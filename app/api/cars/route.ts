@@ -13,8 +13,7 @@ export async function GET(req: NextRequest) {
 
     // Build WHERE clauses dynamically
     const conditions: string[] = ["c.status != 'sold'"];
-    const params: unknown[]    = [];
-
+    const params: any[] = [];
     if (sp.get("type"))      { conditions.push("c.type = ?");               params.push(sp.get("type")); }
     if (sp.get("brand"))     { conditions.push("b.name = ?");               params.push(sp.get("brand")); }
     if (sp.get("min_price")) { conditions.push("c.price >= ?");             params.push(Number(sp.get("min_price"))); }
@@ -47,7 +46,7 @@ export async function GET(req: NextRequest) {
     // Count total
     const [countRows] = await pool.execute<any[]>(
       `SELECT COUNT(*) as total FROM cars c JOIN brands b ON c.brand_id = b.id ${where}`,
-      params
+      params as any[] // Tambahkan 'as any[]' di sini
     );
     const total = countRows[0].total as number;
 
