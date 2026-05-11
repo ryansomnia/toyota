@@ -25,7 +25,7 @@ export default function HomePage() {
         <CatalogSection />
         <PromoSection />
         <WhySection />
-        <KreditCalc />
+        {/* <KreditCalc /> */}
         <TestimonialSection />
         <ContactSection />
       </main>

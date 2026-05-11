@@ -1,15 +1,12 @@
 import mysql from "mysql2/promise";
+import { NextResponse } from "next/server";
 
 // ─── Connection Pool ────────────────────────────────────────────
-// Pool dibuat sekali dan dipakai ulang di semua API routes.
-// Di Next.js App Router, gunakan singleton pattern agar tidak
-// membuat koneksi baru di setiap hot-reload development.
-
 declare global {
   // eslint-disable-next-line no-var
   var _mysqlPool: mysql.Pool | undefined;
 }
-console.log(process.env.DB_PASSWORD);
+
 function createPool() {
   return mysql.createPool({
     host:               process.env.DB_HOST     ?? "localhost",
@@ -25,32 +22,41 @@ function createPool() {
   });
 }
 
-
-// Singleton: satu pool untuk seluruh app
+// Singleton pattern untuk Next.js
 const pool = global._mysqlPool ?? createPool();
 if (process.env.NODE_ENV !== "production") global._mysqlPool = pool;
 
 export default pool;
 
-// ─── Typed query helper ─────────────────────────────────────────
+// ─── Typed Query Helpers ────────────────────────────────────────
+
+/**
+ * Eksekusi query SQL (Multiple rows)
+ */
 export async function query<T = unknown>(
   sql: string,
-  params?: unknown[]
+  params?: any[] // Menggunakan any[] agar tidak error unknown di library mysql2
 ): Promise<T> {
   const [rows] = await pool.execute(sql, params);
   return rows as T;
 }
 
-// ─── Single-row helper ──────────────────────────────────────────
+/**
+ * Eksekusi query SQL (Single row)
+ */
 export async function queryOne<T = unknown>(
   sql: string,
-  params?: unknown[]
+  params?: any[]
 ): Promise<T | null> {
   const rows = await query<T[]>(sql, params);
   return rows[0] ?? null;
 }
 
-// ─── Transaction helper ─────────────────────────────────────────
+// ─── Transaction Helper ─────────────────────────────────────────
+
+/**
+ * Menjalankan operasi database dalam satu transaksi
+ */
 export async function withTransaction<T>(
   callback: (conn: mysql.PoolConnection) => Promise<T>
 ): Promise<T> {
@@ -66,4 +72,50 @@ export async function withTransaction<T>(
   } finally {
     conn.release();
   }
+}
+
+// ─── API Response Helpers ───────────────────────────────────────
+
+/**
+ * Response sukses standar
+ */
+export function ok(data: any, status = 200) {
+  return NextResponse.json(
+    {
+      success: true,
+      ...data,
+    },
+    { status }
+  );
+}
+
+/**
+ * Response error standar
+ */
+export function err(message: string, status = 400) {
+  return NextResponse.json(
+    {
+      success: false,
+      error: message,
+    },
+    { status }
+  );
+}
+
+// ─── Interfaces ────────────────────────────────────────────────
+
+export interface KreditApplication {
+  id?: number;
+  lead_id: number;
+  nama: string;
+  phone: string;
+  email?: string;
+  car_id?: number;
+  harga_mobil: number;
+  dp_persen: number;
+  dp_amount: number;
+  tenor_bulan: number;
+  cicilan_estimasi: number;
+  bank_pilihan?: string;
+  created_at?: string;
 }
