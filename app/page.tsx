@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Toyota Cibubur – Sales Mobil Resmi Cibinong & Bogor",
   description:
     "Sales mobil resmi terpercaya di Cibinong, Bogor. Tersedia Toyota, Honda, Mitsubishi dan lebih. Proses kredit mudah, DP ringan mulai 10%. Hubungi kami sekarang!",
-  alternates: { canonical: "https://autoprima.id" },
+  alternates: { canonical: "https://mobiltoyotacibubur.com" },
 };
 
 export default function HomePage() {
@@ -34,7 +34,7 @@ export default function HomePage() {
 
       {/* Floating WA button */}
       <a
-        href="https://wa.me/6281234567890?text=Halo%20AutoPrima%2C%20saya%20ingin%20konsultasi%20%F0%9F%99%8F"
+        href="https://wa.me/6282125061466?text=Halo%Toyota%2C%20saya%20ingin%20konsultasi%20%F0%9F%99%8F"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 bg-[#25D366] text-white pl-4 pr-5 py-3.5 rounded-full shadow-2xl hover:scale-105 transition-transform"

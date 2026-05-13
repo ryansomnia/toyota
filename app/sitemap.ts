@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://autoprima.id";
+  const base = "https://mobiltoyotacibubur.com/";
   const now = new Date();
 
   const routes = [

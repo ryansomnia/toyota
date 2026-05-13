@@ -43,7 +43,7 @@ export default function Navbar() {
     }
   };
 
-  const waLink = "https://wa.me/6281234567890";
+  const waLink = "https://wa.me/6282125061466";
 
   return (
     <>

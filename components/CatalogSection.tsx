@@ -43,7 +43,7 @@ export default function CatalogSection() {
     ? cars
     : cars.filter((car) => categories.find(c => c.id === car.categoryId)?.name === activeTab);
 
-  const waBase = "https://wa.me/6281234567890?text=";
+  const waBase = "https://wa.me/6282125061466?text=";
 
   if (loading) return <div className="py-20 text-center">Memuat Katalog...</div>;
 
@@ -216,7 +216,7 @@ export default function CatalogSection() {
                 Tutup
               </button>
               <a
-                href={`${waBase}${encodeURIComponent(`Halo AutoPrima, saya tertarik dengan ${selectedCar.fullName}. Bisa kirimkan simulasi kredit dan info stok warnanya?`)}`}
+                href={`${waBase}${encodeURIComponent(`Halo, saya tertarik dengan ${selectedCar.fullName}. Bisa kirimkan simulasi kredit dan info stok warnanya?`)}`}
                 target="_blank"
                 className="flex-[2] bg-[#25D366] text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-[#1ebe5d] shadow-lg shadow-green-200 transition-all active:scale-95"
               >

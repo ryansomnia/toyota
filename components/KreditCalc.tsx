@@ -36,8 +36,8 @@ export default function KreditCalc() {
     });
   }, [harga, dp, tenor]);
 
-  const waLink = `https://wa.me/6281234567890?text=${encodeURIComponent(
-    `Halo AutoPrima 🙏 Saya ingin ajukan kredit mobil.
+  const waLink = `https://wa.me/6282125061466?text=${encodeURIComponent(
+    `Halo 🙏 Saya ingin ajukan kredit mobil.
 
 Harga Mobil: ${fmt(harga)}
 DP: ${dp}%

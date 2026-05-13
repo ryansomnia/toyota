@@ -18,45 +18,45 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://autoprima.id"),
+  metadataBase: new URL("https://mobiltoyotacibubur.com"),
   title: {
-    default: "AutoPrima – Sales Mobil Resmi Cibinong & Bogor",
-    template: "%s | AutoPrima",
+    default: "Toyota Cibubur – Sales Mobil Resmi Cibubur & Bekasi",
+    template: "%s | Toyota Cibubur",
   },
   description:
-    "Sales mobil resmi terpercaya di Cibinong, Bogor. Tersedia Toyota, Honda, Mitsubishi, Suzuki & lebih. Proses kredit mudah, DP ringan, konsultasi gratis. Hubungi kami sekarang!",
+    "Sales mobil resmi terpercaya di Cibubur, Bekasi. Tersedia Toyota, Honda, Mitsubishi, Suzuki & lebih. Proses kredit mudah, DP ringan, konsultasi gratis. Hubungi kami sekarang!",
   keywords: [
-    "sales mobil Cibinong",
-    "dealer mobil Bogor",
-    "kredit mobil Bogor",
-    "beli mobil Cibinong",
-    "Toyota Cibinong",
-    "Honda Bogor",
-    "AutoPrima",
+    "sales mobil Cibubur",
+    "dealer mobil Bekasi",
+    "kredit mobil Bekasi",
+    "beli mobil Cibubur",
+    "Toyota Cibubur",
+    "Honda Bekasi",
+    "Toyota Cibubur",
     "sales mobil terpercaya",
   ],
-  authors: [{ name: "AutoPrima" }],
-  creator: "AutoPrima",
+  authors: [{ name: "Toyota Cibubur" }],
+  creator: "Toyota Cibubur",
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://autoprima.id",
-    siteName: "AutoPrima",
-    title: "AutoPrima – Sales Mobil Resmi Cibinong & Bogor",
+    url: "https://mobiltoyotacibubur.com",
+    siteName: "Toyota Cibubur",
+    title: "Toyota Cibubur – Sales Mobil Resmi Cibubur & Bekasi",
     description:
-      "Sales mobil resmi terpercaya di Cibinong, Bogor. Proses kredit mudah, DP ringan, konsultasi gratis.",
+      "Sales mobil resmi terpercaya di Cibubur, Bekasi. Proses kredit mudah, DP ringan, konsultasi gratis.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "AutoPrima – Sales Mobil Resmi",
+        alt: "Toyota Cibubur – Sales Mobil Resmi",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AutoPrima – Sales Mobil Resmi Cibinong & Bogor",
+    title: "Toyota Cibubur – Sales Mobil Resmi Cibubur & Bekasi",
     description: "Sales mobil terpercaya. Proses kredit mudah, konsultasi gratis.",
     images: ["/og-image.jpg"],
   },
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://autoprima.id",
+    canonical: "https://mobiltoyotacibubur.com",
   },
   verification: {
     google: "YOUR_GOOGLE_VERIFICATION_CODE",
@@ -94,16 +94,16 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "AutoDealer",
-              name: "AutoPrima",
+              name: "Toyota Cibubur",
               description:
-                "Sales mobil resmi terpercaya di Cibinong, Bogor dan sekitarnya.",
-              url: "https://autoprima.id",
+                "Sales mobil resmi terpercaya di Cibubur, Bekasi dan sekitarnya.",
+              url: "https://mobiltoyotacibubur.com",
               telephone: "+628123456789",
-              email: "info@autoprima.id",
+              email: "info@Toyota Cibubur.id",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Jl. Raya Otomotif No. 88",
-                addressLocality: "Cibinong",
+                addressLocality: "Cibubur",
                 addressRegion: "Jawa Barat",
                 postalCode: "16911",
                 addressCountry: "ID",
@@ -122,8 +122,8 @@ export default function RootLayout({
                 },
               ],
               sameAs: [
-                "https://instagram.com/autoprima",
-                "https://facebook.com/autoprima",
+                "https://instagram.com/Toyota Cibubur",
+                "https://facebook.com/Toyota Cibubur",
               ],
               aggregateRating: {
                 "@type": "AggregateRating",
