@@ -3,12 +3,11 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 
 const NAV_ITEMS = [
-  { label: "Beranda", targetId: "hero" },
+  { label: "Beranda", targetId: "hero" }, 
+   { label: "Katalog", targetId: "katalog" },
   { label: "Promo", targetId: "promo" },
-  { label: "Katalog", targetId: "katalog" },
-  { label: "Simulasi Kredit", targetId: "kredit" },
-  { label: "Blog", targetId: "blog" },
-  { label: "Tentang", targetId: "tentang" },
+
+  { label: "Hubu", targetId: "tentang" },
 ];
 
 export default function Navbar() {
@@ -81,9 +80,9 @@ export default function Navbar() {
           >
             <div className="flex flex-col leading-none">
                 <span className="text-[#0A0A0A] font-black text-2xl tracking-tighter group-hover:text-red-600 transition-colors">
-                    SETIA<span className="text-red-600 group-hover:text-[#0A0A0A]">JAYA</span>
+                    TOYOTA<span className="text-red-600 group-hover:text-[#0A0A0A]">CIBUBUR</span>
                 </span>
-                <span className="text-[8px] tracking-[4px] text-gray-400 font-bold uppercase">ToyotaCibubur</span>
+                <span className="text-[8px] tracking-[4px] text-gray-400 font-bold uppercase">SetiaJaya</span>
             </div>
           </button>
 

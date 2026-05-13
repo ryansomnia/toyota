@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "name": "SUV",
+      "slug": "suv",
+      "icon": "🚙",
+      "sortOrder": 1,
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "name": "MPV",
+      "slug": "mpv",
+      "icon": "🚐",
+      "sortOrder": 2,
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "name": "Hatchback",
+      "slug": "hatchback",
+      "icon": "🚗",
+      "sortOrder": 3,
+      "isActive": true
+    },
+    {
+      "id": 4,
+      "name": "Sedan",
+      "slug": "sedan",
+      "icon": "🏎️",
+      "sortOrder": 4,
+      "isActive": true
+    },
+    {
+      "id": 5,
+      "name": "Commercial",
+      "slug": "commercial",
+      "icon": "🚚",
+      "sortOrder": 5,
+      "isActive": true
+    }
+  ]

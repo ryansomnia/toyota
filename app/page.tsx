@@ -5,11 +5,11 @@ import Marquee from "@/components/Marquee";
 import CatalogSection from "@/components/CatalogSection";
 import { PromoSection, WhySection, TestimonialSection } from "@/components/Sections";
 import KreditCalc from "@/components/KreditCalc";
-import { ContactSection, Footer } from "@/components/ContactFooter";
+import { ContactSection, Footer } from "@/components/AboutFooter";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "AutoPrima – Sales Mobil Resmi Cibinong & Bogor",
+  title: "Toyota Cibubur – Sales Mobil Resmi Cibinong & Bogor",
   description:
     "Sales mobil resmi terpercaya di Cibinong, Bogor. Tersedia Toyota, Honda, Mitsubishi dan lebih. Proses kredit mudah, DP ringan mulai 10%. Hubungi kami sekarang!",
   alternates: { canonical: "https://autoprima.id" },

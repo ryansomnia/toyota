@@ -52,7 +52,8 @@ export default function Hero() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-[90vh] flex items-center overflow-hidden bg-white text-[#0A0A0A]"
+       id="hero"
+      className=" relative min-h-[90vh] flex items-center overflow-hidden bg-white text-[#0A0A0A]"
     >
       {/* Background Decor - Subtle & Clean */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">

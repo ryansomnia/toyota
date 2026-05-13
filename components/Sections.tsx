@@ -3,14 +3,10 @@ import Link from "next/link";
 const PROMOS = [
   {
     icon: "💰",
-    title: "Cash Back Rp 30 Juta",
+    title: "Cash Back Puluhan Juta",
     desc: "Khusus pembelian unit tertentu bulan ini",
   },
-  {
-    icon: "🎁",
-    title: "Free Aksesoris Rp 10 Juta",
-    desc: "Paket original untuk pembeli pertama",
-  },
+
   {
     icon: "🛡️",
     title: "Asuransi All-Risk 1 Tahun",
@@ -116,7 +112,7 @@ export function PromoSection() {
               </span>
 
               <h3 className="text-4xl md:text-5xl font-light leading-tight mb-6">
-                DP Mulai 10%
+                DP Ringan
                 <br />
                 Cicilan Mulai
                 <br />

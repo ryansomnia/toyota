@@ -1,0 +1,2463 @@
+[
+  {
+    "id": 1,
+    "categoryId": 1,
+    "categoryName": "SUV",
+    "name": "Fortuner GR Sport",
+    "fullName": "New Fortuner GR Sport",
+    "slug": "fortuner-gr-sport",
+    "tagline": "Discover Your Fortuner",
+    "description": "New Fortuner GR Sport hadir dengan tampilan sporty yang agresif dan performa mesin diesel 2.8L turbo yang bertenaga. Dilengkapi teknologi 4WD dan fitur keselamatan aktif Toyota Safety Sense.",
+    "bannerUrl": "/images/cars/fortuner-gr-sport/banner.jpg",
+    "thumbnailUrl": "/images/cars/fortuner-gr-sport/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-fortuner-gr-sport.pdf",
+    "startingPrice": 617800000,
+    "priceLabel": "Starting from",
+    "label": "GR SPORT",
+    "isNew": true,
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 1,
+    "metaTitle": "New Fortuner GR Sport – Harga & Promo Terbaru | AutoPrima",
+    "metaDescription": "Beli New Toyota Fortuner GR Sport di AutoPrima Cibinong. Harga mulai Rp 617 Juta. Proses kredit mudah, DP ringan. Hubungi kami sekarang!",
+    "variants": [
+      {
+        "id": 101,
+        "name": "2.7 SRZ 4x2 A/T Non RSE",
+        "slug": "fortuner-gr-sport-srz-4x2",
+        "fuel": "Bensin",
+        "transmission": "Automatic",
+        "engineCc": 2700,
+        "engineLabel": "2.7L 4-cyl VVT-i",
+        "drivetrain": "4x2",
+        "seats": 7,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 1001, "label": "2.7 SRZ 4x2 A/T Non RSE", "price": 617800000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 1002, "label": "2.7 SRZ 4x2 A/T", "price": 623400000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Tipe Mesin", "specValue": "2TR-FE, 4-Silinder, DOHC, VVT-i", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "2.694 cc", "sortOrder": 2 },
+          { "category": "Mesin", "specKey": "Tenaga Maksimum", "specValue": "166 PS / 5.200 rpm", "sortOrder": 3 },
+          { "category": "Mesin", "specKey": "Torsi Maksimum", "specValue": "245 Nm / 3.600 rpm", "sortOrder": 4 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "6-Speed Automatic", "sortOrder": 5 },
+          { "category": "Dimensi", "specKey": "Panjang", "specValue": "4.795 mm", "sortOrder": 6 },
+          { "category": "Dimensi", "specKey": "Lebar", "specValue": "1.855 mm", "sortOrder": 7 },
+          { "category": "Dimensi", "specKey": "Tinggi", "specValue": "1.835 mm", "sortOrder": 8 },
+          { "category": "Dimensi", "specKey": "Wheelbase", "specValue": "2.745 mm", "sortOrder": 9 },
+          { "category": "Kapasitas", "specKey": "Kapasitas Tangki", "specValue": "80 Liter", "sortOrder": 10 }
+        ]
+      },
+      {
+        "id": 102,
+        "name": "2.8 SRZ 4x4 A/T",
+        "slug": "fortuner-gr-sport-srz-4x4",
+        "fuel": "Diesel",
+        "transmission": "Automatic",
+        "engineCc": 2800,
+        "engineLabel": "2.8L 4-cyl Turbo Diesel",
+        "drivetrain": "4x4",
+        "seats": 7,
+        "sortOrder": 2,
+        "prices": [
+          { "id": 1003, "label": "GRS TSS 4x4 RSE", "price": 782600000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 1004, "label": "GRS 4x4 1T", "price": 788300000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 },
+          { "id": 1005, "label": "GRS 4x4 2T", "price": 793300000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 3 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Tipe Mesin", "specValue": "1GD-FTV, 4-Silinder, DOHC, Turbo", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "2.755 cc", "sortOrder": 2 },
+          { "category": "Mesin", "specKey": "Tenaga Maksimum", "specValue": "204 PS / 3.400 rpm", "sortOrder": 3 },
+          { "category": "Mesin", "specKey": "Torsi Maksimum", "specValue": "500 Nm / 1.600-2.800 rpm", "sortOrder": 4 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "6-Speed Automatic", "sortOrder": 5 },
+          { "category": "Penggerak", "specKey": "Sistem", "specValue": "4WD dengan Shift-On-The-Fly", "sortOrder": 6 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 1, "name": "Attitude Black Mica", "hexCode": "#1C1C1C", "imageUrl": "/images/cars/fortuner-gr-sport/color-black.jpg", "sortOrder": 1 },
+      { "id": 2, "name": "Super White II", "hexCode": "#F5F5F5", "imageUrl": "/images/cars/fortuner-gr-sport/color-white.jpg", "sortOrder": 2 },
+      { "id": 3, "name": "Silver Metallic", "hexCode": "#A8A8A8", "imageUrl": "/images/cars/fortuner-gr-sport/color-silver.jpg", "sortOrder": 3 },
+      { "id": 4, "name": "Crimson Spark Red", "hexCode": "#8B1A1A", "imageUrl": "/images/cars/fortuner-gr-sport/color-red.jpg", "sortOrder": 4 }
+    ],
+    "images": [
+      { "id": 1, "url": "/images/cars/fortuner-gr-sport/exterior-1.jpg", "altText": "Toyota Fortuner GR Sport tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 },
+      { "id": 2, "url": "/images/cars/fortuner-gr-sport/exterior-2.jpg", "altText": "Toyota Fortuner GR Sport tampak samping", "category": "exterior", "isPrimary": false, "sortOrder": 2 },
+      { "id": 3, "url": "/images/cars/fortuner-gr-sport/interior-1.jpg", "altText": "Interior Toyota Fortuner GR Sport", "category": "interior", "isPrimary": false, "sortOrder": 3 }
+    ],
+    "features": [
+      { "id": 1, "title": "GR-S Suspension Tuning", "description": "Suspensi khusus GR Sport yang dioptimalkan untuk handling lebih sporty namun tetap nyaman.", "category": "Performance", "sortOrder": 1 },
+      { "id": 2, "title": "Toyota Safety Sense", "description": "Paket keselamatan aktif mencakup Pre-Collision System, Lane Departure Alert, dan Automatic High Beam.", "category": "Safety", "sortOrder": 2 },
+      { "id": 3, "title": "9-inch Touchscreen Display", "description": "Layar sentuh 9 inci dengan Apple CarPlay dan Android Auto.", "category": "Technology", "sortOrder": 3 },
+      { "id": 4, "title": "360-degree Camera", "description": "Kamera 360 derajat untuk kemudahan parkir dan manuver di area sempit.", "category": "Technology", "sortOrder": 4 }
+    ]
+  },
+
+  {
+    "id": 2,
+    "categoryId": 1,
+    "categoryName": "SUV",
+    "name": "Fortuner G",
+    "fullName": "New Fortuner G",
+    "slug": "fortuner-g",
+    "tagline": "Ready for Any Road",
+    "description": "New Fortuner G hadir sebagai pilihan tangguh dengan mesin diesel 2.4L dan bensin 2.4L/2.7L. SUV body-on-frame yang terpercaya untuk medan apapun.",
+    "bannerUrl": "/images/cars/fortuner-g/banner.jpg",
+    "thumbnailUrl": "/images/cars/fortuner-g/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-fortuner-g.pdf",
+    "startingPrice": 583700000,
+    "priceLabel": "Starting from",
+    "label": null,
+    "isNew": true,
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 2,
+    "metaTitle": "New Fortuner G – Harga Terbaru | AutoPrima",
+    "metaDescription": "Beli New Toyota Fortuner G di AutoPrima Cibinong. Harga mulai Rp 583 Juta. Kredit mudah, DP ringan.",
+    "variants": [
+      {
+        "id": 201,
+        "name": "2.4 G M/T",
+        "slug": "fortuner-g-mt",
+        "fuel": "Diesel",
+        "transmission": "Manual",
+        "engineCc": 2400,
+        "engineLabel": "2.4L 4-cyl Turbo Diesel",
+        "drivetrain": "4x2",
+        "seats": 7,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 2001, "label": "2.4 G M/T", "price": 583700000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "2.393 cc", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Tipe Bahan Bakar", "specValue": "Diesel Turbo", "sortOrder": 2 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "6-Speed Manual", "sortOrder": 3 }
+        ]
+      },
+      {
+        "id": 202,
+        "name": "2.4 G A/T",
+        "slug": "fortuner-g-at",
+        "fuel": "Diesel",
+        "transmission": "Automatic",
+        "engineCc": 2400,
+        "engineLabel": "2.4L 4-cyl Turbo Diesel",
+        "drivetrain": "4x2",
+        "seats": 7,
+        "sortOrder": 2,
+        "prices": [
+          { "id": 2002, "label": "2.4 G A/T", "price": 601800000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 1 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "2.393 cc", "sortOrder": 1 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "6-Speed Automatic", "sortOrder": 2 }
+        ]
+      },
+      {
+        "id": 203,
+        "name": "2.8 VRZ A/T 4x2",
+        "slug": "fortuner-vrz-4x2",
+        "fuel": "Diesel",
+        "transmission": "Automatic",
+        "engineCc": 2800,
+        "engineLabel": "2.8L 4-cyl Turbo Diesel",
+        "drivetrain": "4x2",
+        "seats": 7,
+        "sortOrder": 3,
+        "prices": [
+          { "id": 2003, "label": "2.8 VRZ 4x2 A/T", "price": 646100000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 2004, "label": "2.8 VRZ TSS 4x2 A/T", "price": 662000000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "2.755 cc", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Tenaga Maksimum", "specValue": "204 PS / 3.400 rpm", "sortOrder": 2 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "6-Speed Automatic", "sortOrder": 3 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 10, "name": "Super White II", "hexCode": "#F5F5F5", "imageUrl": "/images/cars/fortuner-g/color-white.jpg", "sortOrder": 1 },
+      { "id": 11, "name": "Attitude Black Mica", "hexCode": "#1C1C1C", "imageUrl": "/images/cars/fortuner-g/color-black.jpg", "sortOrder": 2 },
+      { "id": 12, "name": "Silver Metallic", "hexCode": "#A8A8A8", "imageUrl": "/images/cars/fortuner-g/color-silver.jpg", "sortOrder": 3 }
+    ],
+    "images": [
+      { "id": 10, "url": "/images/cars/fortuner-g/exterior-1.jpg", "altText": "Toyota Fortuner G tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 10, "title": "Body-on-Frame Construction", "description": "Konstruksi body-on-frame yang kokoh untuk medan off-road maupun on-road.", "category": "Performance", "sortOrder": 1 },
+      { "id": 11, "title": "Multi-Terrain Select", "description": "Sistem pemilihan medan yang memudahkan berkendara di berbagai kondisi jalan.", "category": "Performance", "sortOrder": 2 }
+    ]
+  },
+
+  {
+    "id": 3,
+    "categoryId": 1,
+    "categoryName": "SUV",
+    "name": "Rush GR Sport",
+    "fullName": "New Rush GR Sport",
+    "slug": "rush-gr-sport",
+    "tagline": "Sport Your Journey",
+    "description": "New Rush GR Sport hadir dengan tampilan sporty berjiwa GR dan performa mesin 1.5L DOHC. SUV 7-seater kompak yang lincah untuk aktivitas sehari-hari.",
+    "bannerUrl": "/images/cars/rush-gr-sport/banner.jpg",
+    "thumbnailUrl": "/images/cars/rush-gr-sport/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-rush-gr-sport.pdf",
+    "startingPrice": 289400000,
+    "priceLabel": "Starting from",
+    "label": "GR SPORT",
+    "isNew": true,
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 3,
+    "metaTitle": "New Rush GR Sport – Harga Terbaru | AutoPrima",
+    "metaDescription": "Beli New Toyota Rush GR Sport di AutoPrima Cibinong. Harga mulai Rp 289 Juta.",
+    "variants": [
+      {
+        "id": 301,
+        "name": "1.5 G M/T",
+        "slug": "rush-g-mt",
+        "fuel": "Bensin",
+        "transmission": "Manual",
+        "engineCc": 1496,
+        "engineLabel": "1.5L 4-cyl DOHC",
+        "drivetrain": "4x2",
+        "seats": 7,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 3001, "label": "1.5 G M/T", "price": 289400000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.496 cc", "sortOrder": 1 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "5-Speed Manual", "sortOrder": 2 }
+        ]
+      },
+      {
+        "id": 302,
+        "name": "1.5 GR Sport M/T",
+        "slug": "rush-gr-sport-mt",
+        "fuel": "Bensin",
+        "transmission": "Manual",
+        "engineCc": 1496,
+        "engineLabel": "1.5L 4-cyl DOHC",
+        "drivetrain": "4x2",
+        "seats": 7,
+        "sortOrder": 2,
+        "prices": [
+          { "id": 3002, "label": "1.5 S GRS M/T", "price": 304800000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 1 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.496 cc", "sortOrder": 1 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "5-Speed Manual", "sortOrder": 2 }
+        ]
+      },
+      {
+        "id": 303,
+        "name": "1.5 G A/T",
+        "slug": "rush-g-at",
+        "fuel": "Bensin",
+        "transmission": "Automatic",
+        "engineCc": 1496,
+        "engineLabel": "1.5L 4-cyl DOHC",
+        "drivetrain": "4x2",
+        "seats": 7,
+        "sortOrder": 3,
+        "prices": [
+          { "id": 3003, "label": "1.5 G A/T", "price": 300400000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 3004, "label": "1.5 S GRS A/T", "price": 315600000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.496 cc", "sortOrder": 1 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "4-Speed Automatic", "sortOrder": 2 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 20, "name": "Super White II", "hexCode": "#F5F5F5", "imageUrl": "/images/cars/rush-gr-sport/color-white.jpg", "sortOrder": 1 },
+      { "id": 21, "name": "Attitude Black Mica", "hexCode": "#1C1C1C", "imageUrl": "/images/cars/rush-gr-sport/color-black.jpg", "sortOrder": 2 },
+      { "id": 22, "name": "Silver Metallic", "hexCode": "#A8A8A8", "imageUrl": "/images/cars/rush-gr-sport/color-silver.jpg", "sortOrder": 3 }
+    ],
+    "images": [
+      { "id": 20, "url": "/images/cars/rush-gr-sport/exterior-1.jpg", "altText": "Toyota Rush GR Sport tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 20, "title": "GR Sport Styling", "description": "Paket eksterior sporty dengan aksen GR Sport yang agresif.", "category": "Design", "sortOrder": 1 },
+      { "id": 21, "title": "7-inch Touchscreen", "description": "Head unit layar sentuh 7 inci dengan Android Auto dan Apple CarPlay.", "category": "Technology", "sortOrder": 2 }
+    ]
+  },
+
+  {
+    "id": 4,
+    "categoryId": 1,
+    "categoryName": "SUV",
+    "name": "Raize GR",
+    "fullName": "New Raize GR",
+    "slug": "raize-gr",
+    "tagline": "Small but Mighty",
+    "description": "New Raize GR menghadirkan SUV kompak bertenaga dengan mesin turbo 1.0L yang irit namun bertenaga. Desain GR Sport yang sporty dan agresif cocok untuk generasi muda yang dinamis.",
+    "bannerUrl": "/images/cars/raize-gr/banner.jpg",
+    "thumbnailUrl": "/images/cars/raize-gr/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-raize-gr.pdf",
+    "startingPrice": 243500000,
+    "priceLabel": "Starting from",
+    "label": "GR",
+    "isNew": true,
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 4,
+    "metaTitle": "New Raize GR – SUV Kompak Bertenaga | AutoPrima",
+    "metaDescription": "Toyota Raize GR tersedia di AutoPrima Cibinong. Harga mulai Rp 243 Juta.",
+    "variants": [
+      {
+        "id": 401,
+        "name": "1.2 G M/T",
+        "slug": "raize-g-mt",
+        "fuel": "Bensin",
+        "transmission": "Manual",
+        "engineCc": 1200,
+        "engineLabel": "1.2L 3-cyl VVT-i",
+        "drivetrain": "4x2",
+        "seats": 5,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 4001, "label": "1.2 G M/T", "price": 243500000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.197 cc", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Tenaga Maksimum", "specValue": "88 PS / 6.000 rpm", "sortOrder": 2 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "5-Speed Manual", "sortOrder": 3 }
+        ]
+      },
+      {
+        "id": 402,
+        "name": "1.0T GR CVT",
+        "slug": "raize-gr-turbo",
+        "fuel": "Bensin",
+        "transmission": "CVT",
+        "engineCc": 998,
+        "engineLabel": "1.0L 3-cyl Turbo",
+        "drivetrain": "4x2",
+        "seats": 5,
+        "sortOrder": 2,
+        "prices": [
+          { "id": 4002, "label": "1.0T GR CVT", "price": 292100000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 4003, "label": "1.0T GRS CVT 2T", "price": 294700000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 },
+          { "id": 4004, "label": "1.0T GRS TSS CVT 2T", "price": 317100000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 3 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Tipe Mesin", "specValue": "1KR-VET, 3-Silinder, DOHC, Turbo", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "998 cc", "sortOrder": 2 },
+          { "category": "Mesin", "specKey": "Tenaga Maksimum", "specValue": "98 PS / 6.000 rpm", "sortOrder": 3 },
+          { "category": "Mesin", "specKey": "Torsi Maksimum", "specValue": "140 Nm / 2.400-4.000 rpm", "sortOrder": 4 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "CVT", "sortOrder": 5 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 30, "name": "Pearlescent White", "hexCode": "#F8F8F8", "imageUrl": "/images/cars/raize-gr/color-white.jpg", "sortOrder": 1 },
+      { "id": 31, "name": "Emotional Red II", "hexCode": "#C0392B", "imageUrl": "/images/cars/raize-gr/color-red.jpg", "sortOrder": 2 },
+      { "id": 32, "name": "Black Mica", "hexCode": "#1C1C1C", "imageUrl": "/images/cars/raize-gr/color-black.jpg", "sortOrder": 3 }
+    ],
+    "images": [
+      { "id": 30, "url": "/images/cars/raize-gr/exterior-1.jpg", "altText": "Toyota Raize GR tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 30, "title": "1.0L Turbo Engine", "description": "Mesin 3 silinder turbo 998cc yang bertenaga namun irit bahan bakar.", "category": "Performance", "sortOrder": 1 },
+      { "id": 31, "title": "GR Styling", "description": "Paket eksterior dan interior GR Sport yang sporty dan agresif.", "category": "Design", "sortOrder": 2 },
+      { "id": 32, "title": "7-inch Touchscreen", "description": "Head unit 7 inci dengan Android Auto dan Apple CarPlay.", "category": "Technology", "sortOrder": 3 }
+    ]
+  },
+
+  {
+    "id": 5,
+    "categoryId": 1,
+    "categoryName": "SUV",
+    "name": "Yaris Cross HEV",
+    "fullName": "All New Yaris Cross HEV",
+    "slug": "yaris-cross-hev",
+    "tagline": "Beyond Every Road",
+    "description": "All New Yaris Cross HEV menghadirkan SUV hybrid kompak dengan teknologi Hybrid Synergy Drive Toyota. Efisiensi bahan bakar terbaik di kelasnya dengan gaya modern.",
+    "bannerUrl": "/images/cars/yaris-cross-hev/banner.jpg",
+    "thumbnailUrl": "/images/cars/yaris-cross-hev/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-yaris-cross-hev.pdf",
+    "startingPrice": 359700000,
+    "priceLabel": "Starting from",
+    "label": "HYBRID",
+    "isNew": true,
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 5,
+    "metaTitle": "All New Yaris Cross HEV – SUV Hybrid Kompak | AutoPrima",
+    "metaDescription": "Toyota Yaris Cross HEV tersedia di AutoPrima Cibinong. Harga mulai Rp 359 Juta.",
+    "variants": [
+      {
+        "id": 501,
+        "name": "1.5 G M/T",
+        "slug": "yaris-cross-g-mt",
+        "fuel": "Bensin",
+        "transmission": "Manual",
+        "engineCc": 1496,
+        "engineLabel": "1.5L 4-cyl DOHC",
+        "drivetrain": "FWD",
+        "seats": 5,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 5001, "label": "1.5 G M/T", "price": 359700000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.496 cc", "sortOrder": 1 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "6-Speed Manual", "sortOrder": 2 }
+        ]
+      },
+      {
+        "id": 502,
+        "name": "1.5 G CVT",
+        "slug": "yaris-cross-g-cvt",
+        "fuel": "Bensin",
+        "transmission": "CVT",
+        "engineCc": 1496,
+        "engineLabel": "1.5L 4-cyl DOHC",
+        "drivetrain": "FWD",
+        "seats": 5,
+        "sortOrder": 2,
+        "prices": [
+          { "id": 5002, "label": "1.5 G CVT", "price": 372900000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 1 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.496 cc", "sortOrder": 1 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "CVT", "sortOrder": 2 }
+        ]
+      },
+      {
+        "id": 503,
+        "name": "1.5 HEV G",
+        "slug": "yaris-cross-hev-g",
+        "fuel": "HybridEV",
+        "transmission": "eCVT",
+        "engineCc": 1496,
+        "engineLabel": "1.5L Hybrid Synergy Drive",
+        "drivetrain": "FWD",
+        "seats": 5,
+        "sortOrder": 3,
+        "prices": [
+          { "id": 5003, "label": "HEV 1.5 G", "price": 399000000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 5004, "label": "HEV 1.5 G 2T", "price": 403000000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.496 cc", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Sistem Hybrid", "specValue": "Toyota Hybrid Synergy Drive", "sortOrder": 2 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "e-CVT", "sortOrder": 3 }
+        ]
+      },
+      {
+        "id": 504,
+        "name": "1.5 HEV S TSS",
+        "slug": "yaris-cross-hev-s-tss",
+        "fuel": "HybridEV",
+        "transmission": "eCVT",
+        "engineCc": 1496,
+        "engineLabel": "1.5L Hybrid Synergy Drive",
+        "drivetrain": "FWD",
+        "seats": 5,
+        "sortOrder": 4,
+        "prices": [
+          { "id": 5005, "label": "HEV 1.5 S TSS", "price": 448800000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 5006, "label": "HEV 1.5 S TSS 2T", "price": 452800000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.496 cc", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Sistem Hybrid", "specValue": "Toyota Hybrid Synergy Drive", "sortOrder": 2 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "e-CVT", "sortOrder": 3 }
+        ]
+      },
+      {
+        "id": 505,
+        "name": "1.5 HEV S GR TSS",
+        "slug": "yaris-cross-hev-s-gr-tss",
+        "fuel": "HybridEV",
+        "transmission": "eCVT",
+        "engineCc": 1496,
+        "engineLabel": "1.5L Hybrid Synergy Drive",
+        "drivetrain": "FWD",
+        "seats": 5,
+        "sortOrder": 5,
+        "prices": [
+          { "id": 5007, "label": "HEV 1.5 S GR TSS", "price": 458200000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 5008, "label": "HEV 1.5 S GR TSS 2T", "price": 462200000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.496 cc", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Sistem Hybrid", "specValue": "Toyota Hybrid Synergy Drive", "sortOrder": 2 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "e-CVT", "sortOrder": 3 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 40, "name": "Platinum White Pearl", "hexCode": "#F5F5F5", "imageUrl": "/images/cars/yaris-cross-hev/color-white.jpg", "sortOrder": 1 },
+      { "id": 41, "name": "Attitude Black Mica", "hexCode": "#1C1C1C", "imageUrl": "/images/cars/yaris-cross-hev/color-black.jpg", "sortOrder": 2 },
+      { "id": 42, "name": "Silver Metallic", "hexCode": "#A8A8A8", "imageUrl": "/images/cars/yaris-cross-hev/color-silver.jpg", "sortOrder": 3 }
+    ],
+    "images": [
+      { "id": 40, "url": "/images/cars/yaris-cross-hev/exterior-1.jpg", "altText": "Toyota Yaris Cross HEV tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 40, "title": "Hybrid Synergy Drive", "description": "Teknologi hybrid Toyota untuk efisiensi bahan bakar terbaik di kelasnya.", "category": "Performance", "sortOrder": 1 },
+      { "id": 41, "title": "Toyota Safety Sense", "description": "Sistem keselamatan aktif generasi terbaru.", "category": "Safety", "sortOrder": 2 }
+    ]
+  },
+
+  {
+    "id": 6,
+    "categoryId": 1,
+    "categoryName": "SUV",
+    "name": "Corolla Cross HEV",
+    "fullName": "New Corolla Cross HEV",
+    "slug": "corolla-cross-hev",
+    "tagline": "Drive the Future",
+    "description": "New Corolla Cross HEV menggabungkan desain SUV premium dengan teknologi hybrid 1.8L Toyota. Hemat bahan bakar, ramah lingkungan, dan penuh fitur modern.",
+    "bannerUrl": "/images/cars/corolla-cross-hev/banner.jpg",
+    "thumbnailUrl": "/images/cars/corolla-cross-hev/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-corolla-cross-hev.pdf",
+    "startingPrice": 605500000,
+    "priceLabel": "Starting from",
+    "label": "HYBRID",
+    "isNew": true,
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 6,
+    "metaTitle": "New Corolla Cross HEV – SUV Hybrid Premium | AutoPrima",
+    "metaDescription": "Toyota Corolla Cross HEV di AutoPrima Cibinong. Harga mulai Rp 605 Juta.",
+    "variants": [
+      {
+        "id": 601,
+        "name": "1.8L HEV",
+        "slug": "corolla-cross-hev-18",
+        "fuel": "HybridEV",
+        "transmission": "eCVT",
+        "engineCc": 1798,
+        "engineLabel": "1.8L Hybrid Synergy Drive",
+        "drivetrain": "FWD",
+        "seats": 5,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 6001, "label": "1.8L HEV", "price": 605500000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 6002, "label": "1.8L HEV P", "price": 608600000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.798 cc", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Sistem Hybrid", "specValue": "Toyota Hybrid Synergy Drive", "sortOrder": 2 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "e-CVT", "sortOrder": 3 }
+        ]
+      },
+      {
+        "id": 602,
+        "name": "1.8L HEV GR Sport",
+        "slug": "corolla-cross-hev-grs",
+        "fuel": "HybridEV",
+        "transmission": "eCVT",
+        "engineCc": 1798,
+        "engineLabel": "1.8L Hybrid Synergy Drive",
+        "drivetrain": "FWD",
+        "seats": 5,
+        "sortOrder": 2,
+        "prices": [
+          { "id": 6003, "label": "1.8L HEV GRS", "price": 645000000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 6004, "label": "1.8L HEV GRS P", "price": 650100000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.798 cc", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Sistem Hybrid", "specValue": "Toyota Hybrid Synergy Drive", "sortOrder": 2 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "e-CVT", "sortOrder": 3 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 50, "name": "Platinum White Pearl", "hexCode": "#F5F5F5", "imageUrl": "/images/cars/corolla-cross-hev/color-white.jpg", "sortOrder": 1 },
+      { "id": 51, "name": "Attitude Black Mica", "hexCode": "#1C1C1C", "imageUrl": "/images/cars/corolla-cross-hev/color-black.jpg", "sortOrder": 2 }
+    ],
+    "images": [
+      { "id": 50, "url": "/images/cars/corolla-cross-hev/exterior-1.jpg", "altText": "Toyota Corolla Cross HEV tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 50, "title": "Hybrid Synergy Drive 1.8L", "description": "Sistem hybrid terbukti efisien hingga 50% dibanding mesin konvensional.", "category": "Performance", "sortOrder": 1 },
+      { "id": 51, "title": "Toyota Safety Sense", "description": "Paket keselamatan aktif lengkap dengan Pre-Collision System.", "category": "Safety", "sortOrder": 2 }
+    ]
+  },
+
+  {
+    "id": 7,
+    "categoryId": 1,
+    "categoryName": "SUV",
+    "name": "BZ4X",
+    "fullName": "New BZ4X Battery EV",
+    "slug": "bz4x",
+    "tagline": "Be Zero. Be Forward.",
+    "description": "New BZ4X adalah SUV listrik murni Toyota pertama di Indonesia. Ditenagai baterai 71.4 kWh dengan jangkauan hingga 500 km, menggabungkan performa tinggi dan emisi nol.",
+    "bannerUrl": "/images/cars/bz4x/banner.jpg",
+    "thumbnailUrl": "/images/cars/bz4x/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-bz4x.pdf",
+    "startingPrice": null,
+    "priceLabel": "Hubungi Kami",
+    "label": "EV",
+    "isNew": true,
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 7,
+    "metaTitle": "New BZ4X Battery EV – SUV Listrik Toyota | AutoPrima",
+    "metaDescription": "Toyota BZ4X Battery EV tersedia di AutoPrima Cibinong. SUV listrik murni, Hubungi kami untuk info harga.",
+    "variants": [
+      {
+        "id": 701,
+        "name": "BZ4X FWD",
+        "slug": "bz4x-fwd",
+        "fuel": "Electric",
+        "transmission": "Automatic",
+        "engineCc": 0,
+        "engineLabel": "71.4 kWh Electric Motor",
+        "drivetrain": "FWD",
+        "seats": 5,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 7001, "label": "BZ4X FWD", "price": null, "isBasePrice": true, "priceOnRequest": true, "sortOrder": 1 }
+        ],
+        "specs": [
+          { "category": "Motor", "specKey": "Kapasitas Baterai", "specValue": "71.4 kWh", "sortOrder": 1 },
+          { "category": "Motor", "specKey": "Tenaga Maksimum", "specValue": "204 PS", "sortOrder": 2 },
+          { "category": "Motor", "specKey": "Jangkauan", "specValue": "Hingga 500 km (WLTP)", "sortOrder": 3 },
+          { "category": "Pengisian", "specKey": "Waktu Pengisian AC", "specValue": "~9 jam (6.6 kW)", "sortOrder": 4 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 60, "name": "Platinum White Pearl", "hexCode": "#F5F5F5", "imageUrl": "/images/cars/bz4x/color-white.jpg", "sortOrder": 1 },
+      { "id": 61, "name": "Attitude Black Mica", "hexCode": "#1C1C1C", "imageUrl": "/images/cars/bz4x/color-black.jpg", "sortOrder": 2 },
+      { "id": 62, "name": "Emotional Red II", "hexCode": "#C0392B", "imageUrl": "/images/cars/bz4x/color-red.jpg", "sortOrder": 3 }
+    ],
+    "images": [
+      { "id": 60, "url": "/images/cars/bz4x/exterior-1.jpg", "altText": "Toyota BZ4X tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 60, "title": "Zero Emission", "description": "Kendaraan listrik murni tanpa emisi gas buang untuk lingkungan yang lebih bersih.", "category": "Performance", "sortOrder": 1 },
+      { "id": 61, "title": "Fast Charging Support", "description": "Mendukung pengisian cepat DC hingga 150 kW.", "category": "Technology", "sortOrder": 2 }
+    ]
+  },
+
+  {
+    "id": 8,
+    "categoryId": 1,
+    "categoryName": "SUV",
+    "name": "Urban Cruiser",
+    "fullName": "New Urban Cruiser Battery EV",
+    "slug": "urban-cruiser-ev",
+    "tagline": "Electrify Your Urban Life",
+    "description": "New Urban Cruiser Battery EV adalah SUV kompak listrik terbaru Toyota. Dirancang untuk mobilitas perkotaan modern dengan teknologi EV terdepan.",
+    "bannerUrl": "/images/cars/urban-cruiser-ev/banner.jpg",
+    "thumbnailUrl": "/images/cars/urban-cruiser-ev/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-urban-cruiser-ev.pdf",
+    "startingPrice": null,
+    "priceLabel": "Hubungi Kami",
+    "label": "EV",
+    "isNew": true,
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 8,
+    "metaTitle": "New Urban Cruiser Battery EV – SUV Listrik Kompak | AutoPrima",
+    "metaDescription": "Toyota Urban Cruiser Battery EV di AutoPrima Cibinong. Hubungi kami untuk info harga.",
+    "variants": [
+      {
+        "id": 801,
+        "name": "Urban Cruiser EV",
+        "slug": "urban-cruiser-ev-std",
+        "fuel": "Electric",
+        "transmission": "Automatic",
+        "engineCc": 0,
+        "engineLabel": "Electric Motor",
+        "drivetrain": "FWD",
+        "seats": 5,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 8001, "label": "Urban Cruiser EV", "price": null, "isBasePrice": true, "priceOnRequest": true, "sortOrder": 1 }
+        ],
+        "specs": [
+          { "category": "Motor", "specKey": "Tipe", "specValue": "Battery Electric Vehicle (BEV)", "sortOrder": 1 },
+          { "category": "Motor", "specKey": "Penggerak", "specValue": "Front-Wheel Drive", "sortOrder": 2 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 70, "name": "White", "hexCode": "#F8F8F8", "imageUrl": "/images/cars/urban-cruiser-ev/color-white.jpg", "sortOrder": 1 }
+    ],
+    "images": [
+      { "id": 70, "url": "/images/cars/urban-cruiser-ev/exterior-1.jpg", "altText": "Toyota Urban Cruiser EV tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 70, "title": "Full Electric Powertrain", "description": "Sepenuhnya bertenaga listrik untuk perjalanan bebas emisi.", "category": "Performance", "sortOrder": 1 }
+    ]
+  },
+
+  {
+    "id": 9,
+    "categoryId": 1,
+    "categoryName": "SUV",
+    "name": "Land Cruiser",
+    "fullName": "All New Land Cruiser",
+    "slug": "land-cruiser",
+    "tagline": "Go Anywhere. Do Anything.",
+    "description": "All New Land Cruiser hadir dengan generasi terbaru platform TNGA-F. SUV flagship Toyota yang tangguh, mewah, dan mampu menaklukkan medan paling ekstrem.",
+    "bannerUrl": "/images/cars/land-cruiser/banner.jpg",
+    "thumbnailUrl": "/images/cars/land-cruiser/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-land-cruiser.pdf",
+    "startingPrice": 2635400000,
+    "priceLabel": "Hubungi Kami",
+    "label": "NEW",
+    "isNew": true,
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 9,
+    "metaTitle": "All New Land Cruiser – SUV Flagship Toyota | AutoPrima",
+    "metaDescription": "Toyota Land Cruiser di AutoPrima Cibinong. Hubungi kami untuk info harga dan ketersediaan.",
+    "variants": [
+      {
+        "id": 901,
+        "name": "Land Cruiser 3.3L Twin Turbo Diesel",
+        "slug": "land-cruiser-diesel",
+        "fuel": "Diesel",
+        "transmission": "Automatic",
+        "engineCc": 3346,
+        "engineLabel": "3.3L V6 Twin Turbo Diesel",
+        "drivetrain": "4x4",
+        "seats": 7,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 9001, "label": "Land Cruiser", "price": null, "isBasePrice": true, "priceOnRequest": true, "sortOrder": 1 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Tipe Mesin", "specValue": "F33A-FTV, V6, Twin Turbo Diesel", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "3.346 cc", "sortOrder": 2 },
+          { "category": "Mesin", "specKey": "Tenaga Maksimum", "specValue": "309 PS / 4.000 rpm", "sortOrder": 3 },
+          { "category": "Mesin", "specKey": "Torsi Maksimum", "specValue": "700 Nm / 1.600-2.600 rpm", "sortOrder": 4 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "10-Speed Automatic", "sortOrder": 5 },
+          { "category": "Penggerak", "specKey": "Sistem", "specValue": "4WD Full-Time", "sortOrder": 6 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 80, "name": "Platinum White Pearl", "hexCode": "#F5F5F5", "imageUrl": "/images/cars/land-cruiser/color-white.jpg", "sortOrder": 1 },
+      { "id": 81, "name": "Attitude Black Mica", "hexCode": "#1C1C1C", "imageUrl": "/images/cars/land-cruiser/color-black.jpg", "sortOrder": 2 }
+    ],
+    "images": [
+      { "id": 80, "url": "/images/cars/land-cruiser/exterior-1.jpg", "altText": "Toyota Land Cruiser tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 80, "title": "E-KDSS", "description": "Electronic Kinetic Dynamic Suspension System untuk kemampuan off-road terbaik.", "category": "Performance", "sortOrder": 1 },
+      { "id": 81, "title": "Multi-Terrain Select", "description": "Sistem pemilihan medan 5-mode untuk kondisi jalan apapun.", "category": "Performance", "sortOrder": 2 }
+    ]
+  },
+
+  {
+    "id": 10,
+    "categoryId": 2,
+    "categoryName": "MPV",
+    "name": "Innova Zenix HEV",
+    "fullName": "All New Innova Zenix HEV",
+    "slug": "innova-zenix-hev",
+    "tagline": "Beyond Expectation",
+    "description": "All New Innova Zenix HEV menghadirkan teknologi hybrid terdepan dalam balutan desain MPV premium. Mesin 2.0L Hybrid memberikan efisiensi bahan bakar luar biasa.",
+    "bannerUrl": "/images/cars/innova-zenix-hev/banner.jpg",
+    "thumbnailUrl": "/images/cars/innova-zenix-hev/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-innova-zenix-hev.pdf",
+    "startingPrice": 474700000,
+    "priceLabel": "Starting from",
+    "label": "HYBRID",
+    "isNew": true,
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 10,
+    "metaTitle": "All New Innova Zenix HEV – MPV Hybrid Premium | AutoPrima",
+    "metaDescription": "Toyota Innova Zenix HEV di AutoPrima Cibinong. Harga mulai Rp 474 Juta.",
+    "variants": [
+      {
+        "id": 1001,
+        "name": "HEV G CVT",
+        "slug": "zenix-hev-g",
+        "fuel": "HybridEV",
+        "transmission": "eCVT",
+        "engineCc": 1987,
+        "engineLabel": "2.0L Hybrid Synergy Drive",
+        "drivetrain": "FWD",
+        "seats": 7,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 10001, "label": "HEV G CVT", "price": 474700000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 10002, "label": "HEV G CVT P", "price": 477600000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Tipe Mesin", "specValue": "M20A-FXS, 4-Silinder, DOHC, Hybrid", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.987 cc", "sortOrder": 2 },
+          { "category": "Mesin", "specKey": "Sistem Hybrid", "specValue": "Toyota Hybrid Synergy Drive", "sortOrder": 3 },
+          { "category": "Mesin", "specKey": "Tenaga Sistem", "specValue": "186 PS", "sortOrder": 4 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "e-CVT", "sortOrder": 5 }
+        ]
+      },
+      {
+        "id": 1002,
+        "name": "HEV V CVT",
+        "slug": "zenix-hev-v",
+        "fuel": "HybridEV",
+        "transmission": "eCVT",
+        "engineCc": 1987,
+        "engineLabel": "2.0L Hybrid Synergy Drive",
+        "drivetrain": "FWD",
+        "seats": 7,
+        "sortOrder": 2,
+        "prices": [
+          { "id": 10003, "label": "HEV V CVT", "price": 548400000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 10004, "label": "HEV V MOD", "price": 538400000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 },
+          { "id": 10005, "label": "HEV V RSE", "price": 540100000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 3 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.987 cc", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Sistem Hybrid", "specValue": "Toyota Hybrid Synergy Drive", "sortOrder": 2 }
+        ]
+      },
+      {
+        "id": 1003,
+        "name": "HEV Q TSS",
+        "slug": "zenix-hev-q",
+        "fuel": "HybridEV",
+        "transmission": "eCVT",
+        "engineCc": 1987,
+        "engineLabel": "2.0L Hybrid Synergy Drive",
+        "drivetrain": "FWD",
+        "seats": 7,
+        "sortOrder": 3,
+        "prices": [
+          { "id": 10006, "label": "HEV Q TSS", "price": 626900000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 10007, "label": "HEV Q TSS MOD", "price": 617000000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 },
+          { "id": 10008, "label": "HEV Q TSS RSE", "price": 618600000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 3 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.987 cc", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Sistem Hybrid", "specValue": "Toyota Hybrid Synergy Drive", "sortOrder": 2 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 90, "name": "Platinum White Pearl Mica", "hexCode": "#F0F0F0", "imageUrl": "/images/cars/innova-zenix-hev/color-white.jpg", "sortOrder": 1 },
+      { "id": 91, "name": "Attitude Black Mica", "hexCode": "#1C1C1C", "imageUrl": "/images/cars/innova-zenix-hev/color-black.jpg", "sortOrder": 2 },
+      { "id": 92, "name": "Silver Metallic", "hexCode": "#A8A8A8", "imageUrl": "/images/cars/innova-zenix-hev/color-silver.jpg", "sortOrder": 3 },
+      { "id": 93, "name": "Bronze Mica Metallic", "hexCode": "#8B6914", "imageUrl": "/images/cars/innova-zenix-hev/color-bronze.jpg", "sortOrder": 4 }
+    ],
+    "images": [
+      { "id": 90, "url": "/images/cars/innova-zenix-hev/exterior-1.jpg", "altText": "Toyota Innova Zenix HEV tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 90, "title": "Hybrid Synergy Drive", "description": "Sistem hybrid Toyota yang irit hingga 50% dibanding mesin konvensional.", "category": "Performance", "sortOrder": 1 },
+      { "id": 91, "title": "Head-Up Display", "description": "Informasi berkendara langsung di kaca depan untuk keamanan optimal.", "category": "Technology", "sortOrder": 2 },
+      { "id": 92, "title": "Power Sliding Door", "description": "Pintu geser elektrik di kedua sisi untuk kemudahan penumpang.", "category": "Comfort", "sortOrder": 3 }
+    ]
+  },
+
+  {
+    "id": 11,
+    "categoryId": 2,
+    "categoryName": "MPV",
+    "name": "Innova Zenix",
+    "fullName": "All New Innova Zenix",
+    "slug": "innova-zenix",
+    "tagline": "A New Kind of Bold",
+    "description": "All New Innova Zenix versi bensin hadir dengan mesin 2.0L VVT-iE yang bertenaga dan desain MPV premium terbaru. Pilihan MPV 7-seater modern.",
+    "bannerUrl": "/images/cars/innova-zenix/banner.jpg",
+    "thumbnailUrl": "/images/cars/innova-zenix/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-innova-zenix.pdf",
+    "startingPrice": 437300000,
+    "priceLabel": "Starting from",
+    "label": null,
+    "isNew": true,
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 11,
+    "metaTitle": "All New Innova Zenix – MPV Premium | AutoPrima",
+    "metaDescription": "Toyota Innova Zenix di AutoPrima Cibinong. Harga mulai Rp 437 Juta.",
+    "variants": [
+      {
+        "id": 1101,
+        "name": "G CVT",
+        "slug": "innova-zenix-g-cvt",
+        "fuel": "Bensin",
+        "transmission": "CVT",
+        "engineCc": 1987,
+        "engineLabel": "2.0L 4-cyl VVT-iE",
+        "drivetrain": "FWD",
+        "seats": 7,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 11001, "label": "G CVT", "price": 437300000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 11002, "label": "G CVT P", "price": 440300000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Tipe Mesin", "specValue": "M20A-FKS, 4-Silinder, DOHC, VVT-iE", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.987 cc", "sortOrder": 2 },
+          { "category": "Mesin", "specKey": "Tenaga Maksimum", "specValue": "174 PS / 6.600 rpm", "sortOrder": 3 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "CVT", "sortOrder": 4 }
+        ]
+      },
+      {
+        "id": 1102,
+        "name": "V CVT",
+        "slug": "innova-zenix-v-cvt",
+        "fuel": "Bensin",
+        "transmission": "CVT",
+        "engineCc": 1987,
+        "engineLabel": "2.0L 4-cyl VVT-iE",
+        "drivetrain": "FWD",
+        "seats": 7,
+        "sortOrder": 2,
+        "prices": [
+          { "id": 11003, "label": "V CVT", "price": 483900000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 11004, "label": "V MOD", "price": 538400000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 },
+          { "id": 11005, "label": "V RSE", "price": 475600000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 3 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.987 cc", "sortOrder": 1 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "CVT", "sortOrder": 2 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 100, "name": "Platinum White Pearl Mica", "hexCode": "#F0F0F0", "imageUrl": "/images/cars/innova-zenix/color-white.jpg", "sortOrder": 1 },
+      { "id": 101, "name": "Attitude Black Mica", "hexCode": "#1C1C1C", "imageUrl": "/images/cars/innova-zenix/color-black.jpg", "sortOrder": 2 }
+    ],
+    "images": [
+      { "id": 100, "url": "/images/cars/innova-zenix/exterior-1.jpg", "altText": "Toyota Innova Zenix tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 100, "title": "2.0L VVT-iE Engine", "description": "Mesin terbaru dengan teknologi Variable Valve Timing-intelligent by Electric motor.", "category": "Performance", "sortOrder": 1 },
+      { "id": 101, "title": "Power Sliding Door", "description": "Pintu geser elektrik untuk kemudahan masuk dan keluar.", "category": "Comfort", "sortOrder": 2 }
+    ]
+  },
+
+  {
+    "id": 12,
+    "categoryId": 2,
+    "categoryName": "MPV",
+    "name": "Innova Reborn",
+    "fullName": "All New Innova",
+    "slug": "innova-reborn",
+    "tagline": "Born to Lead",
+    "description": "All New Innova hadir dengan mesin diesel 2.4L yang tangguh dan terpercaya. MPV legendaris Toyota yang kini hadir lebih modern.",
+    "bannerUrl": "/images/cars/innova-reborn/banner.jpg",
+    "thumbnailUrl": "/images/cars/innova-reborn/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-innova-reborn.pdf",
+    "startingPrice": 417800000,
+    "priceLabel": "Starting from",
+    "label": null,
+    "isNew": false,
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 12,
+    "metaTitle": "All New Innova – MPV Diesel Terpercaya | AutoPrima",
+    "metaDescription": "Toyota Innova Reborn di AutoPrima Cibinong. Harga mulai Rp 417 Juta.",
+    "variants": [
+      {
+        "id": 1201,
+        "name": "2.4 G M/T",
+        "slug": "innova-g-mt",
+        "fuel": "Diesel",
+        "transmission": "Manual",
+        "engineCc": 2393,
+        "engineLabel": "2.4L 4-cyl Turbo Diesel",
+        "drivetrain": "4x2",
+        "seats": 7,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 12001, "label": "2.4 G M/T", "price": 417800000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "2.393 cc", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Tipe Bahan Bakar", "specValue": "Diesel Turbo", "sortOrder": 2 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "5-Speed Manual", "sortOrder": 3 }
+        ]
+      },
+      {
+        "id": 1202,
+        "name": "2.4 G A/T",
+        "slug": "innova-g-at",
+        "fuel": "Diesel",
+        "transmission": "Automatic",
+        "engineCc": 2393,
+        "engineLabel": "2.4L 4-cyl Turbo Diesel",
+        "drivetrain": "4x2",
+        "seats": 7,
+        "sortOrder": 2,
+        "prices": [
+          { "id": 12002, "label": "2.4 G A/T", "price": 438700000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 1 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "2.393 cc", "sortOrder": 1 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "6-Speed Automatic", "sortOrder": 2 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 110, "name": "White", "hexCode": "#F5F5F5", "imageUrl": "/images/cars/innova-reborn/color-white.jpg", "sortOrder": 1 },
+      { "id": 111, "name": "Silver Metallic", "hexCode": "#A8A8A8", "imageUrl": "/images/cars/innova-reborn/color-silver.jpg", "sortOrder": 2 }
+    ],
+    "images": [
+      { "id": 110, "url": "/images/cars/innova-reborn/exterior-1.jpg", "altText": "Toyota Innova tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 110, "title": "2GD-FTV Diesel Engine", "description": "Mesin diesel turbo bertenaga 150 PS yang terbukti handal.", "category": "Performance", "sortOrder": 1 }
+    ]
+  },
+
+  {
+    "id": 13,
+    "categoryId": 2,
+    "categoryName": "MPV",
+    "name": "Avanza",
+    "fullName": "All New Avanza",
+    "slug": "avanza",
+    "tagline": "New Generation, New Experience",
+    "description": "All New Avanza hadir dengan desain modern dan fitur lengkap. Mesin 1.5L DOHC memberikan performa optimal untuk MPV keluarga.",
+    "bannerUrl": "/images/cars/avanza/banner.jpg",
+    "thumbnailUrl": "/images/cars/avanza/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-avanza.pdf",
+    "startingPrice": 243700000,
+    "priceLabel": "Starting from",
+    "label": null,
+    "isNew": false,
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 13,
+    "metaTitle": "All New Toyota Avanza – MPV Keluarga Terbaik | AutoPrima",
+    "metaDescription": "All New Toyota Avanza di AutoPrima Cibinong. Harga mulai Rp 243 Juta.",
+    "variants": [
+      {
+        "id": 1301,
+        "name": "1.3 E M/T",
+        "slug": "avanza-e-mt",
+        "fuel": "Bensin",
+        "transmission": "Manual",
+        "engineCc": 1329,
+        "engineLabel": "1.3L 4-cyl DOHC Dual VVT-i",
+        "drivetrain": "4x2",
+        "seats": 7,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 13001, "label": "1.3 E M/T", "price": 243700000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.329 cc", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Tenaga Maksimum", "specValue": "95 PS / 6.000 rpm", "sortOrder": 2 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "5-Speed Manual", "sortOrder": 3 }
+        ]
+      },
+      {
+        "id": 1302,
+        "name": "1.5 G M/T",
+        "slug": "avanza-g-mt",
+        "fuel": "Bensin",
+        "transmission": "Manual",
+        "engineCc": 1496,
+        "engineLabel": "1.5L 4-cyl DOHC Dual VVT-i",
+        "drivetrain": "4x2",
+        "seats": 7,
+        "sortOrder": 2,
+        "prices": [
+          { "id": 13002, "label": "1.5 G M/T", "price": 266800000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 13003, "label": "1.5 G CVT", "price": 281600000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 },
+          { "id": 13004, "label": "1.3 E CVT", "price": 258700000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 3 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.496 cc", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Tenaga Maksimum", "specValue": "106 PS / 6.000 rpm", "sortOrder": 2 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "5-Speed Manual / CVT", "sortOrder": 3 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 120, "name": "White", "hexCode": "#FFFFFF", "imageUrl": "/images/cars/avanza/color-white.jpg", "sortOrder": 1 },
+      { "id": 121, "name": "Silver Metallic", "hexCode": "#C0C0C0", "imageUrl": "/images/cars/avanza/color-silver.jpg", "sortOrder": 2 },
+      { "id": 122, "name": "Black", "hexCode": "#1C1C1C", "imageUrl": "/images/cars/avanza/color-black.jpg", "sortOrder": 3 }
+    ],
+    "images": [
+      { "id": 120, "url": "/images/cars/avanza/exterior-1.jpg", "altText": "Toyota Avanza tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 120, "title": "DOHC Dual VVT-i Engine", "description": "Mesin generasi terbaru yang bertenaga dan irit bahan bakar.", "category": "Performance", "sortOrder": 1 },
+      { "id": 121, "title": "7-inch Touchscreen", "description": "Head unit layar sentuh 7 inci dengan konektivitas smartphone.", "category": "Technology", "sortOrder": 2 }
+    ]
+  },
+
+  {
+    "id": 14,
+    "categoryId": 2,
+    "categoryName": "MPV",
+    "name": "Calya",
+    "fullName": "New Calya",
+    "slug": "calya",
+    "tagline": "Smart & Affordable",
+    "description": "New Calya hadir sebagai MPV LCGC terjangkau dengan kapasitas 7-penumpang. Cocok untuk keluarga yang menginginkan MPV hemat bahan bakar.",
+    "bannerUrl": "/images/cars/calya/banner.jpg",
+    "thumbnailUrl": "/images/cars/calya/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-calya.pdf",
+    "startingPrice": 170200000,
+    "priceLabel": "Starting from",
+    "label": null,
+    "isNew": false,
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 14,
+    "metaTitle": "New Calya – MPV LCGC Terjangkau | AutoPrima",
+    "metaDescription": "Toyota Calya di AutoPrima Cibinong. Harga mulai Rp 170 Juta.",
+    "variants": [
+      {
+        "id": 1401,
+        "name": "1.2 E STD M/T",
+        "slug": "calya-e-std-mt",
+        "fuel": "Bensin",
+        "transmission": "Manual",
+        "engineCc": 1197,
+        "engineLabel": "1.2L 3-cyl Dual VVT-i",
+        "drivetrain": "4x2",
+        "seats": 7,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 14001, "label": "1.2 E STD M/T", "price": 170200000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.197 cc", "sortOrder": 1 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "5-Speed Manual", "sortOrder": 2 }
+        ]
+      },
+      {
+        "id": 1402,
+        "name": "1.2 G A/T",
+        "slug": "calya-g-at",
+        "fuel": "Bensin",
+        "transmission": "Automatic",
+        "engineCc": 1197,
+        "engineLabel": "1.2L 3-cyl Dual VVT-i",
+        "drivetrain": "4x2",
+        "seats": 7,
+        "sortOrder": 2,
+        "prices": [
+          { "id": 14002, "label": "1.2 E M/T", "price": 173100000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 14003, "label": "1.2 G M/T", "price": 178800000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 },
+          { "id": 14004, "label": "1.2 G A/T", "price": 193200000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 3 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.197 cc", "sortOrder": 1 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "4-Speed Automatic", "sortOrder": 2 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 130, "name": "White", "hexCode": "#FFFFFF", "imageUrl": "/images/cars/calya/color-white.jpg", "sortOrder": 1 },
+      { "id": 131, "name": "Silver Metallic", "hexCode": "#C0C0C0", "imageUrl": "/images/cars/calya/color-silver.jpg", "sortOrder": 2 }
+    ],
+    "images": [
+      { "id": 130, "url": "/images/cars/calya/exterior-1.jpg", "altText": "Toyota Calya tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 130, "title": "7-Seater Capacity", "description": "Kabin luas untuk 7 penumpang dengan efisiensi bahan bakar LCGC.", "category": "Comfort", "sortOrder": 1 }
+    ]
+  },
+
+  {
+    "id": 15,
+    "categoryId": 2,
+    "categoryName": "MPV",
+    "name": "Veloz",
+    "fullName": "New Veloz Hybrid EV",
+    "slug": "veloz-hev",
+    "tagline": "Hybrid. Stylish. Ready.",
+    "description": "New Veloz Hybrid EV menghadirkan MPV stylish dengan teknologi hybrid terdepan. Hemat bahan bakar dan penuh gaya untuk keluarga modern.",
+    "bannerUrl": "/images/cars/veloz-hev/banner.jpg",
+    "thumbnailUrl": "/images/cars/veloz-hev/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-veloz-hev.pdf",
+    "startingPrice": 303000000,
+    "priceLabel": "Starting from",
+    "label": "HYBRID",
+    "isNew": false,
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 15,
+    "metaTitle": "New Veloz Hybrid EV – MPV Hybrid Stylish | AutoPrima",
+    "metaDescription": "Toyota Veloz HEV di AutoPrima Cibinong. Harga mulai Rp 303 Juta.",
+    "variants": [
+      {
+        "id": 1501,
+        "name": "V HEV",
+        "slug": "veloz-v-hev",
+        "fuel": "HybridEV",
+        "transmission": "eCVT",
+        "engineCc": 1496,
+        "engineLabel": "1.5L Hybrid Synergy Drive",
+        "drivetrain": "FWD",
+        "seats": 7,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 15001, "label": "V HEV", "price": 303000000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 15002, "label": "V HEV PC", "price": 304500000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.496 cc", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Sistem Hybrid", "specValue": "Toyota Hybrid Synergy Drive", "sortOrder": 2 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "e-CVT", "sortOrder": 3 }
+        ]
+      },
+      {
+        "id": 1502,
+        "name": "Q HEV",
+        "slug": "veloz-q-hev",
+        "fuel": "HybridEV",
+        "transmission": "eCVT",
+        "engineCc": 1496,
+        "engineLabel": "1.5L Hybrid Synergy Drive",
+        "drivetrain": "FWD",
+        "seats": 7,
+        "sortOrder": 2,
+        "prices": [
+          { "id": 15003, "label": "Q HEV", "price": 325000000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 15004, "label": "Q MOD 1T HEV TSS", "price": 385000000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 },
+          { "id": 15005, "label": "Q MOD 2T HEV TSS", "price": 387500000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 3 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.496 cc", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Sistem Hybrid", "specValue": "Toyota Hybrid Synergy Drive", "sortOrder": 2 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 140, "name": "White", "hexCode": "#FFFFFF", "imageUrl": "/images/cars/veloz-hev/color-white.jpg", "sortOrder": 1 },
+      { "id": 141, "name": "Black", "hexCode": "#1C1C1C", "imageUrl": "/images/cars/veloz-hev/color-black.jpg", "sortOrder": 2 }
+    ],
+    "images": [
+      { "id": 140, "url": "/images/cars/veloz-hev/exterior-1.jpg", "altText": "Toyota Veloz HEV tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 140, "title": "Hybrid Synergy Drive", "description": "Sistem hybrid Toyota untuk efisiensi dan performa optimal.", "category": "Performance", "sortOrder": 1 }
+    ]
+  },
+
+  {
+    "id": 16,
+    "categoryId": 2,
+    "categoryName": "MPV",
+    "name": "Voxy",
+    "fullName": "All New Voxy",
+    "slug": "voxy",
+    "tagline": "The Bold MPV",
+    "description": "All New Voxy menghadirkan MPV premium dengan desain bold dan aggressive. Kabin luas dengan fitur modern untuk keluarga yang dinamis.",
+    "bannerUrl": "/images/cars/voxy/banner.jpg",
+    "thumbnailUrl": "/images/cars/voxy/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-voxy.pdf",
+    "startingPrice": 631800000,
+    "priceLabel": "Starting from",
+    "label": "NEW",
+    "isNew": true,
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 16,
+    "metaTitle": "All New Voxy – MPV Premium Bold | AutoPrima",
+    "metaDescription": "Toyota Voxy di AutoPrima Cibinong. Harga mulai Rp 631 Juta.",
+    "variants": [
+      {
+        "id": 1601,
+        "name": "2.0 T00B A/T",
+        "slug": "voxy-t00b",
+        "fuel": "Bensin",
+        "transmission": "Automatic",
+        "engineCc": 1987,
+        "engineLabel": "2.0L 4-cyl DOHC",
+        "drivetrain": "FWD",
+        "seats": 7,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 16001, "label": "2.0 T00B A/T", "price": 631800000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 16002, "label": "2.0 T01B A/T", "price": 634900000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.987 cc", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Tenaga Maksimum", "specValue": "170 PS / 6.600 rpm", "sortOrder": 2 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "CVT", "sortOrder": 3 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 150, "name": "Super White II", "hexCode": "#F5F5F5", "imageUrl": "/images/cars/voxy/color-white.jpg", "sortOrder": 1 },
+      { "id": 151, "name": "Black Mica", "hexCode": "#1C1C1C", "imageUrl": "/images/cars/voxy/color-black.jpg", "sortOrder": 2 }
+    ],
+    "images": [
+      { "id": 150, "url": "/images/cars/voxy/exterior-1.jpg", "altText": "Toyota Voxy tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 150, "title": "Bold Exterior Design", "description": "Desain eksterior bold dan aggressive dengan grille besar yang memukau.", "category": "Design", "sortOrder": 1 },
+      { "id": 151, "title": "Power Sliding Door", "description": "Pintu geser elektrik kedua sisi untuk kemudahan penumpang.", "category": "Comfort", "sortOrder": 2 }
+    ]
+  },
+
+  {
+    "id": 17,
+    "categoryId": 2,
+    "categoryName": "MPV",
+    "name": "Alphard HEV",
+    "fullName": "All New Alphard HEV",
+    "slug": "alphard-hev",
+    "tagline": "The Art of Moving",
+    "description": "All New Alphard HEV menghadirkan puncak kemewahan MPV Toyota dengan teknologi hybrid. Desain elegan, kabin super premium, dan performa hybrid efisien.",
+    "bannerUrl": "/images/cars/alphard-hev/banner.jpg",
+    "thumbnailUrl": "/images/cars/alphard-hev/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-alphard-hev.pdf",
+    "startingPrice": 1288000000,
+    "priceLabel": "Starting from",
+    "label": "HYBRID",
+    "isNew": true,
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 17,
+    "metaTitle": "All New Alphard HEV – MPV Luxury Hybrid | AutoPrima",
+    "metaDescription": "Toyota Alphard HEV di AutoPrima Cibinong. Harga mulai Rp 1,2 Miliar.",
+    "variants": [
+      {
+        "id": 1701,
+        "name": "2.5 XE HEV CVT",
+        "slug": "alphard-hev-xe",
+        "fuel": "HybridEV",
+        "transmission": "eCVT",
+        "engineCc": 2487,
+        "engineLabel": "2.5L 4-cyl Hybrid",
+        "drivetrain": "FWD",
+        "seats": 7,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 17001, "label": "2.5 XE HEV CVT", "price": 1288000000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 17002, "label": "2.5 XE HEV CVT PC", "price": 1291500000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "2.487 cc", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Sistem Hybrid", "specValue": "Toyota Hybrid Synergy Drive", "sortOrder": 2 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "e-CVT", "sortOrder": 3 }
+        ]
+      },
+      {
+        "id": 1702,
+        "name": "2.5 G HEV",
+        "slug": "alphard-hev-g",
+        "fuel": "HybridEV",
+        "transmission": "eCVT",
+        "engineCc": 2487,
+        "engineLabel": "2.5L 4-cyl Hybrid",
+        "drivetrain": "AWD",
+        "seats": 7,
+        "sortOrder": 2,
+        "prices": [
+          { "id": 17003, "label": "2.5 G HEV CVT", "price": 1652100000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 17004, "label": "2.5 G HEV CVT PC", "price": 1655600000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "2.487 cc", "sortOrder": 1 },
+          { "category": "Penggerak", "specKey": "Sistem", "specValue": "E-Four AWD", "sortOrder": 2 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 160, "name": "Platinum White Pearl Mica", "hexCode": "#F5F5F5", "imageUrl": "/images/cars/alphard-hev/color-white.jpg", "sortOrder": 1 },
+      { "id": 161, "name": "Sonic Titanium", "hexCode": "#4A4A4A", "imageUrl": "/images/cars/alphard-hev/color-titanium.jpg", "sortOrder": 2 },
+      { "id": 162, "name": "Black", "hexCode": "#1C1C1C", "imageUrl": "/images/cars/alphard-hev/color-black.jpg", "sortOrder": 3 }
+    ],
+    "images": [
+      { "id": 160, "url": "/images/cars/alphard-hev/exterior-1.jpg", "altText": "Toyota Alphard HEV tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 160, "title": "Executive Lounge Seat", "description": "Kursi executive lounge dengan fitur relaksasi dan massage.", "category": "Comfort", "sortOrder": 1 },
+      { "id": 161, "title": "Hybrid Synergy Drive", "description": "Teknologi hybrid E-Four untuk efisiensi optimal.", "category": "Performance", "sortOrder": 2 },
+      { "id": 162, "title": "JBL Premium Audio", "description": "Sistem audio premium JBL untuk pengalaman mendengarkan terbaik.", "category": "Entertainment", "sortOrder": 3 }
+    ]
+  },
+
+  {
+    "id": 18,
+    "categoryId": 2,
+    "categoryName": "MPV",
+    "name": "Vellfire HEV",
+    "fullName": "All New Vellfire HEV",
+    "slug": "vellfire-hev",
+    "tagline": "The Pinnacle of Luxury",
+    "description": "All New Vellfire HEV adalah puncak kemewahan Toyota. Hadir dengan teknologi hybrid dan fitur ultra-premium untuk pengalaman berkendara tak tertandingi.",
+    "bannerUrl": "/images/cars/vellfire-hev/banner.jpg",
+    "thumbnailUrl": "/images/cars/vellfire-hev/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-vellfire-hev.pdf",
+    "startingPrice": 1872800000,
+    "priceLabel": "Starting from",
+    "label": "HYBRID",
+    "isNew": true,
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 18,
+    "metaTitle": "All New Vellfire HEV – Ultra Luxury MPV | AutoPrima",
+    "metaDescription": "Toyota Vellfire HEV di AutoPrima Cibinong. Harga mulai Rp 1,8 Miliar.",
+    "variants": [
+      {
+        "id": 1801,
+        "name": "2.5 VIP HEV",
+        "slug": "vellfire-hev-vip",
+        "fuel": "HybridEV",
+        "transmission": "eCVT",
+        "engineCc": 2487,
+        "engineLabel": "2.5L 4-cyl Hybrid AWD",
+        "drivetrain": "AWD",
+        "seats": 4,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 18001, "label": "2.5 VIP HEV", "price": 1872800000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 18002, "label": "2.5 VIP HEV P", "price": 1876300000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "2.487 cc", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Sistem Hybrid", "specValue": "Toyota Hybrid Synergy Drive E-Four", "sortOrder": 2 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "e-CVT", "sortOrder": 3 },
+          { "category": "Penggerak", "specKey": "Sistem", "specValue": "E-Four AWD", "sortOrder": 4 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 170, "name": "Platinum White Pearl Mica", "hexCode": "#F5F5F5", "imageUrl": "/images/cars/vellfire-hev/color-white.jpg", "sortOrder": 1 },
+      { "id": 171, "name": "Sonic Titanium", "hexCode": "#4A4A4A", "imageUrl": "/images/cars/vellfire-hev/color-titanium.jpg", "sortOrder": 2 }
+    ],
+    "images": [
+      { "id": 170, "url": "/images/cars/vellfire-hev/exterior-1.jpg", "altText": "Toyota Vellfire HEV tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 170, "title": "Ottoman Rear Seat", "description": "Kursi belakang ottoman untuk kenyamanan perjalanan jauh yang tak tertandingi.", "category": "Comfort", "sortOrder": 1 },
+      { "id": 171, "title": "28-inch Rear Seat Entertainment", "description": "Layar entertainment 28 inci di kursi belakang.", "category": "Entertainment", "sortOrder": 2 }
+    ]
+  },
+
+  {
+    "id": 19,
+    "categoryId": 3,
+    "categoryName": "Hatchback",
+    "name": "GR Yaris",
+    "fullName": "New GR Yaris",
+    "slug": "gr-yaris",
+    "tagline": "Born from Rally",
+    "description": "New GR Yaris lahir dari teknologi rally World Rally Championship. Perpaduan sempurna antara mesin turbo 1.6L bertenaga tinggi dan sasis yang ringan.",
+    "bannerUrl": "/images/cars/gr-yaris/banner.jpg",
+    "thumbnailUrl": "/images/cars/gr-yaris/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-gr-yaris.pdf",
+    "startingPrice": null,
+    "priceLabel": "Hubungi Kami",
+    "label": "GR",
+    "isNew": true,
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 19,
+    "metaTitle": "New GR Yaris – Hatchback Performa Tinggi | AutoPrima",
+    "metaDescription": "Toyota GR Yaris di AutoPrima Cibinong. Hatchback bertenaga lahir dari DNA Rally. Hubungi kami.",
+    "variants": [
+      {
+        "id": 1901,
+        "name": "GR Yaris 1.6T AWD",
+        "slug": "gr-yaris-16t",
+        "fuel": "Bensin",
+        "transmission": "Manual",
+        "engineCc": 1618,
+        "engineLabel": "1.6L 3-cyl Turbo GR",
+        "drivetrain": "AWD",
+        "seats": 4,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 19001, "label": "GR Yaris", "price": null, "isBasePrice": true, "priceOnRequest": true, "sortOrder": 1 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Tipe Mesin", "specValue": "G16E-GTS, 3-Silinder, DOHC, Turbo", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.618 cc", "sortOrder": 2 },
+          { "category": "Mesin", "specKey": "Tenaga Maksimum", "specValue": "272 PS / 6.500 rpm", "sortOrder": 3 },
+          { "category": "Mesin", "specKey": "Torsi Maksimum", "specValue": "370 Nm / 3.000-4.600 rpm", "sortOrder": 4 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "6-Speed Manual / iMT", "sortOrder": 5 },
+          { "category": "Penggerak", "specKey": "Sistem", "specValue": "GR-FOUR AWD", "sortOrder": 6 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 180, "name": "Emotional Red II", "hexCode": "#C0392B", "imageUrl": "/images/cars/gr-yaris/color-red.jpg", "sortOrder": 1 },
+      { "id": 181, "name": "White Pearl", "hexCode": "#F5F5F5", "imageUrl": "/images/cars/gr-yaris/color-white.jpg", "sortOrder": 2 }
+    ],
+    "images": [
+      { "id": 180, "url": "/images/cars/gr-yaris/exterior-1.jpg", "altText": "Toyota GR Yaris tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 180, "title": "GR-FOUR AWD", "description": "Sistem AWD eksklusif GR untuk traksi optimal di setiap kondisi.", "category": "Performance", "sortOrder": 1 },
+      { "id": 181, "title": "1.6L Turbo 272 PS", "description": "Mesin turbo 3 silinder paling bertenaga di kelasnya.", "category": "Performance", "sortOrder": 2 }
+    ]
+  },
+
+  {
+    "id": 20,
+    "categoryId": 3,
+    "categoryName": "Hatchback",
+    "name": "Yaris GR Sport",
+    "fullName": "New Yaris GR Sport",
+    "slug": "yaris-gr-sport",
+    "tagline": "Style Meets Performance",
+    "description": "New Yaris GR Sport menggabungkan gaya sporty GR Sport dengan kenyamanan hatchback sehari-hari. Mesin 1.5L dengan paket aerodinamika GR.",
+    "bannerUrl": "/images/cars/yaris-gr-sport/banner.jpg",
+    "thumbnailUrl": "/images/cars/yaris-gr-sport/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-yaris-gr-sport.pdf",
+    "startingPrice": null,
+    "priceLabel": "Hubungi Kami",
+    "label": "GR SPORT",
+    "isNew": true,
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 20,
+    "metaTitle": "New Yaris GR Sport – Hatchback Sporty | AutoPrima",
+    "metaDescription": "Toyota Yaris GR Sport di AutoPrima Cibinong. Hatchback sporty dengan DNA GR. Hubungi kami.",
+    "variants": [
+      {
+        "id": 2001,
+        "name": "Yaris GR Sport 1.5 CVT",
+        "slug": "yaris-gr-sport-cvt",
+        "fuel": "Bensin",
+        "transmission": "CVT",
+        "engineCc": 1496,
+        "engineLabel": "1.5L 4-cyl DOHC",
+        "drivetrain": "FWD",
+        "seats": 5,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 20001, "label": "Yaris GR Sport", "price": null, "isBasePrice": true, "priceOnRequest": true, "sortOrder": 1 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.496 cc", "sortOrder": 1 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "CVT", "sortOrder": 2 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 190, "name": "Emotional Red II", "hexCode": "#C0392B", "imageUrl": "/images/cars/yaris-gr-sport/color-red.jpg", "sortOrder": 1 },
+      { "id": 191, "name": "White", "hexCode": "#F5F5F5", "imageUrl": "/images/cars/yaris-gr-sport/color-white.jpg", "sortOrder": 2 }
+    ],
+    "images": [
+      { "id": 190, "url": "/images/cars/yaris-gr-sport/exterior-1.jpg", "altText": "Toyota Yaris GR Sport tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 190, "title": "GR Sport Aero Kit", "description": "Paket aerodinamika GR Sport untuk tampilan sporty agresif.", "category": "Design", "sortOrder": 1 }
+    ]
+  },
+
+  {
+    "id": 21,
+    "categoryId": 3,
+    "categoryName": "Hatchback",
+    "name": "Agya GR Sport",
+    "fullName": "New Agya GR Sport",
+    "slug": "agya-gr-sport",
+    "tagline": "Compact. Sporty. Agya.",
+    "description": "New Agya GR Sport hadir dengan paket sporty GR pada city car andalan Toyota. Lincah di perkotaan dengan tampilan yang menawan.",
+    "bannerUrl": "/images/cars/agya-gr-sport/banner.jpg",
+    "thumbnailUrl": "/images/cars/agya-gr-sport/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-agya-gr-sport.pdf",
+    "startingPrice": 181500000,
+    "priceLabel": "Starting from",
+    "label": "GR SPORT",
+    "isNew": false,
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 21,
+    "metaTitle": "New Agya GR Sport – City Car Sporty | AutoPrima",
+    "metaDescription": "Toyota Agya GR Sport di AutoPrima Cibinong. Harga mulai Rp 181 Juta.",
+    "variants": [
+      {
+        "id": 2101,
+        "name": "1.2 G M/T",
+        "slug": "agya-g-mt",
+        "fuel": "Bensin",
+        "transmission": "Manual",
+        "engineCc": 1197,
+        "engineLabel": "1.2L 3-cyl DOHC Dual VVT-i",
+        "drivetrain": "FWD",
+        "seats": 5,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 21001, "label": "1.2 G M/T", "price": 181500000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 21002, "label": "1.2 G CVT", "price": 197700000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.197 cc", "sortOrder": 1 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "5-Speed Manual / CVT", "sortOrder": 2 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 200, "name": "White", "hexCode": "#FFFFFF", "imageUrl": "/images/cars/agya-gr-sport/color-white.jpg", "sortOrder": 1 },
+      { "id": 201, "name": "Red", "hexCode": "#C0392B", "imageUrl": "/images/cars/agya-gr-sport/color-red.jpg", "sortOrder": 2 }
+    ],
+    "images": [
+      { "id": 200, "url": "/images/cars/agya-gr-sport/exterior-1.jpg", "altText": "Toyota Agya GR Sport tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 200, "title": "GR Sport Package", "description": "Paket sporty GR dengan bumper, side skirt, dan aksen eksklusif.", "category": "Design", "sortOrder": 1 }
+    ]
+  },
+
+  {
+    "id": 22,
+    "categoryId": 3,
+    "categoryName": "Hatchback",
+    "name": "Agya Stylix",
+    "fullName": "New Agya Stylix",
+    "slug": "agya-stylix",
+    "tagline": "Style Your Story",
+    "description": "New Agya Stylix hadir dengan varian eksklusif yang stylish dan trendi. City car yang sempurna untuk anak muda yang ingin tampil beda.",
+    "bannerUrl": "/images/cars/agya-stylix/banner.jpg",
+    "thumbnailUrl": "/images/cars/agya-stylix/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-agya-stylix.pdf",
+    "startingPrice": 201200000,
+    "priceLabel": "Starting from",
+    "label": "STYLIX",
+    "isNew": true,
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 22,
+    "metaTitle": "New Agya Stylix – City Car Stylish | AutoPrima",
+    "metaDescription": "Toyota Agya Stylix di AutoPrima Cibinong. Harga mulai Rp 201 Juta.",
+    "variants": [
+      {
+        "id": 2201,
+        "name": "1.2 Stylix CVT",
+        "slug": "agya-stylix-cvt",
+        "fuel": "Bensin",
+        "transmission": "CVT",
+        "engineCc": 1197,
+        "engineLabel": "1.2L 3-cyl DOHC Dual VVT-i",
+        "drivetrain": "FWD",
+        "seats": 5,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 22001, "label": "1.2 Stylix CVT", "price": 201200000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 22002, "label": "1.2 E M/T", "price": 173800000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.197 cc", "sortOrder": 1 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "CVT", "sortOrder": 2 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 210, "name": "White", "hexCode": "#FFFFFF", "imageUrl": "/images/cars/agya-stylix/color-white.jpg", "sortOrder": 1 },
+      { "id": 211, "name": "Red", "hexCode": "#C0392B", "imageUrl": "/images/cars/agya-stylix/color-red.jpg", "sortOrder": 2 }
+    ],
+    "images": [
+      { "id": 210, "url": "/images/cars/agya-stylix/exterior-1.jpg", "altText": "Toyota Agya Stylix tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 210, "title": "Stylix Exclusive Package", "description": "Paket styling eksklusif Stylix dengan aksen unik yang trendi.", "category": "Design", "sortOrder": 1 }
+    ]
+  },
+
+  {
+    "id": 23,
+    "categoryId": 3,
+    "categoryName": "Hatchback",
+    "name": "GR Corolla",
+    "fullName": "All New GR Corolla",
+    "slug": "gr-corolla",
+    "tagline": "Motorsport Inspired",
+    "description": "All New GR Corolla adalah hatchback performa tinggi yang terinspirasi motorsport. Mesin 1.6L Turbo 3-silinder dengan GR-FOUR AWD untuk pengalaman berkendara maksimal.",
+    "bannerUrl": "/images/cars/gr-corolla/banner.jpg",
+    "thumbnailUrl": "/images/cars/gr-corolla/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-gr-corolla.pdf",
+    "startingPrice": null,
+    "priceLabel": "Hubungi Kami",
+    "label": "GR",
+    "isNew": true,
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 23,
+    "metaTitle": "All New GR Corolla – Hatchback Performa Tinggi | AutoPrima",
+    "metaDescription": "Toyota GR Corolla di AutoPrima Cibinong. Hatchback motorsport AWD. Hubungi kami.",
+    "variants": [
+      {
+        "id": 2301,
+        "name": "GR Corolla 1.6T AWD",
+        "slug": "gr-corolla-16t",
+        "fuel": "Bensin",
+        "transmission": "Manual",
+        "engineCc": 1618,
+        "engineLabel": "1.6L 3-cyl Turbo",
+        "drivetrain": "AWD",
+        "seats": 5,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 23001, "label": "GR Corolla", "price": null, "isBasePrice": true, "priceOnRequest": true, "sortOrder": 1 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.618 cc", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Tenaga Maksimum", "specValue": "300 PS / 6.500 rpm", "sortOrder": 2 },
+          { "category": "Penggerak", "specKey": "Sistem", "specValue": "GR-FOUR AWD", "sortOrder": 3 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 220, "name": "Supersonic Red", "hexCode": "#C0392B", "imageUrl": "/images/cars/gr-corolla/color-red.jpg", "sortOrder": 1 },
+      { "id": 221, "name": "White Pearl", "hexCode": "#F5F5F5", "imageUrl": "/images/cars/gr-corolla/color-white.jpg", "sortOrder": 2 }
+    ],
+    "images": [
+      { "id": 220, "url": "/images/cars/gr-corolla/exterior-1.jpg", "altText": "Toyota GR Corolla tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 220, "title": "GR-FOUR AWD", "description": "Sistem AWD adaptif GR untuk traksi dan handling motorsport.", "category": "Performance", "sortOrder": 1 },
+      { "id": 221, "title": "1.6L Turbo 300 PS", "description": "Mesin turbo 3-silinder bertenaga 300 PS.", "category": "Performance", "sortOrder": 2 }
+    ]
+  },
+
+  {
+    "id": 24,
+    "categoryId": 4,
+    "categoryName": "Sedan",
+    "name": "Camry HEV",
+    "fullName": "New Camry HEV",
+    "slug": "camry-hev",
+    "tagline": "The Pinnacle of Comfort",
+    "description": "New Camry HEV menghadirkan kemewahan sedan premium dengan teknologi hybrid 2.5L. Desain elegan dan kabin mewah untuk eksekutif modern.",
+    "bannerUrl": "/images/cars/camry-hev/banner.jpg",
+    "thumbnailUrl": "/images/cars/camry-hev/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-camry-hev.pdf",
+    "startingPrice": 976100000,
+    "priceLabel": "Starting from",
+    "label": "HYBRID",
+    "isNew": true,
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 24,
+    "metaTitle": "New Camry HEV – Sedan Premium Hybrid | AutoPrima",
+    "metaDescription": "Toyota Camry HEV di AutoPrima Cibinong. Harga mulai Rp 976 Juta.",
+    "variants": [
+      {
+        "id": 2401,
+        "name": "2.5 L HEV",
+        "slug": "camry-25-hev",
+        "fuel": "HybridEV",
+        "transmission": "eCVT",
+        "engineCc": 2487,
+        "engineLabel": "2.5L 4-cyl Hybrid",
+        "drivetrain": "FWD",
+        "seats": 5,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 24001, "label": "2.5 L HEV", "price": 976100000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 24002, "label": "2.5 L HEV P", "price": 979200000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "2.487 cc", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Sistem Hybrid", "specValue": "Toyota Hybrid Synergy Drive", "sortOrder": 2 },
+          { "category": "Mesin", "specKey": "Tenaga Sistem", "specValue": "218 PS", "sortOrder": 3 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "e-CVT", "sortOrder": 4 }
+        ]
+      },
+      {
+        "id": 2402,
+        "name": "2.5 V A/T",
+        "slug": "camry-25-v-at",
+        "fuel": "Bensin",
+        "transmission": "Automatic",
+        "engineCc": 2487,
+        "engineLabel": "2.5L 4-cyl DOHC",
+        "drivetrain": "FWD",
+        "seats": 5,
+        "sortOrder": 2,
+        "prices": [
+          { "id": 24003, "label": "2.5 V A/T", "price": 855800000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 24004, "label": "2.5 V A/T P", "price": 858900000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "2.487 cc", "sortOrder": 1 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "8-Speed Automatic", "sortOrder": 2 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 230, "name": "Platinum White Pearl Mica", "hexCode": "#F5F5F5", "imageUrl": "/images/cars/camry-hev/color-white.jpg", "sortOrder": 1 },
+      { "id": 231, "name": "Black", "hexCode": "#1C1C1C", "imageUrl": "/images/cars/camry-hev/color-black.jpg", "sortOrder": 2 },
+      { "id": 232, "name": "Graphite Metallic", "hexCode": "#5A5A5A", "imageUrl": "/images/cars/camry-hev/color-graphite.jpg", "sortOrder": 3 }
+    ],
+    "images": [
+      { "id": 230, "url": "/images/cars/camry-hev/exterior-1.jpg", "altText": "Toyota Camry HEV tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 230, "title": "Hybrid Synergy Drive 2.5L", "description": "Sistem hybrid generasi terbaru untuk akselerasi halus dan efisiensi tinggi.", "category": "Performance", "sortOrder": 1 },
+      { "id": 231, "title": "12.3-inch Touchscreen", "description": "Layar sentuh 12.3 inci dengan navigasi built-in.", "category": "Technology", "sortOrder": 2 },
+      { "id": 232, "title": "JBL Premium Sound", "description": "Sistem audio JBL 9-speaker.", "category": "Comfort", "sortOrder": 3 }
+    ]
+  },
+
+  {
+    "id": 25,
+    "categoryId": 4,
+    "categoryName": "Sedan",
+    "name": "Corolla Altis HEV GR Sport",
+    "fullName": "Altis GR Sport HEV",
+    "slug": "corolla-altis-hev-gr-sport",
+    "tagline": "Sport the Future",
+    "description": "Altis GR Sport HEV memadukan teknologi hybrid dengan tampilan GR Sport yang sporty. Sedan hybrid dengan karakter berkendara yang menyenangkan.",
+    "bannerUrl": "/images/cars/corolla-altis-hev-gr-sport/banner.jpg",
+    "thumbnailUrl": "/images/cars/corolla-altis-hev-gr-sport/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-corolla-altis-hev-gr-sport.pdf",
+    "startingPrice": 639200000,
+    "priceLabel": "Starting from",
+    "label": "HYBRID",
+    "isNew": true,
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 25,
+    "metaTitle": "Altis GR Sport HEV – Sedan Hybrid Sporty | AutoPrima",
+    "metaDescription": "Toyota Corolla Altis GR Sport HEV di AutoPrima Cibinong. Harga mulai Rp 639 Juta.",
+    "variants": [
+      {
+        "id": 2501,
+        "name": "1.8L HV",
+        "slug": "altis-hv",
+        "fuel": "HybridEV",
+        "transmission": "eCVT",
+        "engineCc": 1798,
+        "engineLabel": "1.8L Hybrid Synergy Drive",
+        "drivetrain": "FWD",
+        "seats": 5,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 25001, "label": "1.8L HV", "price": 639200000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 25002, "label": "1.8L HV GRS", "price": 646600000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.798 cc", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Sistem Hybrid", "specValue": "Toyota Hybrid Synergy Drive", "sortOrder": 2 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "e-CVT", "sortOrder": 3 }
+        ]
+      },
+      {
+        "id": 2502,
+        "name": "1.8 V A/T",
+        "slug": "altis-v-at",
+        "fuel": "Bensin",
+        "transmission": "Automatic",
+        "engineCc": 1798,
+        "engineLabel": "1.8L 4-cyl DOHC",
+        "drivetrain": "FWD",
+        "seats": 5,
+        "sortOrder": 2,
+        "prices": [
+          { "id": 25003, "label": "1.8 V A/T", "price": 584800000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 1 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.798 cc", "sortOrder": 1 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "CVT", "sortOrder": 2 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 240, "name": "Platinum White Pearl", "hexCode": "#F5F5F5", "imageUrl": "/images/cars/corolla-altis-hev-gr-sport/color-white.jpg", "sortOrder": 1 },
+      { "id": 241, "name": "Black Mica", "hexCode": "#1C1C1C", "imageUrl": "/images/cars/corolla-altis-hev-gr-sport/color-black.jpg", "sortOrder": 2 }
+    ],
+    "images": [
+      { "id": 240, "url": "/images/cars/corolla-altis-hev-gr-sport/exterior-1.jpg", "altText": "Toyota Altis GR Sport HEV tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 240, "title": "Hybrid Synergy Drive", "description": "Teknologi hybrid 1.8L untuk efisiensi dan performa optimal.", "category": "Performance", "sortOrder": 1 }
+    ]
+  },
+
+  {
+    "id": 26,
+    "categoryId": 4,
+    "categoryName": "Sedan",
+    "name": "GR 86",
+    "fullName": "All New GR 86",
+    "slug": "gr-86",
+    "tagline": "Pure. Sports. Joy.",
+    "description": "All New GR 86 adalah sports car murni dengan mesin boxer 2.4L NA bertenaga. Dibuat untuk pengalaman berkendara yang intim dan menyenangkan.",
+    "bannerUrl": "/images/cars/gr-86/banner.jpg",
+    "thumbnailUrl": "/images/cars/gr-86/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-gr-86.pdf",
+    "startingPrice": null,
+    "priceLabel": "Hubungi Kami",
+    "label": "GR",
+    "isNew": true,
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 26,
+    "metaTitle": "All New GR 86 – Sports Coupe Toyota | AutoPrima",
+    "metaDescription": "Toyota GR 86 di AutoPrima Cibinong. Sports car murni bertenaga 234 PS. Hubungi kami.",
+    "variants": [
+      {
+        "id": 2601,
+        "name": "GR 86 2.4 MT",
+        "slug": "gr-86-24-mt",
+        "fuel": "Bensin",
+        "transmission": "Manual",
+        "engineCc": 2387,
+        "engineLabel": "2.4L Boxer 4-cyl DOHC",
+        "drivetrain": "RWD",
+        "seats": 4,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 26001, "label": "GR 86", "price": null, "isBasePrice": true, "priceOnRequest": true, "sortOrder": 1 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Tipe Mesin", "specValue": "FA24, Boxer 4-Silinder, DOHC", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "2.387 cc", "sortOrder": 2 },
+          { "category": "Mesin", "specKey": "Tenaga Maksimum", "specValue": "234 PS / 7.000 rpm", "sortOrder": 3 },
+          { "category": "Mesin", "specKey": "Torsi Maksimum", "specValue": "250 Nm / 3.700 rpm", "sortOrder": 4 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "6-Speed Manual / Automatic", "sortOrder": 5 },
+          { "category": "Penggerak", "specKey": "Sistem", "specValue": "Rear-Wheel Drive", "sortOrder": 6 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 250, "name": "Halo White", "hexCode": "#F5F5F5", "imageUrl": "/images/cars/gr-86/color-white.jpg", "sortOrder": 1 },
+      { "id": 251, "name": "Neptune Blue", "hexCode": "#1A3A5A", "imageUrl": "/images/cars/gr-86/color-blue.jpg", "sortOrder": 2 },
+      { "id": 252, "name": "Ignition Red", "hexCode": "#C0392B", "imageUrl": "/images/cars/gr-86/color-red.jpg", "sortOrder": 3 }
+    ],
+    "images": [
+      { "id": 250, "url": "/images/cars/gr-86/exterior-1.jpg", "altText": "Toyota GR 86 tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 250, "title": "2.4L Boxer Engine 234 PS", "description": "Mesin boxer 4-silinder yang memberikan center of gravity rendah.", "category": "Performance", "sortOrder": 1 },
+      { "id": 251, "title": "Rear-Wheel Drive", "description": "Penggerak roda belakang untuk pengalaman berkendara yang murni.", "category": "Performance", "sortOrder": 2 }
+    ]
+  },
+
+  {
+    "id": 27,
+    "categoryId": 4,
+    "categoryName": "Sedan",
+    "name": "GR Supra",
+    "fullName": "New GR Supra",
+    "slug": "gr-supra",
+    "tagline": "The Icon Returns",
+    "description": "New GR Supra adalah legenda yang kembali hadir. Sports car ikonik Toyota dengan mesin turbo inline-6 bertenaga tinggi untuk pengalaman berkendara sejati.",
+    "bannerUrl": "/images/cars/gr-supra/banner.jpg",
+    "thumbnailUrl": "/images/cars/gr-supra/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-gr-supra.pdf",
+    "startingPrice": null,
+    "priceLabel": "Hubungi Kami",
+    "label": "GR",
+    "isNew": true,
+    "isFeatured": true,
+    "isActive": true,
+    "sortOrder": 27,
+    "metaTitle": "New GR Supra – Sports Car Legendaris Toyota | AutoPrima",
+    "metaDescription": "Toyota GR Supra di AutoPrima Cibinong. Sports car ikonik dengan mesin turbo 387 PS. Hubungi kami.",
+    "variants": [
+      {
+        "id": 2701,
+        "name": "GR Supra 3.0T",
+        "slug": "gr-supra-30t",
+        "fuel": "Bensin",
+        "transmission": "Automatic",
+        "engineCc": 2998,
+        "engineLabel": "3.0L Inline-6 Turbo",
+        "drivetrain": "RWD",
+        "seats": 2,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 27001, "label": "GR Supra", "price": null, "isBasePrice": true, "priceOnRequest": true, "sortOrder": 1 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Tipe Mesin", "specValue": "Inline-6, DOHC, Turbo", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "2.998 cc", "sortOrder": 2 },
+          { "category": "Mesin", "specKey": "Tenaga Maksimum", "specValue": "387 PS / 5.800 rpm", "sortOrder": 3 },
+          { "category": "Mesin", "specKey": "Torsi Maksimum", "specValue": "500 Nm / 1.800-5.000 rpm", "sortOrder": 4 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "8-Speed Automatic", "sortOrder": 5 },
+          { "category": "Penggerak", "specKey": "Sistem", "specValue": "Rear-Wheel Drive", "sortOrder": 6 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 260, "name": "Phantom Matte Gray", "hexCode": "#5A5A5A", "imageUrl": "/images/cars/gr-supra/color-gray.jpg", "sortOrder": 1 },
+      { "id": 261, "name": "Renaissance Red", "hexCode": "#8B1A1A", "imageUrl": "/images/cars/gr-supra/color-red.jpg", "sortOrder": 2 },
+      { "id": 262, "name": "White", "hexCode": "#F5F5F5", "imageUrl": "/images/cars/gr-supra/color-white.jpg", "sortOrder": 3 }
+    ],
+    "images": [
+      { "id": 260, "url": "/images/cars/gr-supra/exterior-1.jpg", "altText": "Toyota GR Supra tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 260, "title": "3.0L Turbo Inline-6 387 PS", "description": "Mesin turbo inline-6 legendaris yang memberikan akselerasi dahsyat.", "category": "Performance", "sortOrder": 1 },
+      { "id": 261, "title": "Adaptive Variable Suspension", "description": "Suspensi adaptif untuk penanganan precision di berbagai kondisi.", "category": "Performance", "sortOrder": 2 }
+    ]
+  },
+
+  {
+    "id": 28,
+    "categoryId": 4,
+    "categoryName": "Sedan",
+    "name": "Vios",
+    "fullName": "All New Vios",
+    "slug": "vios",
+    "tagline": "Style. Comfort. Value.",
+    "description": "All New Vios hadir sebagai sedan compact yang stylish dan bertenaga. Mesin 1.5L dengan fitur modern cocok untuk profesional muda.",
+    "bannerUrl": "/images/cars/vios/banner.jpg",
+    "thumbnailUrl": "/images/cars/vios/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-vios.pdf",
+    "startingPrice": 375800000,
+    "priceLabel": "Starting from",
+    "label": null,
+    "isNew": true,
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 28,
+    "metaTitle": "All New Vios – Sedan Compact Modern | AutoPrima",
+    "metaDescription": "Toyota Vios di AutoPrima Cibinong. Harga mulai Rp 375 Juta.",
+    "variants": [
+      {
+        "id": 2801,
+        "name": "1.5 G CVT",
+        "slug": "vios-g-cvt",
+        "fuel": "Bensin",
+        "transmission": "CVT",
+        "engineCc": 1496,
+        "engineLabel": "1.5L 4-cyl DOHC Dual VVT-i",
+        "drivetrain": "FWD",
+        "seats": 5,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 28001, "label": "1.5 G CVT", "price": 375800000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 28002, "label": "1.5 G CVT TSS", "price": 389200000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.496 cc", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Tenaga Maksimum", "specValue": "107 PS / 6.000 rpm", "sortOrder": 2 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "CVT", "sortOrder": 3 }
+        ]
+      },
+      {
+        "id": 2802,
+        "name": "1.5 HEV",
+        "slug": "vios-hev",
+        "fuel": "HybridEV",
+        "transmission": "eCVT",
+        "engineCc": 1496,
+        "engineLabel": "1.5L Hybrid Synergy Drive",
+        "drivetrain": "FWD",
+        "seats": 5,
+        "sortOrder": 2,
+        "prices": [
+          { "id": 28003, "label": "1.5 HEV 1T", "price": 460000000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 28004, "label": "1.5 HEV 2T", "price": 464000000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.496 cc", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Sistem Hybrid", "specValue": "Toyota Hybrid Synergy Drive", "sortOrder": 2 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "e-CVT", "sortOrder": 3 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 270, "name": "White", "hexCode": "#FFFFFF", "imageUrl": "/images/cars/vios/color-white.jpg", "sortOrder": 1 },
+      { "id": 271, "name": "Black", "hexCode": "#1C1C1C", "imageUrl": "/images/cars/vios/color-black.jpg", "sortOrder": 2 },
+      { "id": 272, "name": "Silver Metallic", "hexCode": "#C0C0C0", "imageUrl": "/images/cars/vios/color-silver.jpg", "sortOrder": 3 }
+    ],
+    "images": [
+      { "id": 270, "url": "/images/cars/vios/exterior-1.jpg", "altText": "Toyota Vios tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 270, "title": "Toyota Safety Sense", "description": "Sistem keselamatan aktif untuk perlindungan optimal.", "category": "Safety", "sortOrder": 1 },
+      { "id": 271, "title": "Hybrid Option", "description": "Tersedia varian hybrid untuk efisiensi bahan bakar terbaik.", "category": "Performance", "sortOrder": 2 }
+    ]
+  },
+
+  {
+    "id": 29,
+    "categoryId": 4,
+    "categoryName": "Sedan",
+    "name": "Corolla Altis",
+    "fullName": "New Corolla Altis",
+    "slug": "corolla-altis",
+    "tagline": "The Legacy Continues",
+    "description": "New Corolla Altis mempertahankan warisan sedan terbaik Toyota. Hadir dengan teknologi modern dan desain yang elegan.",
+    "bannerUrl": "/images/cars/corolla-altis/banner.jpg",
+    "thumbnailUrl": "/images/cars/corolla-altis/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-corolla-altis.pdf",
+    "startingPrice": 584800000,
+    "priceLabel": "Starting from",
+    "label": null,
+    "isNew": false,
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 29,
+    "metaTitle": "New Corolla Altis – Sedan Premium Toyota | AutoPrima",
+    "metaDescription": "Toyota Corolla Altis di AutoPrima Cibinong. Harga mulai Rp 584 Juta.",
+    "variants": [
+      {
+        "id": 2901,
+        "name": "1.8 V A/T",
+        "slug": "corolla-altis-18-v",
+        "fuel": "Bensin",
+        "transmission": "Automatic",
+        "engineCc": 1798,
+        "engineLabel": "1.8L 4-cyl DOHC Dual VVT-i",
+        "drivetrain": "FWD",
+        "seats": 5,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 29001, "label": "1.8 V A/T", "price": 584800000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.798 cc", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Tenaga Maksimum", "specValue": "140 PS / 6.400 rpm", "sortOrder": 2 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "CVT", "sortOrder": 3 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 280, "name": "White Pearl", "hexCode": "#F5F5F5", "imageUrl": "/images/cars/corolla-altis/color-white.jpg", "sortOrder": 1 },
+      { "id": 281, "name": "Black", "hexCode": "#1C1C1C", "imageUrl": "/images/cars/corolla-altis/color-black.jpg", "sortOrder": 2 }
+    ],
+    "images": [
+      { "id": 280, "url": "/images/cars/corolla-altis/exterior-1.jpg", "altText": "Toyota Corolla Altis tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 280, "title": "DOHC Dual VVT-i Engine", "description": "Mesin 1.8L bertenaga dengan teknologi Variable Valve Timing.", "category": "Performance", "sortOrder": 1 }
+    ]
+  },
+
+  {
+    "id": 30,
+    "categoryId": 5,
+    "categoryName": "Commercial",
+    "name": "Hiace Premio",
+    "fullName": "New Hiace Premio",
+    "slug": "hiace-premio",
+    "tagline": "Premium People Mover",
+    "description": "New Hiace Premio menghadirkan kenyamanan premium untuk transportasi kelompok. Kabin luas dengan material premium dan mesin diesel bertenaga.",
+    "bannerUrl": "/images/cars/hiace-premio/banner.jpg",
+    "thumbnailUrl": "/images/cars/hiace-premio/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-hiace-premio.pdf",
+    "startingPrice": 678800000,
+    "priceLabel": "Starting from",
+    "label": null,
+    "isNew": true,
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 30,
+    "metaTitle": "New Hiace Premio – Minibus Premium | AutoPrima",
+    "metaDescription": "Toyota Hiace Premio di AutoPrima Cibinong. Harga mulai Rp 678 Juta.",
+    "variants": [
+      {
+        "id": 3001,
+        "name": "Premio M/T Black",
+        "slug": "hiace-premio-black",
+        "fuel": "Diesel",
+        "transmission": "Manual",
+        "engineCc": 2800,
+        "engineLabel": "2.8L 4-cyl Turbo Diesel",
+        "drivetrain": "4x2",
+        "seats": 10,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 30001, "label": "Premio M/T Black", "price": 678800000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 30002, "label": "Premio M/T Silver/Beige", "price": 678800000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "2.755 cc", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Tenaga Maksimum", "specValue": "177 PS / 3.400 rpm", "sortOrder": 2 },
+          { "category": "Kapasitas", "specKey": "Jumlah Penumpang", "specValue": "10 Orang", "sortOrder": 3 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "5-Speed Manual", "sortOrder": 4 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 290, "name": "Black", "hexCode": "#1C1C1C", "imageUrl": "/images/cars/hiace-premio/color-black.jpg", "sortOrder": 1 },
+      { "id": 291, "name": "Silver/Beige", "hexCode": "#D4C5A9", "imageUrl": "/images/cars/hiace-premio/color-silver.jpg", "sortOrder": 2 }
+    ],
+    "images": [
+      { "id": 290, "url": "/images/cars/hiace-premio/exterior-1.jpg", "altText": "Toyota Hiace Premio tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 290, "title": "Captain Seat Premium", "description": "Kursi captain berbahan premium dengan sandaran kepala dan armrest.", "category": "Comfort", "sortOrder": 1 },
+      { "id": 291, "title": "Dual AC", "description": "AC depan dan belakang untuk kenyamanan seluruh penumpang.", "category": "Comfort", "sortOrder": 2 }
+    ]
+  },
+
+  {
+    "id": 31,
+    "categoryId": 5,
+    "categoryName": "Commercial",
+    "name": "Hiace Commuter",
+    "fullName": "Hiace Commuter",
+    "slug": "hiace-commuter",
+    "tagline": "Built for the Journey",
+    "description": "Hiace Commuter adalah pilihan transportasi komersial yang handal dan terpercaya. Kapasitas penumpang besar dengan biaya operasional yang efisien.",
+    "bannerUrl": "/images/cars/hiace-commuter/banner.jpg",
+    "thumbnailUrl": "/images/cars/hiace-commuter/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-hiace-commuter.pdf",
+    "startingPrice": 575400000,
+    "priceLabel": "Starting from",
+    "label": null,
+    "isNew": false,
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 31,
+    "metaTitle": "Hiace Commuter – Minibus Komersial | AutoPrima",
+    "metaDescription": "Toyota Hiace Commuter di AutoPrima Cibinong. Harga mulai Rp 575 Juta.",
+    "variants": [
+      {
+        "id": 3101,
+        "name": "Commuter M/T 1T",
+        "slug": "hiace-commuter-mt-1t",
+        "fuel": "Diesel",
+        "transmission": "Manual",
+        "engineCc": 2800,
+        "engineLabel": "2.8L 4-cyl Turbo Diesel",
+        "drivetrain": "4x2",
+        "seats": 15,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 31001, "label": "Commuter M/T 1T", "price": 575400000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 31002, "label": "Commuter M/T 2T", "price": 575400000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "2.755 cc", "sortOrder": 1 },
+          { "category": "Kapasitas", "specKey": "Jumlah Penumpang", "specValue": "15 Orang", "sortOrder": 2 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "5-Speed Manual", "sortOrder": 3 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 300, "name": "White", "hexCode": "#FFFFFF", "imageUrl": "/images/cars/hiace-commuter/color-white.jpg", "sortOrder": 1 }
+    ],
+    "images": [
+      { "id": 300, "url": "/images/cars/hiace-commuter/exterior-1.jpg", "altText": "Toyota Hiace Commuter tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 300, "title": "Large Capacity Cabin", "description": "Kabin luas untuk 15 penumpang dengan akses mudah.", "category": "Comfort", "sortOrder": 1 }
+    ]
+  },
+
+  {
+    "id": 32,
+    "categoryId": 5,
+    "categoryName": "Commercial",
+    "name": "Hilux Rangga",
+    "fullName": "Hilux Rangga",
+    "slug": "hilux-rangga",
+    "tagline": "Strong. Versatile. Rangga.",
+    "description": "Hilux Rangga adalah pickup serbaguna terbaru Toyota. Tersedia dalam berbagai konfigurasi untuk kebutuhan komersial dan personal.",
+    "bannerUrl": "/images/cars/hilux-rangga/banner.jpg",
+    "thumbnailUrl": "/images/cars/hilux-rangga/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-hilux-rangga.pdf",
+    "startingPrice": 194300000,
+    "priceLabel": "Starting from",
+    "label": "NEW",
+    "isNew": true,
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 32,
+    "metaTitle": "Hilux Rangga – Pickup Serbaguna | AutoPrima",
+    "metaDescription": "Toyota Hilux Rangga di AutoPrima Cibinong. Harga mulai Rp 194 Juta.",
+    "variants": [
+      {
+        "id": 3201,
+        "name": "M/T PU 2.0 STD",
+        "slug": "hilux-rangga-pu-std",
+        "fuel": "Bensin",
+        "transmission": "Manual",
+        "engineCc": 1998,
+        "engineLabel": "2.0L 4-cyl Bensin",
+        "drivetrain": "4x2",
+        "seats": 2,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 32001, "label": "M/T CHSS PU 2.0 STD", "price": 194300000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 32002, "label": "M/T PU 2.0 STD", "price": 199200000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 },
+          { "id": 32003, "label": "M/T MB 2.4 Diesel", "price": 249100000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 3 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "1.998 cc", "sortOrder": 1 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "5-Speed Manual", "sortOrder": 2 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 310, "name": "White", "hexCode": "#FFFFFF", "imageUrl": "/images/cars/hilux-rangga/color-white.jpg", "sortOrder": 1 },
+      { "id": 311, "name": "Silver", "hexCode": "#C0C0C0", "imageUrl": "/images/cars/hilux-rangga/color-silver.jpg", "sortOrder": 2 }
+    ],
+    "images": [
+      { "id": 310, "url": "/images/cars/hilux-rangga/exterior-1.jpg", "altText": "Toyota Hilux Rangga tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 310, "title": "Multi-Configuration", "description": "Tersedia berbagai konfigurasi dari single cab hingga double cab.", "category": "Versatility", "sortOrder": 1 }
+    ]
+  },
+
+  {
+    "id": 33,
+    "categoryId": 5,
+    "categoryName": "Commercial",
+    "name": "Hilux D Cab",
+    "fullName": "New Hilux D Cab",
+    "slug": "hilux-d-cab",
+    "tagline": "Tough. Capable. Hilux.",
+    "description": "New Hilux Double Cab menghadirkan pickup tangguh dengan kabin 5-penumpang. Mesin diesel 2.4L bertenaga untuk berbagai medan.",
+    "bannerUrl": "/images/cars/hilux-d-cab/banner.jpg",
+    "thumbnailUrl": "/images/cars/hilux-d-cab/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-hilux-d-cab.pdf",
+    "startingPrice": 456300000,
+    "priceLabel": "Starting from",
+    "label": null,
+    "isNew": true,
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 33,
+    "metaTitle": "New Hilux Double Cab – Pickup Tangguh | AutoPrima",
+    "metaDescription": "Toyota Hilux D Cab di AutoPrima Cibinong. Harga mulai Rp 456 Juta.",
+    "variants": [
+      {
+        "id": 3301,
+        "name": "DC 2.4 E M/T",
+        "slug": "hilux-dc-e-mt",
+        "fuel": "Diesel",
+        "transmission": "Manual",
+        "engineCc": 2393,
+        "engineLabel": "2.4L 4-cyl Turbo Diesel",
+        "drivetrain": "4x2",
+        "seats": 5,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 33001, "label": "DC M/T 2.4 E", "price": 456300000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 33002, "label": "DC M/T 2.4 E RTS", "price": 465200000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 },
+          { "id": 33003, "label": "DC M/T 2.4 G", "price": 490100000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 3 },
+          { "id": 33004, "label": "DC A/T 2.4 V", "price": 545900000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 4 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "2.393 cc", "sortOrder": 1 },
+          { "category": "Mesin", "specKey": "Tipe Bahan Bakar", "specValue": "Diesel Turbo", "sortOrder": 2 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "6-Speed Manual / Automatic", "sortOrder": 3 },
+          { "category": "Kapasitas", "specKey": "Jumlah Penumpang", "specValue": "5 Orang", "sortOrder": 4 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 320, "name": "White", "hexCode": "#FFFFFF", "imageUrl": "/images/cars/hilux-d-cab/color-white.jpg", "sortOrder": 1 },
+      { "id": 321, "name": "Silver Metallic", "hexCode": "#C0C0C0", "imageUrl": "/images/cars/hilux-d-cab/color-silver.jpg", "sortOrder": 2 }
+    ],
+    "images": [
+      { "id": 320, "url": "/images/cars/hilux-d-cab/exterior-1.jpg", "altText": "Toyota Hilux D Cab tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 320, "title": "2.4L Turbo Diesel", "description": "Mesin diesel turbo bertenaga untuk kemampuan angkut maksimal.", "category": "Performance", "sortOrder": 1 }
+    ]
+  },
+
+  {
+    "id": 34,
+    "categoryId": 5,
+    "categoryName": "Commercial",
+    "name": "Hilux S Cab",
+    "fullName": "New Hilux S Cab",
+    "slug": "hilux-s-cab",
+    "tagline": "Work Hard. Drive Harder.",
+    "description": "New Hilux Single Cab adalah pickup kerja yang tangguh dan efisien. Ideal untuk kebutuhan bisnis dan operasional harian.",
+    "bannerUrl": "/images/cars/hilux-s-cab/banner.jpg",
+    "thumbnailUrl": "/images/cars/hilux-s-cab/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-hilux-s-cab.pdf",
+    "startingPrice": null,
+    "priceLabel": "Hubungi Kami",
+    "label": null,
+    "isNew": true,
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 34,
+    "metaTitle": "New Hilux Single Cab – Pickup Kerja | AutoPrima",
+    "metaDescription": "Toyota Hilux S Cab di AutoPrima Cibinong. Hubungi kami untuk info harga.",
+    "variants": [
+      {
+        "id": 3401,
+        "name": "SC M/T 2.4 DSL 4x4",
+        "slug": "hilux-sc-mt-4x4",
+        "fuel": "Diesel",
+        "transmission": "Manual",
+        "engineCc": 2393,
+        "engineLabel": "2.4L 4-cyl Turbo Diesel",
+        "drivetrain": "4x4",
+        "seats": 2,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 34001, "label": "SC M/T 2.4 DSL 4x4", "price": 416800000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Kapasitas Mesin", "specValue": "2.393 cc", "sortOrder": 1 },
+          { "category": "Penggerak", "specKey": "Sistem", "specValue": "4x4", "sortOrder": 2 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "6-Speed Manual", "sortOrder": 3 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 330, "name": "White", "hexCode": "#FFFFFF", "imageUrl": "/images/cars/hilux-s-cab/color-white.jpg", "sortOrder": 1 }
+    ],
+    "images": [
+      { "id": 330, "url": "/images/cars/hilux-s-cab/exterior-1.jpg", "altText": "Toyota Hilux S Cab tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 330, "title": "4x4 Capability", "description": "Sistem 4x4 untuk kemampuan off-road dan medan berat.", "category": "Performance", "sortOrder": 1 }
+    ]
+  },
+
+  {
+    "id": 35,
+    "categoryId": 5,
+    "categoryName": "Commercial",
+    "name": "Dyna",
+    "fullName": "New Dyna",
+    "slug": "dyna",
+    "tagline": "Built for Business",
+    "description": "New Dyna adalah truk ringan andalan Toyota untuk kebutuhan komersial. Kapasitas muatan besar dengan konsumsi bahan bakar yang efisien.",
+    "bannerUrl": "/images/cars/dyna/banner.jpg",
+    "thumbnailUrl": "/images/cars/dyna/thumbnail.jpg",
+    "brochureUrl": "/files/brochure-dyna.pdf",
+    "startingPrice": 509300000,
+    "priceLabel": "Starting from",
+    "label": null,
+    "isNew": true,
+    "isFeatured": false,
+    "isActive": true,
+    "sortOrder": 35,
+    "metaTitle": "New Dyna – Truk Ringan Komersial | AutoPrima",
+    "metaDescription": "Toyota Dyna di AutoPrima Cibinong. Harga mulai Rp 509 Juta.",
+    "variants": [
+      {
+        "id": 3501,
+        "name": "M/T 4x2 6",
+        "slug": "dyna-4x2-6",
+        "fuel": "Diesel",
+        "transmission": "Manual",
+        "engineCc": 4163,
+        "engineLabel": "4.2L Diesel",
+        "drivetrain": "4x2",
+        "seats": 3,
+        "sortOrder": 1,
+        "prices": [
+          { "id": 35001, "label": "M/T 4x2 6", "price": 509300000, "isBasePrice": true, "priceOnRequest": false, "sortOrder": 1 },
+          { "id": 35002, "label": "M/T 4x2 6 (PTO)", "price": 513300000, "isBasePrice": false, "priceOnRequest": false, "sortOrder": 2 }
+        ],
+        "specs": [
+          { "category": "Mesin", "specKey": "Tipe Bahan Bakar", "specValue": "Diesel", "sortOrder": 1 },
+          { "category": "Transmisi", "specKey": "Tipe", "specValue": "Manual", "sortOrder": 2 },
+          { "category": "Kapasitas", "specKey": "GVW", "specValue": "6.000 kg", "sortOrder": 3 }
+        ]
+      }
+    ],
+    "colors": [
+      { "id": 340, "name": "White", "hexCode": "#FFFFFF", "imageUrl": "/images/cars/dyna/color-white.jpg", "sortOrder": 1 }
+    ],
+    "images": [
+      { "id": 340, "url": "/images/cars/dyna/exterior-1.jpg", "altText": "Toyota Dyna tampak depan", "category": "exterior", "isPrimary": true, "sortOrder": 1 }
+    ],
+    "features": [
+      { "id": 340, "title": "Heavy Duty Payload", "description": "Kapasitas muatan tinggi untuk kebutuhan angkut komersial.", "category": "Performance", "sortOrder": 1 }
+    ]
+  }
+]
