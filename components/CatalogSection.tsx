@@ -180,34 +180,67 @@ export default function CatalogSection() {
               </div>
 
               {/* Tabel Harga Varian */}
-              <div className="p-6">
-                <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-4">Daftar Harga OTR Bogor</p>
-                <table className="w-full text-left border-collapse">
-                  <thead>
-                    <tr className="text-slate-400 text-[10px] uppercase tracking-wider border-b">
-                      <th className="py-3 font-medium">Tipe Varian</th>
-                      <th className="py-3 font-medium">Transmisi</th>
-                      <th className="py-3 font-medium text-right">Harga</th>
-                    </tr>
-                  </thead>
-                  <tbody className="text-slate-700">
-                    {selectedCar.variants.map((variant: any) => (
-                      variant.prices.map((p: any) => (
-                        <tr key={p.id} className="border-b last:border-0 hover:bg-slate-50 transition-colors">
-                          <td className="py-4 text-sm font-medium">{p.label}</td>
-                          <td className="py-4 text-xs text-slate-500">{variant.transmission}</td>
-                          <td className="py-4 text-right font-bold text-red-600 text-sm">
-                            Rp {p.price.toLocaleString("id-ID")}
-                          </td>
-                        </tr>
-                      ))
-                    ))}
-                  </tbody>
-                </table>
-                <p className="mt-4 text-[10px] text-slate-400 italic">
-                  * Harga OTR Bogor dapat berubah sewaktu-waktu.
-                </p>
-              </div>
+           {/* Tabel Harga Varian */}
+<div className="p-6">
+  <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-4">
+    Daftar Harga OTR Bogor
+  </p>
+
+  <div className="overflow-x-auto">
+    <table className="w-full text-left border-collapse min-w-[700px]">
+      <thead>
+        <tr className="text-slate-400 text-[10px] uppercase tracking-wider border-b">
+          <th className="py-3 font-medium">Tipe Varian</th>
+          <th className="py-3 font-medium">Transmisi</th>
+          <th className="py-3 font-medium text-right">Plat B</th>
+          <th className="py-3 font-medium text-right">Plat F</th>
+        </tr>
+      </thead>
+
+      <tbody className="text-slate-700">
+        {selectedCar?.variants?.map((variant: any) =>
+          variant?.prices?.map((p: any) => {
+            const platB = p.platB ?? p.price;
+            const platF = p.platF ?? p.price;
+
+            return (
+              <tr
+                key={p.id}
+                className="border-b last:border-0 hover:bg-slate-50 transition-colors"
+              >
+                <td className="py-4 text-sm font-medium">
+                  {p.label}
+                </td>
+
+                <td className="py-4 text-xs text-slate-500">
+                  {variant.transmission}
+                </td>
+
+                {/* Harga Plat B */}
+                <td className="py-4 text-right font-bold text-red-600 text-sm">
+                  {platB
+                    ? `Rp ${platB.toLocaleString("id-ID")}`
+                    : "-"}
+                </td>
+
+                {/* Harga Plat F */}
+                <td className="py-4 text-right font-bold text-red-600 text-sm">
+                  {platF
+                    ? `Rp ${platF.toLocaleString("id-ID")}`
+                    : "-"}
+                </td>
+              </tr>
+            );
+          })
+        )}
+      </tbody>
+    </table>
+  </div>
+
+  <p className="mt-4 text-[10px] text-slate-400 italic">
+    * Harga OTR Bogor dapat berubah sewaktu-waktu.
+  </p>
+</div>
             </div>
 
             {/* Modal Footer */}
