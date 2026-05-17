@@ -1,32 +1,74 @@
-import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
+import { NextRequest, NextResponse } from "next/server";
+import connectDB from "@/lib/connectDB";
+import { Car } from "@/models/Car";
+import "@/models/CarCategory"; // ← import wajib agar populate bisa jalan
 
-const filePath = path.join(process.cwd(), 'public/data/cars.json');
-
-// 1. Ambil semua data mobil
-export async function GET() {
-  const jsonData = fs.readFileSync(filePath, 'utf-8');
-  return NextResponse.json(JSON.parse(jsonData));
-}
-
-// 2. Tambah mobil baru (Simulasi Admin)
-export async function POST(request: Request) {
+export async function GET(req: NextRequest) {
   try {
-    const newCar = await request.json();
-    const jsonData = fs.readFileSync(filePath, 'utf-8');
-    const cars = JSON.parse(jsonData);
+    await connectDB();
 
-    // Tambah ID otomatis
-    newCar.id = cars.length > 0 ? Math.max(...cars.map((c: any) => c.id)) + 1 : 1;
-    
-    cars.push(newCar);
+    const sp    = req.nextUrl.searchParams;
+    const page  = Math.max(1, Number(sp.get("page")  ?? 1));
+    const limit = Math.min(50, Number(sp.get("limit") ?? 12));
+    const skip  = (page - 1) * limit;
 
-    // Simpan kembali ke file
-    fs.writeFileSync(filePath, JSON.stringify(cars, null, 2));
+    // ── Build filter ─────────────────────────────────────────────
+    const filter: Record<string, unknown> = { isActive: true };
 
-    return NextResponse.json({ message: "Car added successfully", car: newCar });
+    if (sp.get("category"))   filter.categoryId  = sp.get("category");
+    if (sp.get("label"))      filter.label        = sp.get("label");
+    if (sp.get("isNew"))      filter.isNew        = true;
+    if (sp.get("isFeatured")) filter.isFeatured   = true;
+
+    if (sp.get("minPrice") || sp.get("maxPrice")) {
+      filter.startingPrice = {
+        ...(sp.get("minPrice") && { $gte: Number(sp.get("minPrice")) }),
+        ...(sp.get("maxPrice") && { $lte: Number(sp.get("maxPrice")) }),
+      };
+    }
+
+    if (sp.get("search")) {
+      filter.$text = { $search: sp.get("search") };
+    }
+
+    // ── Sort ─────────────────────────────────────────────────────
+    const SORT_MAP: Record<string, object> = {
+      "price-asc":  { startingPrice:  1 },
+      "price-desc": { startingPrice: -1 },
+      "newest":     { createdAt: -1 },
+      "name":       { name: 1 },
+      "popular":    { viewCount: -1 },
+      "default":    { isFeatured: -1, sortOrder: 1 },
+    };
+    const sort = SORT_MAP[sp.get("sort") ?? "default"] ?? SORT_MAP["default"];
+
+    // ── Query ────────────────────────────────────────────────────
+    const [cars, total] = await Promise.all([
+      Car.find(filter)
+        .select("name fullName slug label thumbnailUrl startingPrice priceLabel isNew isFeatured sortOrder categoryId images variants")
+        .sort(sort)
+        .skip(skip)
+        .limit(limit)
+        .populate("categoryId", "name slug")
+        .lean(),
+      Car.countDocuments(filter),
+    ]);
+
+    return NextResponse.json({
+      success: true,
+      data: cars,
+      pagination: {
+        page,
+        limit,
+        total,
+        totalPages: Math.ceil(total / limit),
+      },
+    });
   } catch (error) {
-    return NextResponse.json({ error: "Failed to update data" }, { status: 500 });
+    console.error("[GET /api/cars]", error);
+    return NextResponse.json(
+      { success: false, error: "Gagal mengambil data mobil" },
+      { status: 500 }
+    );
   }
 }

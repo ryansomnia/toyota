@@ -1,22 +1,27 @@
-// ─── /app/api/promos/route.ts ────────────────────────────────────
-import { NextRequest } from "next/server";
-import { query } from "@/lib/db";
-import { ok, err, Promo } from "@/lib/types";
+// ── /app/api/promos/route.ts ─────────────────────────────────────
+import { NextResponse } from "next/server";
+import connectDB from "@/lib/connectDB";
+import { Promo } from "@/models/index";
 
-export async function GET(_req: NextRequest) {
+export async function GET() {
   try {
-    const promos = await query<Promo[]>(
-      `SELECT p.*, c.name AS car_name, c.slug AS car_slug
-       FROM promos p
-       LEFT JOIN cars c ON p.car_id = c.id
-       WHERE p.is_active = 1
-         AND p.start_date <= CURDATE()
-         AND p.end_date   >= CURDATE()
-       ORDER BY p.created_at DESC`
+    await connectDB();
+    const now = new Date();
+    const promos = await Promo.find({
+      isActive:  true,
+      startDate: { $lte: now },
+      endDate:   { $gte: now },
+    })
+      .populate("carId", "name slug thumbnailUrl")
+      .sort({ createdAt: -1 })
+      .lean();
+
+    return NextResponse.json({ success: true, data: promos });
+  } catch (error) {
+    console.error("[GET /api/promos]", error);
+    return NextResponse.json(
+      { success: false, error: "Gagal mengambil data promo" },
+      { status: 500 }
     );
-    return ok(promos);
-  } catch (e) {
-    console.error("[GET /api/promos]", e);
-    return err("Gagal mengambil data promo", 500);
   }
 }
