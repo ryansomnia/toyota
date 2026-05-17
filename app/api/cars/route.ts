@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import connectDB from "@/lib/connectDB";
 import { Car } from "@/models/Car";
-import "@/models/CarCategory"; // ← import wajib agar populate bisa jalan
+import "@/models/CarCategory";
+import { SortOrder } from "mongoose";
 
 export async function GET(req: NextRequest) {
   try {
@@ -15,10 +16,10 @@ export async function GET(req: NextRequest) {
     // ── Build filter ─────────────────────────────────────────────
     const filter: Record<string, unknown> = { isActive: true };
 
-    if (sp.get("category"))   filter.categoryId  = sp.get("category");
-    if (sp.get("label"))      filter.label        = sp.get("label");
-    if (sp.get("isNew"))      filter.isNew        = true;
-    if (sp.get("isFeatured")) filter.isFeatured   = true;
+    if (sp.get("category"))   filter.categoryId = sp.get("category");
+    if (sp.get("label"))      filter.label       = sp.get("label");
+    if (sp.get("isNew"))      filter.isNew       = true;
+    if (sp.get("isFeatured")) filter.isFeatured  = true;
 
     if (sp.get("minPrice") || sp.get("maxPrice")) {
       filter.startingPrice = {
@@ -32,7 +33,7 @@ export async function GET(req: NextRequest) {
     }
 
     // ── Sort ─────────────────────────────────────────────────────
-    const SORT_MAP: Record<string, object> = {
+    const SORT_MAP: Record<string, Record<string, SortOrder>> = {
       "price-asc":  { startingPrice:  1 },
       "price-desc": { startingPrice: -1 },
       "newest":     { createdAt: -1 },
