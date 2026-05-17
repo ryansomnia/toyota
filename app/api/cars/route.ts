@@ -18,7 +18,7 @@ export async function GET(req: NextRequest) {
 
     if (sp.get("category"))   filter.categoryId = sp.get("category");
     if (sp.get("label"))      filter.label       = sp.get("label");
-    if (sp.get("isNew"))      filter.isNew       = true;
+    if (sp.get("isNew"))      filter.isNewModel  = true;
     if (sp.get("isFeatured")) filter.isFeatured  = true;
 
     if (sp.get("minPrice") || sp.get("maxPrice")) {

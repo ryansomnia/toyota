@@ -95,7 +95,7 @@ export interface ICar extends Document {
   startingPrice?:   number;
   priceLabel:       string;
   label?:           string;
-  isNew:            boolean;
+  isNewModel:        boolean;
   isFeatured:       boolean;
   isActive:         boolean;
   sortOrder:        number;
@@ -130,7 +130,7 @@ const CarSchema = new Schema<ICar>(
 
     // Label & status
     label:          { type: String },        // "NEW", "HYBRID", "EV", "GR"
-    isNew:          { type: Boolean, default: false },
+    isNewModel:     { type: Boolean, default: false }, // rename dari isNew (reserved word mongoose)
     isFeatured:     { type: Boolean, default: false },
     isActive:       { type: Boolean, default: true },
     sortOrder:      { type: Number, default: 0 },
@@ -152,6 +152,7 @@ const CarSchema = new Schema<ICar>(
 // Indexes
 CarSchema.index({ categoryId: 1 });
 CarSchema.index({ isActive: 1, isFeatured: -1, sortOrder: 1 });
+CarSchema.index({ isNewModel: -1 });
 CarSchema.index({ isActive: 1, startingPrice: 1 });
 CarSchema.index({ name: "text", fullName: "text", description: "text" });
 
