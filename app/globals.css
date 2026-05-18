@@ -107,3 +107,11 @@ html {
 
 /* Mobile menu open state */
 body.menu-open { overflow: hidden; }
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}

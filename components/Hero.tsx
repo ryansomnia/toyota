@@ -1,6 +1,266 @@
+// "use client";
+
+// const STATS = [
+//   { num: "250+", label: "Unit Ready Stock" },
+//   { num: "12+", label: "Tahun Pengalaman" },
+//   { num: "1.5k", label: "Happy Clients" },
+//   { num: "0%", label: "Bunga Promo" },
+// ];
+
+// const WA = "6282125061466";
+
+// export default function Hero() {
+//   return (
+//     <section
+//       id="hero"
+//       className="
+//         relative overflow-hidden
+//         bg-white
+//         min-h-screen
+//         flex items-center
+//       "
+//     >
+//       {/* BACKGROUND */}
+//       <div className="absolute inset-0 pointer-events-none overflow-hidden">
+//         <div className="absolute top-0 right-0 w-[45%] h-full bg-zinc-50 skew-x-[-14deg] translate-x-24" />
+
+//         <div className="absolute -bottom-20 left-0 text-[22vw] font-black text-zinc-50 uppercase leading-none">
+//           Toyota
+//         </div>
+
+//         <div className="absolute top-20 left-20 w-72 h-72 bg-red-500/10 rounded-full blur-3xl" />
+
+//         <div className="absolute bottom-10 right-10 w-80 h-80 bg-red-500/5 rounded-full blur-3xl" />
+//       </div>
+
+//       <div
+//         className="
+//           relative z-10
+//           max-w-7xl mx-auto
+//           px-6 md:px-10
+//           py-24
+//           grid lg:grid-cols-2
+//           gap-16
+//           items-center
+//         "
+//       >
+//         {/* LEFT */}
+//         <div>
+//           {/* LABEL */}
+//           <div className="flex items-center gap-3 mb-7">
+//             <span className="w-10 h-[3px] bg-red-600 rounded-full" />
+
+//             <span className="text-[11px] font-black tracking-[4px] uppercase text-red-600">
+//               Toyota Authorized Dealer
+//             </span>
+//           </div>
+
+//           {/* TITLE */}
+//           <h1
+//             className="
+//               text-[52px]
+//               sm:text-[68px]
+//               lg:text-[92px]
+//               font-black
+//               leading-[0.88]
+//               tracking-[-4px]
+//               uppercase
+//               text-zinc-900
+//               mb-8
+//             "
+//           >
+//             Drive <br />
+
+//             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-500">
+//               Prestige
+//             </span>
+
+//             <br />
+//             Everyday.
+//           </h1>
+
+//           {/* DESC */}
+//           <p
+//             className="
+//               text-zinc-500
+//               text-sm md:text-base
+//               leading-relaxed
+//               max-w-xl
+//               mb-10
+//             "
+//           >
+//             Temukan pengalaman membeli mobil Toyota yang lebih modern,
+//             transparan, dan eksklusif dengan promo terbaik serta layanan
+//             profesional terpercaya.
+//           </p>
+
+//           {/* BUTTON */}
+//           <div className="flex flex-wrap gap-4 mb-14">
+//             <a
+//               href={`https://wa.me/${WA}`}
+//               target="_blank"
+//               rel="noopener noreferrer"
+//               className="
+//                 px-8 py-4
+//                 rounded-2xl
+//                 bg-zinc-900
+//                 text-white
+//                 text-[11px]
+//                 uppercase
+//                 tracking-[2px]
+//                 font-black
+//                 hover:bg-red-600
+//                 transition-all
+//                 shadow-xl shadow-black/10
+//               "
+//             >
+//               Konsultasi Sekarang
+//             </a>
+
+//             <a
+//               href="#katalog"
+//               className="
+//                 px-8 py-4
+//                 rounded-2xl
+//                 border border-zinc-200
+//                 text-zinc-700
+//                 text-[11px]
+//                 uppercase
+//                 tracking-[2px]
+//                 font-black
+//                 hover:border-zinc-900
+//                 hover:bg-zinc-900
+//                 hover:text-white
+//                 transition-all
+//               "
+//             >
+//               Lihat Katalog
+//             </a>
+//           </div>
+
+//           {/* STATS */}
+//           <div
+//             className="
+//               grid grid-cols-2 sm:grid-cols-4
+//               gap-6
+//               pt-8
+//               border-t border-zinc-100
+//             "
+//           >
+//             {STATS.map((s, i) => (
+//               <div key={i}>
+//                 <p className="text-2xl font-black text-zinc-900">
+//                   {s.num}
+//                 </p>
+
+//                 <p
+//                   className="
+//                     text-[10px]
+//                     uppercase
+//                     tracking-[2px]
+//                     font-bold
+//                     text-zinc-400
+//                     mt-1
+//                   "
+//                 >
+//                   {s.label}
+//                 </p>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+
+//         {/* RIGHT */}
+//         <div className="relative">
+//           {/* CARD */}
+//           <div
+//             className="
+//               relative
+//               bg-white
+//               rounded-[32px]
+//               border border-zinc-100
+//               shadow-[0_50px_100px_-20px_rgba(0,0,0,0.12)]
+//               overflow-hidden
+//             "
+//           >
+//             {/* IMAGE BG */}
+//             <div className="absolute inset-0 bg-gradient-to-br from-zinc-50 to-white" />
+
+//             {/* FLOAT BADGE */}
+//             <div
+//               className="
+//                 absolute top-5 left-5 z-20
+//                 px-4 py-2
+//                 rounded-full
+//                 bg-red-600
+//                 text-white
+//                 text-[10px]
+//                 uppercase
+//                 tracking-[2px]
+//                 font-black
+//                 shadow-lg
+//               "
+//             >
+//               Best Seller 2026
+//             </div>
+
+//             {/* CAR IMAGE */}
+//             <div
+//               className="
+//                 relative z-10
+//                 p-8 md:p-12
+//                 flex items-center justify-center
+//               "
+//             >
+//               <img
+//                 src="/images/hero-car.png"
+//                 alt="Toyota Hero"
+//                 className="
+//                   w-full
+//                   object-contain
+//                   drop-shadow-[0_40px_60px_rgba(0,0,0,0.18)]
+//                   hover:scale-[1.03]
+//                   transition-all duration-700
+//                 "
+//               />
+//             </div>
+
+//             {/* FLOATING CARD */}
+//             <div
+//               className="
+//                 absolute bottom-5 left-5
+//                 bg-white/90 backdrop-blur
+//                 border border-zinc-100
+//                 rounded-2xl
+//                 px-5 py-4
+//                 shadow-xl
+//               "
+//             >
+//               <p className="text-[10px] uppercase tracking-[2px] text-zinc-400 font-bold mb-1">
+//                 Promo Bulan Ini
+//               </p>
+
+//               <p className="text-lg font-black text-zinc-900">
+//                 DP Mulai 20 Jutaan
+//               </p>
+//             </div>
+//           </div>
+
+//           {/* DECOR */}
+//           <div className="absolute -top-6 -right-6 w-full h-full border-2 border-zinc-100 rounded-[32px] -z-10" />
+
+//           <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-red-500/10 rounded-full blur-3xl -z-10" />
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
+
 "use client";
-import { useEffect, useRef, useState } from "react";
+
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const STATS = [
   { num: "250+", label: "Unit Ready Stock" },
@@ -9,187 +269,284 @@ const STATS = [
   { num: "0%", label: "Bunga Promo" },
 ];
 
-const FEATURED_CARS = [
-  { 
-    brand: "TOYOTA", 
-    name: "Fortuner GR Sport", 
-    price: "Rp 680 Jt", 
-    tag: "Hot Deal",
-    emoji: "🏎️",
-    specs: ["Diesel 2.8L", "4x4 Drive", "Luxury Interior"]
-  },
-  { 
-    brand: "HONDA", 
-    name: "Civic Type R", 
-    price: "Rp 1.39 M", 
-    tag: "Legendary",
-    emoji: "🏎️",
-    specs: ["Track Ready", "Manual 6-Speed", "VTEC Turbo"]
-  },
-  { 
-    brand: "HYUNDAI", 
-    name: "Ioniq 5 Electric", 
-    price: "Rp 780 Jt", 
-    tag: "Future Tech",
-    emoji: "⚡",
-    specs: ["Zero Emission", "Fast Charge", "Smart Sense"]
-  },
-];
+const WA = "6282125061466";
+
+function fmt(v?: number) {
+  if (!v) return "Hubungi Kami";
+
+  return (
+    "Rp " +
+    Number(v).toLocaleString("id-ID", {
+      maximumFractionDigits: 0,
+    })
+  );
+}
 
 export default function Hero() {
+  const [cars, setCars] = useState<any[]>([]);
   const [activeIdx, setActiveIdx] = useState(0);
-  const containerRef = useRef<HTMLDivElement>(null);
+  const [loading, setLoading] = useState(true);
 
+  // FETCH API
   useEffect(() => {
-    const timer = setInterval(() => {
-      setActiveIdx((prev) => (prev + 1) % FEATURED_CARS.length);
-    }, 5000);
-    return () => clearInterval(timer);
+    const fetchCars = async () => {
+      try {
+        const res = await fetch("/api/cars?limit=5");
+
+        const json = await res.json();
+
+        const featured =
+          json?.data?.filter((c: any) => c.isFeatured) || [];
+
+        setCars(featured);
+      } catch (err) {
+        console.error(err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchCars();
   }, []);
 
-  const waLink = "https://wa.me/6282125061466";
+  // AUTO SLIDE
+  useEffect(() => {
+    if (!cars.length) return;
+
+    const timer = setInterval(() => {
+      setActiveIdx((prev) => (prev + 1) % cars.length);
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, [cars]);
+
+  const activeCar = cars?.[activeIdx];
 
   return (
     <section
-      ref={containerRef}
-       id="hero"
-      className=" relative min-h-[90vh] flex items-center overflow-hidden bg-white text-[#0A0A0A]"
+      id="hero"
+      className="
+        relative
+        min-h-screen
+        overflow-hidden
+        bg-black
+      "
     >
-      {/* Background Decor - Subtle & Clean */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-[#FBFBFB] skew-x-[-12deg] translate-x-20" />
-        <div className="absolute -bottom-10 -left-10 text-[22vw] font-black text-gray-50 select-none leading-none uppercase">
-          Setiajaya
-        </div>
+      {/* BACKGROUND IMAGE */}
+      <div className="absolute inset-0">
+        {!loading && activeCar?.thumbnailUrl ? (
+          <img
+            src={activeCar.thumbnailUrl}
+            alt={activeCar.fullName}
+            className="
+              w-full
+              h-full
+              object-cover
+              scale-110
+              opacity-40
+              transition-all
+              duration-1000
+            "
+          />
+        ) : (
+          <div className="w-full h-full bg-zinc-900" />
+        )}
+
+        {/* OVERLAY */}
+        <div
+          className="
+            absolute inset-0
+            bg-gradient-to-r
+            from-black/90
+            via-black/70
+            to-black/40
+          "
+        />
+
+        {/* BOTTOM FADE */}
+        <div
+          className="
+            absolute inset-x-0 bottom-0
+            h-60
+            bg-gradient-to-t
+            from-black
+            to-transparent
+          "
+        />
       </div>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 py-16 grid lg:grid-cols-2 gap-16 items-center">
-        
-        {/* LEFT CONTENT */}
-        <div className="flex flex-col items-start">
-          <div className="flex items-center gap-3 mb-6">
-            <span className="w-10 h-[3px] bg-red-600"></span>
-            <span className="text-red-600 text-[11px] font-black uppercase tracking-[4px]">Dealer Terpercaya</span>
+      {/* MAIN */}
+      <div
+        className="
+          relative z-10
+          max-w-7xl
+          mx-auto
+          px-6 md:px-10
+          min-h-screen
+          grid
+          lg:grid-cols-2
+          gap-10
+          items-center
+          py-24
+        "
+      >
+        {/* LEFT */}
+        <div>
+          {/* LABEL */}
+          <div className="flex items-center gap-3 mb-7">
+            <span className="w-12 h-[2px] bg-red-500" />
+
+            <span
+              className="
+                text-white/90
+                text-[11px]
+                font-black
+                uppercase
+                tracking-[4px]
+              "
+            >
+              Authorized Toyota Dealer
+            </span>
           </div>
 
-          <h1 className="text-[54px] md:text-[80px] font-black leading-[0.9] tracking-[-3px] mb-8 uppercase text-[#0A0A0A]">
-            Find Your <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-500">
-              Ultimate
-            </span> <br />
-            Machine.
+          {/* TITLE */}
+          <h1
+            className="
+              text-white
+              font-black
+              uppercase
+              leading-[0.9]
+              tracking-[-3px]
+              text-[50px]
+              sm:text-[72px]
+              md:text-[92px]
+            "
+          >
+            Drive
+            <br />
+
+            <span className="text-red-500">
+              Beyond
+            </span>
+
+            <br />
+            Limits.
           </h1>
 
-          <p className="text-gray-500 text-sm md:text-base max-w-md leading-relaxed mb-10 font-medium">
-            Pengalaman membeli mobil yang transparan dan eksklusif. Temukan unit impian Anda dengan layanan purna jual terbaik di kelasnya.
+          {/* SUBTITLE */}
+          <p
+            className="
+              mt-7
+              text-white/70
+              text-sm
+              md:text-lg
+              leading-relaxed
+              max-w-xl
+            "
+          >
+            Temukan mobil Toyota impian Anda dengan promo terbaik,
+            pelayanan profesional, dan pengalaman pembelian yang
+            nyaman serta terpercaya.
           </p>
 
-          <div className="flex flex-wrap gap-4 mb-16">
-            {/* <Link
-              href="/katalog"
-              className="bg-[#0A0A0A] text-white px-10 py-4 text-[11px] font-black uppercase tracking-[2px] hover:bg-red-600 transition-all duration-300 shadow-xl shadow-black/10"
-            >
-              Lihat Katalog
-            </Link> */}
+          {/* BUTTON */}
+          <div className="flex flex-wrap gap-4 mt-10">
             <a
-              href={waLink}
-              className="group border-2 border-[#0A0A0A] px-10 py-[14px] text-[11px] font-black uppercase tracking-[2px] hover:bg-[#0A0A0A] hover:text-white transition-all flex items-center gap-2"
+              href={`https://wa.me/${WA}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                h-14
+                px-8
+                rounded-full
+                bg-red-600
+                hover:bg-red-700
+                transition-all
+                text-white
+                font-black
+                uppercase
+                tracking-[2px]
+                text-[11px]
+                inline-flex
+                items-center
+                justify-center
+                shadow-[0_20px_40px_rgba(220,38,38,0.35)]
+              "
             >
-              Konsultasi Gratis 24/7
+              Konsultasi Sekarang
             </a>
+
+            <Link
+              href="/produk"
+              className="
+                h-14
+                px-8
+                rounded-full
+                border
+                border-white/20
+                bg-white/10
+                backdrop-blur-md
+                hover:bg-white/20
+                transition-all
+                text-white
+                font-black
+                uppercase
+                tracking-[2px]
+                text-[11px]
+                inline-flex
+                items-center
+                justify-center
+              "
+            >
+              Lihat Produk
+            </Link>
           </div>
 
-          {/* Stats Bar */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 py-8 border-t border-gray-100 w-full">
-            {STATS.map((s, i) => (
-              <div key={i} className="flex flex-col">
-                <span className="text-2xl font-black text-[#0A0A0A]">{s.num}</span>
-                <span className="text-[9px] uppercase tracking-[2px] text-gray-400 font-bold">{s.label}</span>
+          {/* STATS */}
+          <div
+            className="
+              grid
+              grid-cols-2
+              sm:grid-cols-4
+              gap-4
+              mt-16
+            "
+          >
+            {STATS.map((item, i) => (
+              <div
+                key={i}
+                className="
+                  rounded-2xl
+                  border
+                  border-white/10
+                  bg-white/10
+                  backdrop-blur-md
+                  p-5
+                "
+              >
+                <p className="text-white text-2xl font-black">
+                  {item.num}
+                </p>
+
+                <p
+                  className="
+                    text-white/60
+                    text-[10px]
+                    uppercase
+                    tracking-[2px]
+                    font-bold
+                    mt-1
+                  "
+                >
+                  {item.label}
+                </p>
               </div>
             ))}
           </div>
         </div>
 
-        {/* RIGHT CONTENT - CAROUSEL (White Theme) */}
-        <div className="relative">
-          {/* Main Card */}
-          <div className="relative z-20 bg-white p-2 rounded-2xl shadow-[0_40px_80px_-15px_rgba(0,0,0,0.1)] border border-gray-50">
-            <div className="bg-[#FDFDFD] rounded-xl p-8 md:p-12 overflow-hidden relative">
-              
-              <div className="relative min-h-[380px] flex flex-col">
-                {FEATURED_CARS.map((car, idx) => (
-                  <div 
-                    key={idx}
-                    className={`transition-all duration-700 ease-in-out absolute inset-0 flex flex-col ${
-                      activeIdx === idx ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12 pointer-events-none"
-                    }`}
-                  >
-                    <div className="flex justify-between items-start mb-6">
-                      <div>
-                        <p className="text-red-600 text-[10px] font-black tracking-[3px] uppercase mb-1">{car.brand}</p>
-                        <h3 className="text-3xl md:text-4xl font-black uppercase tracking-tighter text-[#0A0A0A] leading-tight">{car.name}</h3>
-                      </div>
-                      <span className="bg-red-600/10 text-red-600 text-[9px] font-black px-3 py-1.5 rounded-md uppercase tracking-widest border border-red-600/20">
-                        {car.tag}
-                      </span>
-                    </div>
-
-                    <div className="flex-1 flex justify-center items-center py-4">
-                      <span className="text-[140px] leading-none filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.1)] select-none">
-                        {car.emoji}
-                      </span>
-                    </div>
-
-                    <div className="flex justify-between items-end border-t border-gray-100 pt-8 mt-auto">
-                      <div>
-                        <p className="text-gray-400 text-[10px] uppercase font-bold tracking-widest">Harga OTR</p>
-                        <p className="text-3xl font-black text-[#0A0A0A]">{car.price}</p>
-                      </div>
-                      <div className="hidden md:flex flex-col gap-1 items-end text-right">
-                        {car.specs.map((s, i) => (
-                          <span key={i} className="text-[9px] text-gray-400 uppercase font-bold tracking-tighter">
-                            ✓ {s}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Progress Indicators */}
-              <div className="absolute bottom-0 left-0 w-full flex gap-1 px-1">
-                {FEATURED_CARS.map((_, idx) => (
-                  <div 
-                    key={idx}
-                    onClick={() => setActiveIdx(idx)}
-                    className="h-1.5 flex-1 bg-gray-100 cursor-pointer relative overflow-hidden transition-all"
-                  >
-                    {activeIdx === idx && (
-                      <div className="absolute inset-0 bg-red-600 origin-left animate-progress" />
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Aesthetic Back-Layer */}
-          <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-red-600/5 rounded-full blur-3xl -z-10" />
-          <div className="absolute -top-6 -right-6 w-full h-full border-2 border-gray-100 rounded-2xl -z-10" />
-        </div>
-
+     
       </div>
-
-      <style jsx>{`
-        @keyframes progress {
-          0% { transform: scaleX(0); }
-          100% { transform: scaleX(1); }
-        }
-        .animate-progress {
-          animation: progress 5s linear infinite;
-        }
-      `}</style>
     </section>
   );
 }

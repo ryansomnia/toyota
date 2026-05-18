@@ -5,6 +5,8 @@ import Marquee from "@/components/Marquee";
 import CatalogSection from "@/components/CatalogSection";
 import { PromoSection, WhySection, TestimonialSection } from "@/components/Sections";
 import KreditCalc from "@/components/KreditCalc";
+import PromoCarousel from "@/components/PromoCarousel";
+
 import { ContactSection, Footer } from "@/components/AboutFooter";
 import ScrollReveal from "@/components/ScrollReveal";
 
@@ -22,10 +24,13 @@ export default function HomePage() {
       <main>
         <Hero />
         <Marquee />
+        <PromoCarousel />
+
         <CatalogSection />
         <PromoSection />
         <WhySection />
         {/* <KreditCalc /> */}
+        
         <TestimonialSection />
         <ContactSection />
       </main>

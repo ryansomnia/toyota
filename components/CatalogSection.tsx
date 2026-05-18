@@ -1,507 +1,514 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
-const BADGE_STYLE: Record<string, string> = {
-  NEW: "bg-blue-100 text-blue-700",
-  HOT: "bg-red-100 text-red-600",
-  GR: "bg-slate-900 text-white",
-  HYBRID: "bg-green-100 text-green-700",
-  EV: "bg-teal-100 text-teal-700",
+const BADGE_CFG: Record<string, { bg: string; text: string; label: string }> = {
+  NEW:      { bg: "bg-blue-50",   text: "text-blue-600",  label: "Baru" },
+  HOT:      { bg: "bg-red-50",    text: "text-red-600",   label: "Hot" },
+  GR:       { bg: "bg-zinc-900",  text: "text-white",     label: "GR" },
+  HYBRID:   { bg: "bg-emerald-50",text: "text-emerald-700",label: "Hybrid" },
+  EV:       { bg: "bg-teal-50",   text: "text-teal-700",  label: "EV" },
+  "SUV":    { bg: "bg-zinc-100",  text: "text-zinc-600",  label: "SUV" },
+  "CITY CAR":{ bg:"bg-violet-50", text:"text-violet-600", label:"City Car"},
 };
 
-const ITEMS_PER_PAGE = 8;
+const ITEMS_PER_PAGE = 12;
+const WA = "6282125061466";
+
+function fmt(v: number | null | undefined) {
+  if (!v) return null;
+  const n = Number(String(v).replace(/[^0-9]/g, ""));
+  if (!n) return null;
+  return "Rp " + n.toLocaleString("id-ID");
+}
 
 export default function CatalogSection() {
-  const [cars, setCars] = useState<any[]>([]);
-  const [categories, setCategories] = useState<any[]>([]);
-  const [activeTab, setActiveTab] = useState("Semua");
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-  const [selectedCar, setSelectedCar] = useState<any>(null);
-
-  // Pagination
-  const [currentPage, setCurrentPage] = useState(1);
+  const [cars, setCars]           = useState<any[]>([]);
+  const [cats, setCats]           = useState<any[]>([]);
+  const [tab, setTab]             = useState("Semua");
+  const [loading, setLoading]     = useState(true);
+  const [error, setError]         = useState<string | null>(null);
+  const [modal, setModal]         = useState<any>(null);
+  const [page, setPage]           = useState(1);
+  const [activeVariant, setActiveVariant] = useState(0);
 
   useEffect(() => {
-    async function fetchData() {
+    (async () => {
       try {
-        setLoading(true);
-
-        const [resCars, resCats] = await Promise.all([
-          fetch("/api/cars?limit=50"),
+        const [r1, r2] = await Promise.all([
+          fetch("/api/cars?limit=100"),
           fetch("/api/categories"),
         ]);
-
-        if (!resCars.ok) throw new Error("Gagal mengambil data mobil");
-        if (!resCats.ok) throw new Error("Gagal mengambil data kategori");
-
-        const { data: dataCars } = await resCars.json();
-        const { data: dataCats } = await resCats.json();
-
-        setCars(dataCars);
-        setCategories(dataCats);
-      } catch (err: any) {
-        console.error("Gagal mengambil data:", err);
-        setError(err.message);
+        if (!r1.ok || !r2.ok) throw new Error("Gagal memuat data");
+        const { data: d1 } = await r1.json();
+        const { data: d2 } = await r2.json();
+        setCars(d1 ?? []);
+        setCats(d2 ?? []);
+      } catch (e: any) {
+        setError(e.message);
       } finally {
         setLoading(false);
       }
-    }
-
-    fetchData();
+    })();
   }, []);
 
-  // Filter kategori
-  const filtered =
-    activeTab === "Semua"
-      ? cars
-      : cars.filter((car) => {
-          const cat = car.categoryId;
-          return (cat?.name ?? "") === activeTab;
-        });
+  const filtered = tab === "Semua"
+    ? cars
+    : cars.filter((c) => (c.categoryId?.name ?? "") === tab);
 
-  // Pagination Logic
-  const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
+  const totalPages  = Math.ceil(filtered.length / ITEMS_PER_PAGE);
+  const paginated   = filtered.slice((page - 1) * ITEMS_PER_PAGE, page * ITEMS_PER_PAGE);
 
-  const paginatedCars = filtered.slice(
-    (currentPage - 1) * ITEMS_PER_PAGE,
-    currentPage * ITEMS_PER_PAGE
+  const openModal = useCallback((car: any) => {
+    setModal(car);
+    setActiveVariant(0);
+    document.body.style.overflow = "hidden";
+  }, []);
+
+  const closeModal = useCallback(() => {
+    setModal(null);
+    document.body.style.overflow = "";
+  }, []);
+
+  const waLink = (car: any) =>
+    `https://wa.me/${WA}?text=${encodeURIComponent(
+      `Halo Toyota 👋 Saya tertarik dengan *${car?.fullName}*. Mohon info harga dan stok terkini 🙏`
+    )}`;
+
+  // ── Loading ────────────────────────────────────────────────────
+  if (loading) return (
+    <section id="katalog" className="py-20 px-4 bg-white">
+      <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        {Array.from({ length: 8 }).map((_, i) => (
+          <div key={i} className="rounded-2xl bg-zinc-100 animate-pulse" style={{ height: 280 }} />
+        ))}
+      </div>
+    </section>
   );
 
-  const waBase = "https://wa.me/6282125061466?text=";
-
-  // Loading
-  if (loading) {
-    return (
-      <section id="katalog" className="py-20 px-4">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
-            {Array.from({ length: 8 }).map((_, i) => (
-              <div
-                key={i}
-                className="rounded-3xl bg-slate-100 animate-pulse h-80"
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-    );
-  }
-
-  // Error
-  if (error) {
-    return (
-      <section id="katalog" className="py-20 px-4 text-center">
-        <p className="text-red-500 mb-3">⚠️ {error}</p>
-
-        <button
-          onClick={() => window.location.reload()}
-          className="px-4 py-2 bg-slate-900 text-white rounded-lg text-sm"
-        >
-          Coba Lagi
-        </button>
-      </section>
-    );
-  }
+  // ── Error ──────────────────────────────────────────────────────
+  if (error) return (
+    <section id="katalog" className="py-20 px-4 text-center bg-white">
+      <p className="text-red-500 mb-4 text-sm">⚠️ {error}</p>
+      <button onClick={() => window.location.reload()}
+        className="px-5 py-2 bg-zinc-900 text-white rounded-lg text-sm">
+        Coba Lagi
+      </button>
+    </section>
+  );
 
   return (
-    <section
-      id="katalog"
-      className="relative py-20 md:py-28 px-4 overflow-hidden"
-    >
-      <div className="absolute inset-0 bg-gradient-to-b from-[#f8fafc] via-[#fdfdfd] to-[#eef2f7]" />
+    <>
+      <section id="katalog" className="bg-white py-16 md:py-24 px-4">
+        <div className="max-w-7xl mx-auto">
 
-      <div className="relative max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
-          <div>
-            <p className="text-sm uppercase tracking-[4px] text-red-600 font-semibold mb-3">
-              Koleksi Mobil
+          {/* ── Header ─────────────────────────────────────────── */}
+          <div className="mb-10">
+            <p className="text-[11px] uppercase tracking-[4px] text-red-500 font-semibold mb-3">
+              Katalog Lengkap
             </p>
-
-            <h2 className="text-4xl md:text-6xl font-light text-slate-900 leading-tight">
-              Temukan Mobil
-              <br />
-              <span className="font-semibold bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
-                Impian Anda
-              </span>
-            </h2>
-          </div>
-
-          <p className="text-slate-400 text-sm md:text-right">
-            {filtered.length} unit tersedia
-          </p>
-        </div>
-
-        {/* Filter Tabs */}
-        <div className="flex flex-wrap gap-3 mb-12">
-          <button
-            onClick={() => {
-              setActiveTab("Semua");
-              setCurrentPage(1);
-            }}
-            className={`px-5 py-2.5 rounded-full text-sm border transition-all ${
-              activeTab === "Semua"
-                ? "bg-slate-900 text-white shadow-lg border-slate-900"
-                : "bg-white/70 text-slate-600 border-slate-200 hover:border-slate-400"
-            }`}
-          >
-            Semua
-          </button>
-
-          {categories.map((cat) => (
-            <button
-              key={cat._id}
-              onClick={() => {
-                setActiveTab(cat.name);
-                setCurrentPage(1);
-              }}
-              className={`px-5 py-2.5 rounded-full text-sm border transition-all ${
-                activeTab === cat.name
-                  ? "bg-slate-900 text-white shadow-lg border-slate-900"
-                  : "bg-white/70 text-slate-600 border-slate-200 hover:border-slate-400"
-            }`}
-            >
-              {cat.icon} {cat.name}
-            </button>
-          ))}
-        </div>
-
-        {/* Empty */}
-        {filtered.length === 0 ? (
-          <div className="text-center py-20 text-slate-400">
-            Tidak ada mobil di kategori ini
-          </div>
-        ) : (
-          <>
-            {/* Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
-              {paginatedCars.map((car) => {
-                const firstVariant = car.variants?.[0];
-                
-                // Amankan starting price dari karakter non-angka
-                const cleanStartingPrice = car.startingPrice 
-                  ? String(car.startingPrice).replace(/[^0-9]/g, "") 
-                  : "";
-
-                return (
-                  <div
-                    key={car._id}
-                    className="group rounded-3xl overflow-hidden bg-white/80 backdrop-blur-xl border border-white shadow-sm hover:shadow-xl transition-all duration-500"
-                  >
-                    {/* Image */}
-                    <div className="relative h-52 flex items-center justify-center bg-slate-100 overflow-hidden">
-                      <img
-                        src={car.thumbnailUrl || "https://placehold.co/600x400?text=Toyota"}
-                        alt={car.fullName}
-                        className="p-8 w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
-                        loading="lazy"
-                        onError={(e) => {
-                          const target = e.currentTarget;
-                          target.onerror = null;
-                          target.src = "https://placehold.co/600x400?text=Toyota";
-                        }}
-                      />
-                      {car.label && (
-                        <span
-                          className={`absolute top-4 left-4 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider ${
-                            BADGE_STYLE[car.label] ?? "bg-slate-200 text-slate-600"
-                          }`}
-                        >
-                          {car.label}
-                        </span>
-                      )}
-                    </div>
-
-                    {/* Content */}
-                    <div className="p-5">
-                      <div className="text-[10px] uppercase tracking-[2px] text-slate-400 mb-2">
-                        {car.categoryId?.name ?? "Toyota"}
-                      </div>
-
-                      <h3 className="text-xl font-semibold text-slate-900 mb-4 group-hover:text-red-600 transition-colors leading-tight">
-                        {car.fullName}
-                      </h3>
-
-                      {firstVariant && (
-                        <div className="flex flex-wrap gap-2 mb-4">
-                          {firstVariant.transmission && (
-                            <span className="px-2 py-1 rounded bg-slate-50 text-slate-500 text-[10px]">
-                              {firstVariant.transmission}
-                            </span>
-                          )}
-                          {firstVariant.fuel && (
-                            <span className="px-2 py-1 rounded bg-slate-50 text-slate-500 text-[10px]">
-                              {firstVariant.fuel}
-                            </span>
-                          )}
-                          {firstVariant.seats && (
-                            <span className="px-2 py-1 rounded bg-slate-50 text-slate-500 text-[10px]">
-                              {firstVariant.seats} Seats
-                            </span>
-                          )}
-                        </div>
-                      )}
-
-                      {cleanStartingPrice && (
-                        <p className="text-[11px] text-slate-400 mb-4">
-                          {car.priceLabel}{" "}
-                          <span className="font-bold text-slate-700 text-sm">
-                            Rp {Number(cleanStartingPrice).toLocaleString("id-ID")}
-                          </span>
-                        </p>
-                      )}
-
-                      <div className="pt-3 border-t border-slate-50">
-                        <button
-                          onClick={() => setSelectedCar(car)}
-                          className="w-full flex items-center justify-between group/btn py-3 px-4 rounded-xl bg-slate-50 hover:bg-red-600 transition-all duration-300"
-                        >
-                          <span className="text-sm font-semibold text-slate-700 group-hover/btn:text-white transition-colors">
-                            Lihat Detail & Harga
-                          </span>
-                          <svg
-                            className="w-5 h-5 text-slate-400 group-hover/btn:text-white transition-colors"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M13 7l5 5m0 0l-5 5m5-5H6"
-                            />
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
+            <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+              <h2 className="text-3xl md:text-5xl font-light text-zinc-900 leading-tight">
+                Pilih Mobil<br />
+                <span className="font-semibold text-red-600">Toyota Anda</span>
+              </h2>
+              <p className="text-zinc-400 text-sm shrink-0">
+                {filtered.length} model tersedia
+              </p>
             </div>
+          </div>
 
-            {/* Pagination */}
-            {totalPages > 1 && (
-              <div className="flex justify-center items-center gap-2 mt-12 flex-wrap">
-                <button
-                  onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
-                  disabled={currentPage === 1}
-                  className="px-4 py-2 rounded-xl border text-sm disabled:opacity-40"
-                >
-                  Prev
-                </button>
+          {/* ── Filter Tabs ────────────────────────────────────── */}
+          <div className="flex gap-2 flex-wrap mb-8">
+            {["Semua", ...cats.map((c) => c.name)].map((t) => (
+              <button key={t}
+                onClick={() => { setTab(t); setPage(1); }}
+                className={`px-4 py-2 rounded-full text-xs font-medium border transition-all ${
+                  tab === t
+                    ? "bg-zinc-900 text-white border-zinc-900"
+                    : "bg-white text-zinc-500 border-zinc-200 hover:border-zinc-400"
+                }`}>
+                {cats.find((c) => c.name === t)?.icon} {t}
+              </button>
+            ))}
+          </div>
 
-                {Array.from({ length: totalPages }).map((_, i) => {
-                  const page = i + 1;
+          {/* ── Grid ───────────────────────────────────────────── */}
+          {filtered.length === 0 ? (
+            <p className="text-center py-16 text-zinc-400 text-sm">
+              Tidak ada mobil di kategori ini
+            </p>
+          ) : (
+            <>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+                {paginated.map((car) => {
+                  const badge = BADGE_CFG[car.label ?? ""];
+                  const sp    = fmt(car.startingPrice);
+                  const fv    = car.variants?.[0];
                   return (
-                    <button
-                      key={page}
-                      onClick={() => setCurrentPage(page)}
-                      className={`w-10 h-10 rounded-xl text-sm font-medium transition-all ${
-                        currentPage === page
-                          ? "bg-slate-900 text-white"
-                          : "bg-white border border-slate-200 text-slate-600 hover:border-slate-400"
-                      }`}
-                    >
-                      {page}
+                    <button key={car._id}
+                      onClick={() => openModal(car)}
+                      className="group text-left bg-white border border-zinc-100 rounded-2xl overflow-hidden hover:border-zinc-300 hover:shadow-lg transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+
+                      {/* Image */}
+                      <div className="relative bg-zinc-50 flex items-center justify-center overflow-hidden"
+                        style={{ height: 148 }}>
+                        <img
+                          src={car.thumbnailUrl || `https://placehold.co/400x280/f4f4f5/a1a1aa?text=${encodeURIComponent(car.name)}`}
+                          alt={car.fullName}
+                          className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+                          loading="lazy"
+                          onError={(e) => {
+                            e.currentTarget.src = `https://placehold.co/400x280/f4f4f5/a1a1aa?text=${encodeURIComponent(car.name)}`;
+                          }}
+                        />
+                        {badge && (
+                          <span className={`absolute top-2.5 left-2.5 px-2 py-0.5 rounded-full text-[9px] font-bold uppercase tracking-wide ${badge.bg} ${badge.text}`}>
+                            {badge.label}
+                          </span>
+                        )}
+                      </div>
+
+                      {/* Body */}
+                      <div className="p-3.5">
+                        <p className="text-[9px] uppercase tracking-[2px] text-zinc-400 mb-1">
+                          {car.categoryId?.name ?? "Toyota"}
+                        </p>
+                        <h3 className="text-sm font-semibold text-zinc-900 leading-snug mb-2 group-hover:text-red-600 transition-colors line-clamp-2">
+                          {car.fullName}
+                        </h3>
+
+                        {/* Spek pills */}
+                        {fv && (
+                          <div className="flex flex-wrap gap-1 mb-3">
+                            {fv.fuel && (
+                              <span className="text-[9px] px-1.5 py-0.5 bg-zinc-100 text-zinc-500 rounded">
+                                {fv.fuel}
+                              </span>
+                            )}
+                            {fv.transmission && (
+                              <span className="text-[9px] px-1.5 py-0.5 bg-zinc-100 text-zinc-500 rounded">
+                                {fv.transmission}
+                              </span>
+                            )}
+                            {fv.seats && (
+                              <span className="text-[9px] px-1.5 py-0.5 bg-zinc-100 text-zinc-500 rounded">
+                                {fv.seats} kursi
+                              </span>
+                            )}
+                          </div>
+                        )}
+
+                        {/* Price */}
+                        <div className="border-t border-zinc-50 pt-2.5 flex items-end justify-between gap-1">
+                          <div>
+                            {sp ? (
+                              <>
+                                <p className="text-[9px] text-zinc-400">Mulai dari</p>
+                                <p className="text-xs font-bold text-zinc-900">{sp}</p>
+                              </>
+                            ) : (
+                              <p className="text-xs font-medium text-red-500">Hubungi Kami</p>
+                            )}
+                          </div>
+                          <span className="text-[9px] text-red-500 font-medium flex items-center gap-0.5 shrink-0">
+                            Detail
+                            <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
                     </button>
                   );
                 })}
-
-                <button
-                  onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
-                  disabled={currentPage === totalPages}
-                  className="px-4 py-2 rounded-xl border text-sm disabled:opacity-40"
-                >
-                  Next
-                </button>
               </div>
-            )}
-          </>
-        )}
-      </div>
 
-      {/* MODAL MINIMALIS */}
-      {selectedCar && (
-        <div
-          className="fixed inset-0 z-[999] flex items-center justify-center p-4 bg-slate-900/70 backdrop-blur-sm"
-          onClick={() => setSelectedCar(null)}
-        >
-          <div
-            className="relative bg-white w-full max-w-4xl rounded-[32px] overflow-hidden shadow-2xl animate-in fade-in zoom-in duration-300 max-h-[95vh] overflow-y-auto"
-            onClick={(e) => e.stopPropagation()}
-          >
-            {/* CLOSE BUTTON */}
-            <button
-              onClick={() => setSelectedCar(null)}
-              className="absolute top-5 right-5 z-20 w-11 h-11 rounded-full bg-white/90 backdrop-blur shadow-lg flex items-center justify-center text-slate-700 hover:bg-red-500 hover:text-white transition-all"
-            >
-              ✕
-            </button>
-
-            {/* HEADER */}
-            <div className="relative bg-gradient-to-br from-slate-100 via-slate-50 to-white p-6 md:p-8 overflow-hidden">
-              <div className="absolute -top-20 -right-20 w-72 h-72 bg-red-100 rounded-full blur-3xl opacity-40" />
-              {selectedCar?.label && (
-                <span
-                  className={`absolute top-5 left-5 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider ${
-                    BADGE_STYLE[selectedCar.label] ?? "bg-slate-200 text-slate-700"
-                  }`}
-                >
-                  {selectedCar.label}
-                </span>
+              {/* ── Pagination ──────────────────────────────────── */}
+              {totalPages > 1 && (
+                <div className="flex justify-center items-center gap-1.5 mt-10 flex-wrap">
+                  <button onClick={() => setPage((p) => Math.max(p - 1, 1))}
+                    disabled={page === 1}
+                    className="w-8 h-8 rounded-lg border border-zinc-200 text-zinc-500 text-xs disabled:opacity-30 hover:border-zinc-400 transition-all flex items-center justify-center">
+                    ‹
+                  </button>
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((pg) => (
+                    <button key={pg} onClick={() => setPage(pg)}
+                      className={`w-8 h-8 rounded-lg text-xs font-medium transition-all ${
+                        pg === page
+                          ? "bg-zinc-900 text-white"
+                          : "border border-zinc-200 text-zinc-500 hover:border-zinc-400"
+                      }`}>
+                      {pg}
+                    </button>
+                  ))}
+                  <button onClick={() => setPage((p) => Math.min(p + 1, totalPages))}
+                    disabled={page === totalPages}
+                    className="w-8 h-8 rounded-lg border border-zinc-200 text-zinc-500 text-xs disabled:opacity-30 hover:border-zinc-400 transition-all flex items-center justify-center">
+                    ›
+                  </button>
+                </div>
               )}
-              <img
-                src={selectedCar?.thumbnailUrl || "https://placehold.co/1000x600?text=Toyota"}
-                alt={selectedCar?.fullName}
-                className="relative z-10 w-full h-[220px] md:h-[280px] object-contain drop-shadow-xl"
-                onError={(e) => {
-                  e.currentTarget.src = "https://placehold.co/1000x600?text=Toyota";
-                }}
-              />
+            </>
+          )}
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════════════
+          MODAL
+      ══════════════════════════════════════════════════════════ */}
+      {modal && (
+        <div
+          className="fixed inset-0 z-[999] flex items-end sm:items-center justify-center bg-zinc-900/60 backdrop-blur-sm p-0 sm:p-4"
+          onClick={closeModal}>
+          <div
+            className="relative bg-white w-full sm:max-w-3xl rounded-t-3xl sm:rounded-3xl shadow-2xl flex flex-col overflow-hidden"
+            style={{ maxHeight: "92vh" }}
+            onClick={(e) => e.stopPropagation()}>
+
+            {/* ── Modal Header ─────────────────────────────────── */}
+            <div className="relative shrink-0">
+              {/* Car image bg */}
+              <div className="bg-gradient-to-b from-zinc-50 to-white flex items-center justify-center px-8 pt-10 pb-4"
+                style={{ minHeight: 180 }}>
+                <img
+                  src={modal.thumbnailUrl || `https://placehold.co/600x360/f4f4f5/a1a1aa?text=${encodeURIComponent(modal.name)}`}
+                  alt={modal.fullName}
+                  className="max-h-40 w-auto object-contain drop-shadow-md"
+                  onError={(e) => {
+                    e.currentTarget.src = `https://placehold.co/600x360/f4f4f5/a1a1aa?text=${encodeURIComponent(modal.name)}`;
+                  }}
+                />
+                {/* Badge */}
+                {modal.label && BADGE_CFG[modal.label] && (
+                  <span className={`absolute top-4 left-4 px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wide ${BADGE_CFG[modal.label].bg} ${BADGE_CFG[modal.label].text}`}>
+                    {BADGE_CFG[modal.label].label}
+                  </span>
+                )}
+              </div>
+
+              {/* Title */}
+              <div className="px-5 pb-4 border-b border-zinc-100">
+                <p className="text-[10px] uppercase tracking-[3px] text-red-500 font-semibold mb-0.5">
+                  {modal.categoryId?.name ?? "Toyota"}
+                </p>
+                <div className="flex items-start justify-between gap-3">
+                  <div>
+                    <h2 className="text-xl font-bold text-zinc-900 leading-tight">{modal.fullName}</h2>
+                    {modal.tagline && (
+                      <p className="text-xs text-zinc-400 mt-0.5">{modal.tagline}</p>
+                    )}
+                  </div>
+                  <button onClick={closeModal}
+                    className="shrink-0 w-8 h-8 rounded-full bg-zinc-100 hover:bg-red-100 hover:text-red-600 flex items-center justify-center text-zinc-500 transition-all text-sm mt-0.5">
+                    ✕
+                  </button>
+                </div>
+              </div>
             </div>
 
-            {/* BODY */}
-            <div className="p-6 md:p-10 pt-4">
-              <div className="text-xs uppercase tracking-[4px] text-red-500 font-semibold mb-2">
-                {selectedCar?.categoryId?.name || "Toyota"}
-              </div>
+            {/* ── Modal Body (scrollable) ───────────────────────── */}
+            <div className="overflow-y-auto flex-1">
 
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 leading-tight mb-2">
-                {selectedCar?.fullName}
-              </h2>
-
-              {selectedCar?.tagline && (
-                <p className="text-sm md:text-base text-slate-500 mb-6">{selectedCar.tagline}</p>
-              )}
-
-              {/* MINIMALIST TABLE PRICE + SPECIFICATIONS */}
-              {selectedCar?.variants?.length > 0 && (
-                <div className="mb-8">
-                  <div className="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm bg-white">
-                    <table className="w-full text-left border-collapse min-w-[650px]">
-                      <thead>
-                        <tr className="bg-slate-900 text-white text-xs uppercase tracking-wider">
-                          <th className="py-4 px-5 font-semibold w-[45%]">Varian & Spesifikasi</th>
-                          <th className="py-4 px-5 font-semibold text-center bg-slate-950 w-[27.5%]">Harga Plat B</th>
-                          <th className="py-4 px-5 font-semibold text-center bg-red-950 w-[27.5%]">Harga Plat F</th>
-                        </tr>
-                      </thead>
-                      <tbody className="divide-y divide-slate-100 text-sm">
-                        {selectedCar.variants.map((variant: any, idx: number) => {
-                          
-                          // AMBIL DATA DARI SEED: HARGA DIKEMAS DALAM SATU OBJEK TUNGGAL
-                          console.log(variant.prices[0])
-                          const priceObj = variant.prices?.[0];
-                          const rawPriceA = priceObj?.platB ?? priceObj?.price; // fallback ke .price jika key-nya berubah
-                          const rawPriceB = priceObj?.platF;
-                          const isPriceOnRequest = priceObj?.priceOnRequest;
-
-                          // FUNGSI RENDER AMAN TANPA NaN
-                          const renderPrice = (val: any) => {
-                            if (isPriceOnRequest) {
-                              return <span className="text-orange-500 font-semibold">Hubungi Kami</span>;
-                            }
-                            if (val === undefined || val === null || val === "") {
-                              return <span className="text-slate-400 font-normal">-</span>;
-                            }
-
-                            // Bersihkan karakter aneh jika data dikirim dalam bentuk string berformat
-                            const cleaned = String(val).replace(/[^0-9]/g, "");
-                            if (!cleaned) return <span className="text-slate-400 font-normal">-</span>;
-
-                            return `Rp ${Number(cleaned).toLocaleString("id-ID")}`;
-                          };
-
-                          return (
-                            <tr key={idx} className="hover:bg-slate-50/60 transition-colors align-top">
-                              {/* KOLOM VARIAN + SPESIFIKASI GABUNGAN */}
-                              <td className="py-4 px-5 text-slate-900">
-                                <span className="font-bold text-base block text-slate-950">{variant.name}</span>
-                                
-                                {/* Quick Mini Badges */}
-                                <div className="flex flex-wrap gap-1 mt-1.5 mb-2.5">
-                                  {variant.transmission && (
-                                    <span className="px-1.5 py-0.5 rounded bg-slate-100 text-slate-600 text-[10px] font-medium">
-                                      {variant.transmission}
-                                    </span>
-                                  )}
-                                  {variant.fuel && (
-                                    <span className="px-1.5 py-0.5 rounded bg-slate-100 text-slate-600 text-[10px] font-medium">
-                                      {variant.fuel}
-                                    </span>
-                                  )}
-                                  {variant.seats && (
-                                    <span className="px-1.5 py-0.5 rounded bg-slate-100 text-slate-600 text-[10px] font-medium">
-                                      {variant.seats} Seats
-                                    </span>
-                                  )}
-                                  {variant.engineCc && (
-                                    <span className="px-1.5 py-0.5 rounded bg-slate-100 text-slate-600 text-[10px] font-medium">
-                                      {variant.engineCc}cc
-                                    </span>
-                                  )}
-                                </div>
-
-                                {/* Detail Specs List */}
-                                {variant.specs?.length > 0 && (
-                                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-0.5 pt-2 border-t border-slate-100 text-[11px]">
-                                    {variant.specs.map((spec: any, sIndex: number) => (
-                                      <div key={sIndex} className="flex justify-between sm:justify-start sm:gap-1.5 text-slate-500">
-                                        <span className="text-slate-400">{spec.specKey}:</span>
-                                        <span className="font-medium text-slate-700">{spec.specValue}</span>
-                                      </div>
-                                    ))}
-                                  </div>
-                                )}
-                              </td>
-
-                              {/* HARGA PLAT A */}
-                              <td className="py-4 px-5 text-center font-semibold text-slate-700 bg-slate-50/30 whitespace-nowrap pt-5">
-                                {renderPrice(rawPriceA)}
-                              </td>
-
-                              {/* HARGA PLAT B */}
-                              <td className="py-4 px-5 text-center font-bold text-slate-700 bg-red-50/5 whitespace-nowrap pt-5">
-                                {renderPrice(rawPriceB)}
-                              </td>
-                            </tr>
-                          );
-                        })}
-                      </tbody>
-                    </table>
-                  </div>
-                  <p className="text-[11px] text-slate-400 mt-2 italic">
-                    * Harga OTR tertera tidak mengikat dan dapat berubah sewaktu-waktu.
+              {/* Variant tabs — kalau lebih dari 1 */}
+              {modal.variants?.length > 1 && (
+                <div className="px-5 pt-4 pb-0">
+                  <p className="text-[10px] uppercase tracking-[2px] text-zinc-400 font-medium mb-2">
+                    Pilih Varian
                   </p>
+                  <div className="flex gap-2 flex-wrap">
+                    {modal.variants.map((v: any, i: number) => (
+                      <button key={i}
+                        onClick={() => setActiveVariant(i)}
+                        className={`px-3 py-1.5 rounded-lg text-xs font-medium border transition-all ${
+                          activeVariant === i
+                            ? "bg-zinc-900 text-white border-zinc-900"
+                            : "border-zinc-200 text-zinc-600 hover:border-zinc-400"
+                        }`}>
+                        {v.name}
+                      </button>
+                    ))}
+                  </div>
                 </div>
               )}
 
-              {/* CTA BUTTONS */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <a
-                  href={`${waBase}${encodeURIComponent(
-                    `Halo Toyota 👋 Saya tertarik dengan ${selectedCar?.fullName}, boleh minta info simulasi kredit OTR terbaru?`
-                  )}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-3 py-3.5 rounded-2xl bg-green-500 hover:bg-green-600 text-white font-bold transition-all shadow-lg hover:shadow-green-200 text-center text-sm"
-                >
-                  <span>Chat WhatsApp</span>
-                </a>
-                <button
-                  onClick={() => setSelectedCar(null)}
-                  className="py-3.5 rounded-2xl border border-slate-300 hover:bg-slate-100 font-bold text-slate-700 transition text-sm"
-                >
-                  Tutup
-                </button>
-              </div>
+              {/* Active variant detail */}
+              {modal.variants?.length > 0 && (() => {
+                const v = modal.variants[activeVariant] ?? modal.variants[0];
+                return (
+                  <div className="px-5 pt-4">
+
+                    {/* Spek pills */}
+                    <div className="flex flex-wrap gap-1.5 mb-4">
+                      {[
+                        v.fuel,
+                        v.transmission,
+                        v.seats && `${v.seats} Kursi`,
+                        v.engineCc && `${v.engineCc}cc`,
+                        v.drivetrain,
+                      ].filter(Boolean).map((tag: string) => (
+                        <span key={tag} className="text-[10px] px-2 py-1 bg-zinc-100 text-zinc-600 rounded-md font-medium">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+
+                    {/* ── Tabel Harga ───────────────────────────── */}
+                    {v.prices?.length > 0 && (
+                      <div className="mb-4">
+                        <p className="text-[10px] uppercase tracking-[2px] text-zinc-400 font-medium mb-2">
+                          Daftar Harga OTR Bogor
+                        </p>
+
+                        {/* Mobile: card list */}
+                        <div className="sm:hidden flex flex-col divide-y divide-zinc-100 border border-zinc-100 rounded-xl overflow-hidden">
+                          {v.prices.map((p: any, pi: number) => (
+                            <div key={pi} className={`px-4 py-3 ${pi % 2 === 0 ? "bg-white" : "bg-zinc-50/60"}`}>
+                              <p className="text-xs font-semibold text-zinc-800 mb-1.5">{p.label}</p>
+                              <div className="grid grid-cols-2 gap-2">
+                                <div>
+                                  <p className="text-[9px] text-zinc-400 mb-0.5">Plat B</p>
+                                  {p.priceOnRequest ? (
+                                    <p className="text-xs font-bold text-orange-500">Hubungi Kami</p>
+                                  ) : (
+                                    <p className="text-xs font-bold text-zinc-900">
+                                      {fmt(p.platB) ?? <span className="text-zinc-300">—</span>}
+                                    </p>
+                                  )}
+                                </div>
+                                <div>
+                                  <p className="text-[9px] text-zinc-400 mb-0.5">Plat F</p>
+                                  {p.priceOnRequest ? (
+                                    <p className="text-xs font-bold text-orange-500">Hubungi Kami</p>
+                                  ) : (
+                                    <p className="text-xs font-bold text-zinc-900">
+                                      {fmt(p.platF) ?? <span className="text-zinc-300">—</span>}
+                                    </p>
+                                  )}
+                                </div>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+
+                        {/* Desktop: table */}
+                        <div className="hidden sm:block overflow-x-auto rounded-xl border border-zinc-100">
+                          <table className="w-full text-left border-collapse">
+                            <thead>
+                              <tr className="bg-zinc-900 text-white text-[10px] uppercase tracking-wider">
+                                <th className="py-3 px-4 font-semibold">Tipe</th>
+                                <th className="py-3 px-4 font-semibold text-right">Plat B</th>
+                                <th className="py-3 px-4 font-semibold text-right">Plat F</th>
+                              </tr>
+                            </thead>
+                            <tbody className="divide-y divide-zinc-50">
+                              {v.prices.map((p: any, pi: number) => (
+                                <tr key={pi} className={`transition-colors hover:bg-zinc-50 ${pi % 2 === 0 ? "" : "bg-zinc-50/40"}`}>
+                                  <td className="py-3 px-4 text-xs font-medium text-zinc-800">
+                                    {p.label}
+                                  </td>
+                                  <td className="py-3 px-4 text-xs font-bold text-right text-zinc-900">
+                                    {p.priceOnRequest
+                                      ? <span className="text-orange-500 font-semibold">Hubungi Kami</span>
+                                      : (fmt(p.platB) ?? <span className="text-zinc-300 font-normal">—</span>)
+                                    }
+                                  </td>
+                                  <td className="py-3 px-4 text-xs font-bold text-right text-zinc-900">
+                                    {p.priceOnRequest
+                                      ? <span className="text-orange-500 font-semibold">Hubungi Kami</span>
+                                      : (fmt(p.platF) ?? <span className="text-zinc-300 font-normal">—</span>)
+                                    }
+                                  </td>
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        </div>
+
+                        <p className="text-[10px] text-zinc-400 italic mt-2">
+                          * Harga tidak mengikat, dapat berubah sewaktu-waktu.
+                        </p>
+                      </div>
+                    )}
+
+                    {/* ── Spesifikasi Teknis ────────────────────── */}
+                    {v.specs?.length > 0 && (
+                      <div className="mb-4">
+                        <p className="text-[10px] uppercase tracking-[2px] text-zinc-400 font-medium mb-2">
+                          Spesifikasi Teknis
+                        </p>
+                        <div className="rounded-xl border border-zinc-100 overflow-hidden">
+                          {Object.entries(
+                            v.specs.reduce((acc: any, s: any) => {
+                              acc[s.category] = acc[s.category] ?? [];
+                              acc[s.category].push(s);
+                              return acc;
+                            }, {})
+                          ).map(([cat, specs]: [string, any]) => (
+                            <div key={cat}>
+                              <div className="bg-zinc-50 px-4 py-2 border-b border-zinc-100">
+                                <p className="text-[10px] font-semibold text-zinc-500 uppercase tracking-wider">{cat}</p>
+                              </div>
+                              {specs.map((s: any, si: number) => (
+                                <div key={si} className={`flex justify-between items-center px-4 py-2.5 border-b border-zinc-50 last:border-0 ${si % 2 === 0 ? "bg-white" : "bg-zinc-50/30"}`}>
+                                  <span className="text-xs text-zinc-500">{s.specKey}</span>
+                                  <span className="text-xs font-medium text-zinc-800 text-right ml-4">{s.specValue}</span>
+                                </div>
+                              ))}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* ── Pilihan Warna ─────────────────────────── */}
+                    {modal.colors?.length > 0 && (
+                      <div className="mb-4">
+                        <p className="text-[10px] uppercase tracking-[2px] text-zinc-400 font-medium mb-2">
+                          Pilihan Warna
+                        </p>
+                        <div className="flex flex-wrap gap-3">
+                          {modal.colors.map((c: any) => (
+                            <div key={c._id ?? c.name} className="flex flex-col items-center gap-1 group">
+                              <div
+                                className="w-8 h-8 rounded-full border-2 border-white shadow ring-1 ring-zinc-200 group-hover:scale-110 transition-transform"
+                                style={{ backgroundColor: c.hexCode ?? "#ccc" }}
+                                title={c.name}
+                              />
+                              <span className="text-[9px] text-zinc-400 text-center max-w-[56px] leading-tight">
+                                {c.name}
+                              </span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                );
+              })()}
+            </div>
+
+            {/* ── Modal Footer ─────────────────────────────────── */}
+            <div className="shrink-0 border-t border-zinc-100 p-4 flex gap-2.5 bg-white">
+              <button onClick={closeModal}
+                className="flex-1 py-3 rounded-xl border border-zinc-200 text-xs font-semibold text-zinc-600 hover:bg-zinc-50 transition-all">
+                Tutup
+              </button>
+              <a
+                href={waLink(modal)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-[2] py-3 rounded-xl bg-[#25D366] hover:bg-[#1fb85a] text-white text-xs font-bold flex items-center justify-center gap-2 transition-all shadow-md shadow-green-100">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                  <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm.029 18.88a7.946 7.946 0 01-3.786-.964L4.5 19.5l1.617-3.664a7.93 7.93 0 01-1.046-3.948c0-4.411 3.588-7.999 8-7.999s8 3.588 8 8-3.589 7.991-8.042 7.991z"/>
+                </svg>
+                Tanya via WhatsApp
+              </a>
             </div>
           </div>
         </div>
       )}
-    </section>
+    </>
   );
 }

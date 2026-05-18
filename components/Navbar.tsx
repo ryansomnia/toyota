@@ -7,7 +7,7 @@ const NAV_ITEMS = [
    { label: "Katalog", targetId: "katalog" },
   { label: "Promo", targetId: "promo" },
 
-  { label: "Hubu", targetId: "tentang" },
+  { label: "Tentang", targetId: "tentang" },
 ];
 
 export default function Navbar() {

@@ -6,6 +6,7 @@
 
 import "dotenv/config";
 import mongoose, { Types } from "mongoose";
+import { Article } from "@/models/Articles";
 
 // ── Connect ──────────────────────────────────────────────────────
 
@@ -1735,6 +1736,79 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
   ]; // end return
 }
 
+
+const articles = [
+  {
+    title: "Promo Fortuner GR Sport Mei 2026",
+    slug: "promo-fortuner-gr-sport-mei-2026",
+
+    excerpt:
+      "Dapatkan promo spesial Fortuner GR Sport dengan DP ringan dan cicilan fleksibel bulan ini.",
+
+    thumbnailUrl:
+      "/images/banner/alphard.png",
+
+    bannerUrl:
+      "/images/banner/alphard.png",
+
+    type: "carousel",
+
+    tags: ["fortuner", "promo", "grsport"],
+
+    isFeatured: true,
+    isActive: true,
+
+    publishedAt: new Date(),
+  },
+
+  {
+    title: "Toyota Zenix Hybrid Semakin Irit",
+    slug: "toyota-innovazenix-semakin-irit",
+
+    excerpt:
+      "Teknologi hybrid terbaru Toyota menghadirkan efisiensi bahan bakar dan kenyamanan maksimal.",
+
+    thumbnailUrl:
+      "/images/banner/innovazenix.png",
+
+    bannerUrl:
+      "/images/banner/innovazenix.png",
+
+    type: "carousel",
+
+    tags: ["zenix", "hybrid", "toyota"],
+
+    isFeatured: true,
+    isActive: true,
+
+    publishedAt: new Date(),
+  },
+
+  {
+    title: "Diskon DP Ringan Agya GR",
+    slug: "diskon-dp-ringan-toyota",
+
+    excerpt:
+      "Promo khusus Agya GR dengan simulasi kredit ringan untuk anak muda aktif.",
+
+    thumbnailUrl:
+      "/images/banner/toyota.png",
+
+    bannerUrl:
+      "/images/banner/toyota.png",
+
+    type: "carousel",
+
+    tags: ["agya", "promo", "citycar"],
+
+    isFeatured: true,
+    isActive: true,
+
+    publishedAt: new Date(),
+  }
+];
+
+
 // ── Main Seeder ───────────────────────────────────────────────────
 
 async function seed() {
@@ -1774,6 +1848,44 @@ async function seed() {
 
   console.log(`\n✅ Done! Inserted: ${inserted}, Updated: ${updated}`);
   console.log(`   Total cars: ${carsData.length} | Categories: ${CATEGORIES.length}`);
+
+
+
+   // ─────────────────────────────────────────────────────────────
+  // 3. ARTICLES / CAROUSEL
+  // ─────────────────────────────────────────────────────────────
+
+  console.log("\n📰 Seeding articles...");
+
+  let articleInserted = 0;
+  let articleUpdated = 0;
+
+  for (const article of articles) {
+    const existing = await Article.findOne({
+      slug: article.slug,
+    });
+
+    if (existing) {
+      await Article.findOneAndUpdate(
+        { slug: article.slug },
+        { $set: article }
+      );
+
+      console.log(`  🔄 Updated: ${article.title}`);
+
+      articleUpdated++;
+    } else {
+      await Article.create(article);
+
+      console.log(`  ✅ Inserted: ${article.title}`);
+
+      articleInserted++;
+    }
+  }
+
+  console.log(
+    `\n✅ Articles Done! Inserted: ${articleInserted}, Updated: ${articleUpdated}`
+  );
 
   await mongoose.disconnect();
   console.log("🔌 MongoDB disconnected");
