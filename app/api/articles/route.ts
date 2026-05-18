@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { connectDB } from "@/lib/connectDB";
 import { Article } from "@/models/Articles";
-
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 export async function GET(req: NextRequest) {
   try {
     await connectDB();
