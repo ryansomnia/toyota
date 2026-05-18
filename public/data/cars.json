@@ -11,7 +11,7 @@
     "bannerUrl": "/images/cars/fortuner-gr-sport/banner.jpg",
     "thumbnailUrl": "/images/cars/fortuner-gr-sport/thumbnail.jpg",
     "brochureUrl": "/files/brochure-fortuner-gr-sport.pdf",
-    "startingPrice": 584500000,
+    "startingPrice": 617800000,
     "priceLabel": "Starting from",
     "label": "GR SPORT",
     "isNew": true,
@@ -34,193 +34,20 @@
         "sortOrder": 1,
         "prices": [
           {
-            "id": 9000,
-            "label": "A/T 2.8 VRZ 4X2 Diesel",
-            "platB": 652800000,
-            "platF": 654200000,
+            "id": 1001,
+            "label": "2.7 SRZ 4x2 A/T Non RSE",
+            "price": 617800000,
             "isBasePrice": true,
             "priceOnRequest": false,
             "sortOrder": 1
           },
           {
-            "id": 9001,
-            "label": "A/T 2.8 VRZ TSS 4X2",
-            "platB": 668700000,
-            "platF": 670100000,
+            "id": 1002,
+            "label": "2.7 SRZ 4x2 A/T",
+            "price": 623400000,
             "isBasePrice": false,
             "priceOnRequest": false,
             "sortOrder": 2
-          },
-          {
-            "id": 9002,
-            "label": "GRS TSS 4X2 1T",
-            "platB": 679300000,
-            "platF": 680700000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 3
-          },
-          {
-            "id": 9003,
-            "label": "GRS TSS 4X2 2T",
-            "platB": 684300000,
-            "platF": 685700000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 4
-          },
-          {
-            "id": 9004,
-            "label": "GRS TSS 4X2 P",
-            "platB": 682300000,
-            "platF": 683700000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 5
-          },
-          {
-            "id": 9005,
-            "label": "4X2 NON RSE",
-            "platB": 647100000,
-            "platF": 648600000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 6
-          },
-          {
-            "id": 9006,
-            "label": "TSS 4X2 NON RSE",
-            "platB": 663000000,
-            "platF": 664400000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 7
-          },
-          {
-            "id": 9007,
-            "label": "GRS TSS 4X2 NON RSE",
-            "platB": 673500000,
-            "platF": 675000000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 8
-          },
-          {
-            "id": 9008,
-            "label": "4X4 NON RSE",
-            "platB": 752600000,
-            "platF": 753600000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 9
-          },
-          {
-            "id": 9009,
-            "label": "4X4 GRS TSS NON RSE",
-            "platB": 783900000,
-            "platF": 784700000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 10
-          },
-          {
-            "id": 9010,
-            "label": "4X4",
-            "platB": 758400000,
-            "platF": 759200000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 11
-          },
-          {
-            "id": 9011,
-            "label": "GRS 4X4 2T",
-            "platB": 794600000,
-            "platF": 795400000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 12
-          },
-          {
-            "id": 9012,
-            "label": "GRS 4X4 1T",
-            "platB": 789600000,
-            "platF": 790600000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 13
-          },
-          {
-            "id": 9013,
-            "label": "M/T 2.4 G",
-            "platB": 584500000,
-            "platF": 586500000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 14
-          },
-          {
-            "id": 9014,
-            "label": "A/T 2.4 G",
-            "platB": 602600000,
-            "platF": 604200000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 15
-          },
-          {
-            "id": 9015,
-            "label": "A/T 2.7 SRZ RSE (Bensin)",
-            "platB": 626100000,
-            "platF": 627500000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 16
-          },
-          {
-            "id": 9016,
-            "label": "A/T 2.7 SRZ NON RSE (Bensin)",
-            "platB": 620500000,
-            "platF": 622000000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 17
-          },
-          {
-            "id": 9017,
-            "label": "GRS RSE",
-            "platB": 629900000,
-            "platF": 631300000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 18
-          },
-          {
-            "id": 9018,
-            "label": "GRS 1T",
-            "platB": 635500000,
-            "platF": 636900000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 19
-          },
-          {
-            "id": 9019,
-            "label": "GRS 1T P",
-            "platB": 638500000,
-            "platF": 639900000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 20
-          },
-          {
-            "id": 9020,
-            "label": "GRS 2T P",
-            "platB": 640600000,
-            "platF": 642000000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 21
           }
         ],
         "specs": [
@@ -462,7 +289,7 @@
     "bannerUrl": "/images/cars/fortuner-g/banner.jpg",
     "thumbnailUrl": "/images/cars/fortuner-g/thumbnail.jpg",
     "brochureUrl": "/files/brochure-fortuner-g.pdf",
-    "startingPrice": 584500000,
+    "startingPrice": 583700000,
     "priceLabel": "Starting from",
     "label": null,
     "isNew": true,
@@ -485,22 +312,12 @@
         "sortOrder": 1,
         "prices": [
           {
-            "id": 9100,
-            "label": "M/T 2.4 G",
-            "platB": 584500000,
-            "platF": 586500000,
+            "id": 2001,
+            "label": "2.4 G M/T",
+            "price": 583700000,
             "isBasePrice": true,
             "priceOnRequest": false,
             "sortOrder": 1
-          },
-          {
-            "id": 9101,
-            "label": "A/T 2.4 G",
-            "platB": 602600000,
-            "platF": 604200000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 2
           }
         ],
         "specs": [
@@ -696,40 +513,12 @@
         "sortOrder": 1,
         "prices": [
           {
-            "id": 9200,
-            "label": "M/T 1.5 G",
-            "platB": 289400000,
-            "platF": 296400000,
+            "id": 3001,
+            "label": "1.5 G M/T",
+            "price": 289400000,
             "isBasePrice": true,
             "priceOnRequest": false,
             "sortOrder": 1
-          },
-          {
-            "id": 9201,
-            "label": "A/T 1.5 G",
-            "platB": 300400000,
-            "platF": 307300000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 2
-          },
-          {
-            "id": 9202,
-            "label": "M/T 1.5 S GRS",
-            "platB": 304800000,
-            "platF": 311800000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 3
-          },
-          {
-            "id": 9203,
-            "label": "A/T 1.5 S GRS",
-            "platB": 315600000,
-            "platF": 322500000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 4
           }
         ],
         "specs": [
@@ -913,67 +702,12 @@
         "sortOrder": 1,
         "prices": [
           {
-            "id": 9300,
-            "label": "M/T 1.2 G",
-            "platB": 243500000,
-            "platF": 246900000,
+            "id": 4001,
+            "label": "1.2 G M/T",
+            "price": 243500000,
             "isBasePrice": true,
             "priceOnRequest": false,
             "sortOrder": 1
-          },
-          {
-            "id": 9301,
-            "label": "CVT 1.2 G",
-            "platB": 258600000,
-            "platF": 262100000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 2
-          },
-          {
-            "id": 9302,
-            "label": "M/T 1.0T G",
-            "platB": 262700000,
-            "platF": 266100000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 3
-          },
-          {
-            "id": 9303,
-            "label": "CVT 1.0T G",
-            "platB": 277800000,
-            "platF": 281200000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 4
-          },
-          {
-            "id": 9304,
-            "label": "CVT 1.0T GR 1T",
-            "platB": 292100000,
-            "platF": 295400000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 5
-          },
-          {
-            "id": 9305,
-            "label": "CVT 1.0T GRS 2T",
-            "platB": 294700000,
-            "platF": 297900000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 6
-          },
-          {
-            "id": 9306,
-            "label": "CVT 1.0T GRS TSS 2T",
-            "platB": 317100000,
-            "platF": 320300000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 7
           }
         ],
         "specs": [
@@ -1160,166 +894,12 @@
         "sortOrder": 1,
         "prices": [
           {
-            "id": 9400,
-            "label": "M/T 1.5 G",
-            "platB": 359700000,
-            "platF": 362600000,
+            "id": 5001,
+            "label": "1.5 G M/T",
+            "price": 359700000,
             "isBasePrice": true,
             "priceOnRequest": false,
             "sortOrder": 1
-          },
-          {
-            "id": 9401,
-            "label": "CVT 1.5 G",
-            "platB": 372900000,
-            "platF": 376000000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 2
-          },
-          {
-            "id": 9402,
-            "label": "CVT 1.5 S TSS",
-            "platB": 417600000,
-            "platF": 420000000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 3
-          },
-          {
-            "id": 9403,
-            "label": "CVT 1.5 S TSS P",
-            "platB": 420100000,
-            "platF": 422500000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 4
-          },
-          {
-            "id": 9404,
-            "label": "CVT 1.5 S GR TSS",
-            "platB": 427000000,
-            "platF": 429400000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 5
-          },
-          {
-            "id": 9405,
-            "label": "CVT 1.5 S GR TSS P",
-            "platB": 430000000,
-            "platF": 432400000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 6
-          },
-          {
-            "id": 9406,
-            "label": "HEV 1.5 G",
-            "platB": 399000000,
-            "platF": 399000000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 7
-          },
-          {
-            "id": 9407,
-            "label": "HEV 1.5 G PC",
-            "platB": 401500000,
-            "platF": 401500000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 8
-          },
-          {
-            "id": 9408,
-            "label": "HEV 1.5 G 2T",
-            "platB": 403000000,
-            "platF": 403000000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 9
-          },
-          {
-            "id": 9409,
-            "label": "HEV 1.5 G 2T PC",
-            "platB": 404000000,
-            "platF": 404000000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 10
-          },
-          {
-            "id": 9410,
-            "label": "HEV 1.5 S TSS",
-            "platB": 448800000,
-            "platF": 451700000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 11
-          },
-          {
-            "id": 9411,
-            "label": "HEV 1.5 S TSS 2T",
-            "platB": 452800000,
-            "platF": 455700000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 12
-          },
-          {
-            "id": 9412,
-            "label": "HEV 1.5 S GR TSS",
-            "platB": 458200000,
-            "platF": 461100000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 13
-          },
-          {
-            "id": 9413,
-            "label": "HEV 1.5 S GR TSS 2T",
-            "platB": 462200000,
-            "platF": 465200000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 14
-          },
-          {
-            "id": 9414,
-            "label": "HEV 1.5 S TSS PT",
-            "platB": 451300000,
-            "platF": 454200000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 15
-          },
-          {
-            "id": 9415,
-            "label": "HEV 1.5 S TSS 2T P",
-            "platB": 453000000,
-            "platF": 456700000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 16
-          },
-          {
-            "id": 9416,
-            "label": "HEV 1.5 S GR TSS P",
-            "platB": 460700000,
-            "platF": 463600000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 17
-          },
-          {
-            "id": 9417,
-            "label": "HEV 1.5 S GR TSS 2T P",
-            "platB": 463300000,
-            "platF": 466300000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 18
           }
         ],
         "specs": [
@@ -1586,7 +1166,7 @@
     "bannerUrl": "/images/cars/corolla-cross-hev/banner.jpg",
     "thumbnailUrl": "/images/cars/corolla-cross-hev/thumbnail.jpg",
     "brochureUrl": "/files/brochure-corolla-cross-hev.pdf",
-    "startingPrice": 608400000,
+    "startingPrice": 605500000,
     "priceLabel": "Starting from",
     "label": "HYBRID",
     "isNew": true,
@@ -1609,40 +1189,20 @@
         "sortOrder": 1,
         "prices": [
           {
-            "id": 9500,
-            "label": "HEV 1.8L",
-            "platB": 608400000,
-            "platF": 610100000,
+            "id": 6001,
+            "label": "1.8L HEV",
+            "price": 605500000,
             "isBasePrice": true,
             "priceOnRequest": false,
             "sortOrder": 1
           },
           {
-            "id": 9501,
-            "label": "HEV 1.8L GRS",
-            "platB": 646100000,
-            "platF": 650000000,
+            "id": 6002,
+            "label": "1.8L HEV P",
+            "price": 608600000,
             "isBasePrice": false,
             "priceOnRequest": false,
             "sortOrder": 2
-          },
-          {
-            "id": 9502,
-            "label": "HEV 1.8L P",
-            "platB": 609500000,
-            "platF": 613200000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 3
-          },
-          {
-            "id": 9503,
-            "label": "HEV 1.8L GRS P",
-            "platB": 651200000,
-            "platF": 655100000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 4
           }
         ],
         "specs": [
@@ -1761,215 +1321,6 @@
     ]
   },
   {
-    "id": 7,
-    "categoryId": 1,
-    "categoryName": "SUV",
-    "name": "BZ4X",
-    "fullName": "New BZ4X Battery EV",
-    "slug": "bz4x",
-    "tagline": "Be Zero. Be Forward.",
-    "description": "New BZ4X adalah SUV listrik murni Toyota pertama di Indonesia. Ditenagai baterai 71.4 kWh dengan jangkauan hingga 500 km, menggabungkan performa tinggi dan emisi nol.",
-    "bannerUrl": "/images/cars/bz4x/banner.jpg",
-    "thumbnailUrl": "/images/cars/bz4x/thumbnail.jpg",
-    "brochureUrl": "/files/brochure-bz4x.pdf",
-    "startingPrice": null,
-    "priceLabel": "Hubungi Kami",
-    "label": "EV",
-    "isNew": true,
-    "isFeatured": true,
-    "isActive": true,
-    "sortOrder": 7,
-    "metaTitle": "New BZ4X Battery EV – SUV Listrik Toyota | Toyota Cibubur",
-    "metaDescription": "Toyota BZ4X Battery EV tersedia di Toyota Cibubur. SUV listrik murni, Hubungi kami untuk info harga.",
-    "variants": [
-      {
-        "id": 701,
-        "name": "BZ4X FWD",
-        "slug": "bz4x-fwd",
-        "fuel": "Electric",
-        "transmission": "Automatic",
-        "engineCc": 0,
-        "engineLabel": "71.4 kWh Electric Motor",
-        "drivetrain": "FWD",
-        "seats": 5,
-        "sortOrder": 1,
-        "prices": [
-          {
-            "id": 7001,
-            "label": "BZ4X FWD",
-            "price": null,
-            "isBasePrice": true,
-            "priceOnRequest": true,
-            "sortOrder": 1
-          }
-        ],
-        "specs": [
-          {
-            "category": "Motor",
-            "specKey": "Kapasitas Baterai",
-            "specValue": "71.4 kWh",
-            "sortOrder": 1
-          },
-          {
-            "category": "Motor",
-            "specKey": "Tenaga Maksimum",
-            "specValue": "204 PS",
-            "sortOrder": 2
-          },
-          {
-            "category": "Motor",
-            "specKey": "Jangkauan",
-            "specValue": "Hingga 500 km (WLTP)",
-            "sortOrder": 3
-          },
-          {
-            "category": "Pengisian",
-            "specKey": "Waktu Pengisian AC",
-            "specValue": "~9 jam (6.6 kW)",
-            "sortOrder": 4
-          }
-        ]
-      }
-    ],
-    "colors": [
-      {
-        "id": 60,
-        "name": "Platinum White Pearl",
-        "hexCode": "#F5F5F5",
-        "imageUrl": "/images/cars/bz4x/color-white.jpg",
-        "sortOrder": 1
-      },
-      {
-        "id": 61,
-        "name": "Attitude Black Mica",
-        "hexCode": "#1C1C1C",
-        "imageUrl": "/images/cars/bz4x/color-black.jpg",
-        "sortOrder": 2
-      },
-      {
-        "id": 62,
-        "name": "Emotional Red II",
-        "hexCode": "#C0392B",
-        "imageUrl": "/images/cars/bz4x/color-red.jpg",
-        "sortOrder": 3
-      }
-    ],
-    "images": [
-      {
-        "id": 60,
-        "url": "/images/cars/bz4x/exterior-1.jpg",
-        "altText": "Toyota BZ4X tampak depan",
-        "category": "exterior",
-        "isPrimary": true,
-        "sortOrder": 1
-      }
-    ],
-    "features": [
-      {
-        "id": 60,
-        "title": "Zero Emission",
-        "description": "Kendaraan listrik murni tanpa emisi gas buang untuk lingkungan yang lebih bersih.",
-        "category": "Performance",
-        "sortOrder": 1
-      },
-      {
-        "id": 61,
-        "title": "Fast Charging Support",
-        "description": "Mendukung pengisian cepat DC hingga 150 kW.",
-        "category": "Technology",
-        "sortOrder": 2
-      }
-    ]
-  },
-  {
-    "id": 8,
-    "categoryId": 1,
-    "categoryName": "SUV",
-    "name": "Urban Cruiser",
-    "fullName": "New Urban Cruiser Battery EV",
-    "slug": "urban-cruiser-ev",
-    "tagline": "Electrify Your Urban Life",
-    "description": "New Urban Cruiser Battery EV adalah SUV kompak listrik terbaru Toyota. Dirancang untuk mobilitas perkotaan modern dengan teknologi EV terdepan.",
-    "bannerUrl": "/images/cars/urban-cruiser-ev/banner.jpg",
-    "thumbnailUrl": "/images/cars/urban-cruiser-ev/thumbnail.jpg",
-    "brochureUrl": "/files/brochure-urban-cruiser-ev.pdf",
-    "startingPrice": null,
-    "priceLabel": "Hubungi Kami",
-    "label": "EV",
-    "isNew": true,
-    "isFeatured": true,
-    "isActive": true,
-    "sortOrder": 8,
-    "metaTitle": "New Urban Cruiser Battery EV – SUV Listrik Kompak | Toyota Cibubur",
-    "metaDescription": "Toyota Urban Cruiser Battery EV di Toyota Cibubur. Hubungi kami untuk info harga.",
-    "variants": [
-      {
-        "id": 801,
-        "name": "Urban Cruiser EV",
-        "slug": "urban-cruiser-ev-std",
-        "fuel": "Electric",
-        "transmission": "Automatic",
-        "engineCc": 0,
-        "engineLabel": "Electric Motor",
-        "drivetrain": "FWD",
-        "seats": 5,
-        "sortOrder": 1,
-        "prices": [
-          {
-            "id": 8001,
-            "label": "Urban Cruiser EV",
-            "price": null,
-            "isBasePrice": true,
-            "priceOnRequest": true,
-            "sortOrder": 1
-          }
-        ],
-        "specs": [
-          {
-            "category": "Motor",
-            "specKey": "Tipe",
-            "specValue": "Battery Electric Vehicle (BEV)",
-            "sortOrder": 1
-          },
-          {
-            "category": "Motor",
-            "specKey": "Penggerak",
-            "specValue": "Front-Wheel Drive",
-            "sortOrder": 2
-          }
-        ]
-      }
-    ],
-    "colors": [
-      {
-        "id": 70,
-        "name": "White",
-        "hexCode": "#F8F8F8",
-        "imageUrl": "/images/cars/urban-cruiser-ev/color-white.jpg",
-        "sortOrder": 1
-      }
-    ],
-    "images": [
-      {
-        "id": 70,
-        "url": "/images/cars/urban-cruiser-ev/exterior-1.jpg",
-        "altText": "Toyota Urban Cruiser EV tampak depan",
-        "category": "exterior",
-        "isPrimary": true,
-        "sortOrder": 1
-      }
-    ],
-    "features": [
-      {
-        "id": 70,
-        "title": "Full Electric Powertrain",
-        "description": "Sepenuhnya bertenaga listrik untuk perjalanan bebas emisi.",
-        "category": "Performance",
-        "sortOrder": 1
-      }
-    ]
-  },
-  {
     "id": 9,
     "categoryId": 1,
     "categoryName": "SUV",
@@ -2004,22 +1355,12 @@
         "sortOrder": 1,
         "prices": [
           {
-            "id": 9600,
-            "label": "A/T VX-R 4X4",
-            "platB": 2635400000,
-            "platF": 2635400000,
+            "id": 9001,
+            "label": "Land Cruiser",
+            "price": null,
             "isBasePrice": true,
-            "priceOnRequest": false,
+            "priceOnRequest": true,
             "sortOrder": 1
-          },
-          {
-            "id": 9601,
-            "label": "A/T 2.4 G",
-            "platB": 2716300000,
-            "platF": 2716300000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 2
           }
         ],
         "specs": [
@@ -2117,7 +1458,7 @@
     "bannerUrl": "/images/cars/innova-zenix-hev/banner.jpg",
     "thumbnailUrl": "/images/cars/innova-zenix-hev/thumbnail.jpg",
     "brochureUrl": "/files/brochure-innova-zenix-hev.pdf",
-    "startingPrice": 437700000,
+    "startingPrice": 474700000,
     "priceLabel": "Starting from",
     "label": "HYBRID",
     "isNew": true,
@@ -2140,202 +1481,20 @@
         "sortOrder": 1,
         "prices": [
           {
-            "id": 9700,
-            "label": "CVT G",
-            "platB": 437700000,
-            "platF": 439900000,
+            "id": 10001,
+            "label": "HEV G CVT",
+            "price": 474700000,
             "isBasePrice": true,
             "priceOnRequest": false,
             "sortOrder": 1
           },
           {
-            "id": 9701,
-            "label": "CVT G P",
-            "platB": 440700000,
-            "platF": 442900000,
+            "id": 10002,
+            "label": "HEV G CVT P",
+            "price": 477600000,
             "isBasePrice": false,
             "priceOnRequest": false,
             "sortOrder": 2
-          },
-          {
-            "id": 9702,
-            "label": "CVT V",
-            "platB": 484100000,
-            "platF": 486200000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 3
-          },
-          {
-            "id": 9703,
-            "label": "CVT V NON RSE",
-            "platB": 475800000,
-            "platF": 478000000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 4
-          },
-          {
-            "id": 9704,
-            "label": "CVT V P",
-            "platB": 487100000,
-            "platF": 489200000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 5
-          },
-          {
-            "id": 9705,
-            "label": "CVT V NON RSE P",
-            "platB": 478800000,
-            "platF": 481000000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 6
-          },
-          {
-            "id": 9706,
-            "label": "HEV G",
-            "platB": 475400000,
-            "platF": 477500000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 7
-          },
-          {
-            "id": 9707,
-            "label": "HEV V",
-            "platB": 549000000,
-            "platF": 552800000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 8
-          },
-          {
-            "id": 9708,
-            "label": "HEV V NON MOD",
-            "platB": 539000000,
-            "platF": 542800000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 9
-          },
-          {
-            "id": 9709,
-            "label": "HEV V NON RSE",
-            "platB": 540700000,
-            "platF": 544500000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 10
-          },
-          {
-            "id": 9710,
-            "label": "HEV G P",
-            "platB": 478300000,
-            "platF": 480400000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 11
-          },
-          {
-            "id": 9711,
-            "label": "HEV V P",
-            "platB": 551900000,
-            "platF": 555700000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 12
-          },
-          {
-            "id": 9712,
-            "label": "HEV V NON MOD P",
-            "platB": 542000000,
-            "platF": 545800000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 13
-          },
-          {
-            "id": 9713,
-            "label": "HEV V NON RSE P",
-            "platB": 543600000,
-            "platF": 547400000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 14
-          },
-          {
-            "id": 9714,
-            "label": "HEV V NON MOD NON RSE",
-            "platB": 530800000,
-            "platF": 534600000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 15
-          },
-          {
-            "id": 9715,
-            "label": "HEV Q TSS",
-            "platB": 626900000,
-            "platF": 628200000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 16
-          },
-          {
-            "id": 9716,
-            "label": "HEV Q TSS NON MOD",
-            "platB": 617000000,
-            "platF": 618300000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 17
-          },
-          {
-            "id": 9717,
-            "label": "HEV Q TSS NON RSE",
-            "platB": 618600000,
-            "platF": 619900000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 18
-          },
-          {
-            "id": 9718,
-            "label": "HEV V NON MOD NON RSE P",
-            "platB": 533700000,
-            "platF": 537500000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 19
-          },
-          {
-            "id": 9719,
-            "label": "HEV Q TSS P",
-            "platB": 629800000,
-            "platF": 631100000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 20
-          },
-          {
-            "id": 9720,
-            "label": "HEV Q TSS NON MOD P",
-            "platB": 619900000,
-            "platF": 621200000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 21
-          },
-          {
-            "id": 9721,
-            "label": "HEV Q TSS NON RSE P",
-            "platB": 621500000,
-            "platF": 622800000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 22
           }
         ],
         "specs": [
@@ -2552,7 +1711,7 @@
     "bannerUrl": "/images/cars/innova-zenix/banner.jpg",
     "thumbnailUrl": "/images/cars/innova-zenix/thumbnail.jpg",
     "brochureUrl": "/files/brochure-innova-zenix.pdf",
-    "startingPrice": 437700000,
+    "startingPrice": 437300000,
     "priceLabel": "Starting from",
     "label": null,
     "isNew": true,
@@ -2575,40 +1734,20 @@
         "sortOrder": 1,
         "prices": [
           {
-            "id": 9800,
-            "label": "CVT G",
-            "platB": 437700000,
-            "platF": 439900000,
+            "id": 11001,
+            "label": "G CVT",
+            "price": 437300000,
             "isBasePrice": true,
             "priceOnRequest": false,
             "sortOrder": 1
           },
           {
-            "id": 9801,
-            "label": "CVT G P",
-            "platB": 440700000,
-            "platF": 442900000,
+            "id": 11002,
+            "label": "G CVT P",
+            "price": 440300000,
             "isBasePrice": false,
             "priceOnRequest": false,
             "sortOrder": 2
-          },
-          {
-            "id": 9802,
-            "label": "CVT V",
-            "platB": 484100000,
-            "platF": 486200000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 3
-          },
-          {
-            "id": 9803,
-            "label": "CVT V NON RSE",
-            "platB": 475800000,
-            "platF": 478000000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 4
           }
         ],
         "specs": [
@@ -2769,22 +1908,12 @@
         "sortOrder": 1,
         "prices": [
           {
-            "id": 9900,
-            "label": "M/T 2.4 G",
-            "platB": 417800000,
-            "platF": 421100000,
+            "id": 12001,
+            "label": "2.4 G M/T",
+            "price": 417800000,
             "isBasePrice": true,
             "priceOnRequest": false,
             "sortOrder": 1
-          },
-          {
-            "id": 9901,
-            "label": "A/T 2.4 G",
-            "platB": 438700000,
-            "platF": 442700000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 2
           }
         ],
         "specs": [
@@ -2916,40 +2045,12 @@
         "sortOrder": 1,
         "prices": [
           {
-            "id": 10000,
-            "label": "M/T 1.3 E",
-            "platB": 243700000,
-            "platF": 247000000,
+            "id": 13001,
+            "label": "1.3 E M/T",
+            "price": 243700000,
             "isBasePrice": true,
             "priceOnRequest": false,
             "sortOrder": 1
-          },
-          {
-            "id": 10001,
-            "label": "CVT 1.3 E",
-            "platB": 258700000,
-            "platF": 262200000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 2
-          },
-          {
-            "id": 10002,
-            "label": "M/T 1.5 G",
-            "platB": 266800000,
-            "platF": 270200000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 3
-          },
-          {
-            "id": 10003,
-            "label": "CVT 1.5 G",
-            "platB": 281800000,
-            "platF": 285000000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 4
           }
         ],
         "specs": [
@@ -3117,40 +2218,12 @@
         "sortOrder": 1,
         "prices": [
           {
-            "id": 10100,
-            "label": "M/T 1.2 E STD",
-            "platB": 170200000,
-            "platF": 173400000,
+            "id": 14001,
+            "label": "1.2 E STD M/T",
+            "price": 170200000,
             "isBasePrice": true,
             "priceOnRequest": false,
             "sortOrder": 1
-          },
-          {
-            "id": 10101,
-            "label": "M/T 1.2 E",
-            "platB": 173100000,
-            "platF": 176700000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 2
-          },
-          {
-            "id": 10102,
-            "label": "M/T 1.2 G",
-            "platB": 178800000,
-            "platF": 182200000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 3
-          },
-          {
-            "id": 10103,
-            "label": "A/T 1.2 G",
-            "platB": 193200000,
-            "platF": 196800000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 4
           }
         ],
         "specs": [
@@ -3292,112 +2365,20 @@
         "sortOrder": 1,
         "prices": [
           {
-            "id": 10200,
-            "label": "HEV V",
-            "platB": 303000000,
-            "platF": 303000000,
-            "isBasePrice": false,
+            "id": 15001,
+            "label": "V HEV",
+            "price": 303000000,
+            "isBasePrice": true,
             "priceOnRequest": false,
             "sortOrder": 1
           },
           {
-            "id": 10201,
-            "label": "HEV V PC",
-            "platB": 304500000,
-            "platF": 304500000,
+            "id": 15002,
+            "label": "V HEV PC",
+            "price": 304500000,
             "isBasePrice": false,
             "priceOnRequest": false,
             "sortOrder": 2
-          },
-          {
-            "id": 10202,
-            "label": "HEV Q",
-            "platB": 326000000,
-            "platF": 326000000,
-            "isBasePrice": true,
-            "priceOnRequest": false,
-            "sortOrder": 3
-          },
-          {
-            "id": 10203,
-            "label": "HEV Q PC",
-            "platB": 326500000,
-            "platF": 326500000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 4
-          },
-          {
-            "id": 10204,
-            "label": "HEV Q MOD 1T",
-            "platB": 350000000,
-            "platF": 350000000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 5
-          },
-          {
-            "id": 10205,
-            "label": "HEV Q MOD 1T PC",
-            "platB": 351500000,
-            "platF": 351500000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 6
-          },
-          {
-            "id": 10206,
-            "label": "HEV Q MOD 2T",
-            "platB": 352500000,
-            "platF": 352500000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 7
-          },
-          {
-            "id": 10207,
-            "label": "HEV Q MOD 2T PC",
-            "platB": 354000000,
-            "platF": 354000000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 8
-          },
-          {
-            "id": 10208,
-            "label": "HEV Q MOD 1T TSS",
-            "platB": 385000000,
-            "platF": 385000000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 9
-          },
-          {
-            "id": 10209,
-            "label": "HEV Q MOD 1T PC TSS",
-            "platB": 386500000,
-            "platF": 386500000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 10
-          },
-          {
-            "id": 10210,
-            "label": "HEV Q MOD 2T TSS",
-            "platB": 387500000,
-            "platF": 387500000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 11
-          },
-          {
-            "id": 10211,
-            "label": "HEV Q MOD 2T PC TSS",
-            "platB": 389000000,
-            "platF": 389000000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 12
           }
         ],
         "specs": [
@@ -3522,7 +2503,7 @@
     "bannerUrl": "/images/cars/voxy/banner.jpg",
     "thumbnailUrl": "/images/cars/voxy/thumbnail.jpg",
     "brochureUrl": "/files/brochure-voxy.pdf",
-    "startingPrice": 632700000,
+    "startingPrice": 631800000,
     "priceLabel": "Starting from",
     "label": "NEW",
     "isNew": true,
@@ -3545,19 +2526,17 @@
         "sortOrder": 1,
         "prices": [
           {
-            "id": 10300,
-            "label": "A/T 2.0 T00B",
-            "platB": 632700000,
-            "platF": 634300000,
+            "id": 16001,
+            "label": "2.0 T00B A/T",
+            "price": 631800000,
             "isBasePrice": true,
             "priceOnRequest": false,
             "sortOrder": 1
           },
           {
-            "id": 10301,
-            "label": "A/T 2.0 T01B",
-            "platB": 635800000,
-            "platF": 637500000,
+            "id": 16002,
+            "label": "2.0 T01B A/T",
+            "price": 634900000,
             "isBasePrice": false,
             "priceOnRequest": false,
             "sortOrder": 2
@@ -3663,76 +2642,20 @@
         "sortOrder": 1,
         "prices": [
           {
-            "id": 10400,
-            "label": "CVT 2.5 XE",
-            "platB": 1288000000,
-            "platF": 1288000000,
+            "id": 17001,
+            "label": "2.5 XE HEV CVT",
+            "price": 1288000000,
             "isBasePrice": true,
             "priceOnRequest": false,
             "sortOrder": 1
           },
           {
-            "id": 10401,
-            "label": "CVT 2.5 XE PC",
-            "platB": 1291500000,
-            "platF": 1291500000,
+            "id": 17002,
+            "label": "2.5 XE HEV CVT PC",
+            "price": 1291500000,
             "isBasePrice": false,
             "priceOnRequest": false,
             "sortOrder": 2
-          },
-          {
-            "id": 10402,
-            "label": "HEV 2.5 XE",
-            "platB": 1388000000,
-            "platF": 1388000000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 3
-          },
-          {
-            "id": 10403,
-            "label": "HEV 2.5 XE PC",
-            "platB": 1391500000,
-            "platF": 1391500000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 4
-          },
-          {
-            "id": 10404,
-            "label": "CVT 2.5 G",
-            "platB": 1652100000,
-            "platF": 1652100000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 5
-          },
-          {
-            "id": 10405,
-            "label": "CVT 2.5 G PC",
-            "platB": 1655600000,
-            "platF": 1655600000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 6
-          },
-          {
-            "id": 10406,
-            "label": "HEV 2.5 G",
-            "platB": 1737400000,
-            "platF": 1736000000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 7
-          },
-          {
-            "id": 10407,
-            "label": "HEV 2.5 G PC",
-            "platB": 1741000000,
-            "platF": 1739700000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 8
           }
         ],
         "specs": [
@@ -3893,19 +2816,17 @@
         "sortOrder": 1,
         "prices": [
           {
-            "id": 10500,
-            "label": "HEV 2.5 VIP",
-            "platB": 1872800000,
-            "platF": 1872800000,
+            "id": 18001,
+            "label": "2.5 VIP HEV",
+            "price": 1872800000,
             "isBasePrice": true,
             "priceOnRequest": false,
             "sortOrder": 1
           },
           {
-            "id": 10501,
-            "label": "HEV 2.5 VIP P",
-            "platB": 1876300000,
-            "platF": 1876300000,
+            "id": 18002,
+            "label": "2.5 VIP HEV P",
+            "price": 1876300000,
             "isBasePrice": false,
             "priceOnRequest": false,
             "sortOrder": 2
@@ -4215,7 +3136,7 @@
     "bannerUrl": "/images/cars/agya-gr-sport/banner.jpg",
     "thumbnailUrl": "/images/cars/agya-gr-sport/thumbnail.jpg",
     "brochureUrl": "/files/brochure-agya-gr-sport.pdf",
-    "startingPrice": 173800000,
+    "startingPrice": 181500000,
     "priceLabel": "Starting from",
     "label": "GR SPORT",
     "isNew": false,
@@ -4238,40 +3159,20 @@
         "sortOrder": 1,
         "prices": [
           {
-            "id": 10600,
-            "label": "M/T 1.2 E (Spot Order)",
-            "platB": 173800000,
-            "platF": 177100000,
+            "id": 21001,
+            "label": "1.2 G M/T",
+            "price": 181500000,
             "isBasePrice": true,
             "priceOnRequest": false,
             "sortOrder": 1
           },
           {
-            "id": 10601,
-            "label": "M/T 1.2 G",
-            "platB": 181500000,
-            "platF": 184600000,
+            "id": 21002,
+            "label": "1.2 G CVT",
+            "price": 197700000,
             "isBasePrice": false,
             "priceOnRequest": false,
             "sortOrder": 2
-          },
-          {
-            "id": 10602,
-            "label": "CVT 1.2 G",
-            "platB": 197700000,
-            "platF": 200800000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 3
-          },
-          {
-            "id": 10603,
-            "label": "CVT 1.2 STYLIX",
-            "platB": 201200000,
-            "platF": 204300000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 4
           }
         ],
         "specs": [
@@ -4361,13 +3262,20 @@
         "sortOrder": 1,
         "prices": [
           {
-            "id": 10700,
-            "label": "CVT 1.2 STYLIX",
-            "platB": 201200000,
-            "platF": 204300000,
+            "id": 22001,
+            "label": "1.2 Stylix CVT",
+            "price": 201200000,
             "isBasePrice": true,
             "priceOnRequest": false,
             "sortOrder": 1
+          },
+          {
+            "id": 22002,
+            "label": "1.2 E M/T",
+            "price": 173800000,
+            "isBasePrice": false,
+            "priceOnRequest": false,
+            "sortOrder": 2
           }
         ],
         "specs": [
@@ -4542,7 +3450,7 @@
     "bannerUrl": "/images/cars/camry-hev/banner.jpg",
     "thumbnailUrl": "/images/cars/camry-hev/thumbnail.jpg",
     "brochureUrl": "/files/brochure-camry-hev.pdf",
-    "startingPrice": 856200000,
+    "startingPrice": 976100000,
     "priceLabel": "Starting from",
     "label": "HYBRID",
     "isNew": true,
@@ -4565,40 +3473,20 @@
         "sortOrder": 1,
         "prices": [
           {
-            "id": 10800,
-            "label": "A/T 2.5 V",
-            "platB": 856200000,
-            "platF": 857000000,
+            "id": 24001,
+            "label": "2.5 L HEV",
+            "price": 976100000,
             "isBasePrice": true,
             "priceOnRequest": false,
             "sortOrder": 1
           },
           {
-            "id": 10801,
-            "label": "HEV 2.5 L",
-            "platB": 977200000,
-            "platF": 983000000,
+            "id": 24002,
+            "label": "2.5 L HEV P",
+            "price": 979200000,
             "isBasePrice": false,
             "priceOnRequest": false,
             "sortOrder": 2
-          },
-          {
-            "id": 10802,
-            "label": "A/T 2.5 V P",
-            "platB": 859300000,
-            "platF": 860100000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 3
-          },
-          {
-            "id": 10803,
-            "label": "HEV 2.5 L P",
-            "platB": 980300000,
-            "platF": 986200000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 4
           }
         ],
         "specs": [
@@ -4742,7 +3630,7 @@
     "bannerUrl": "/images/cars/corolla-altis-hev-gr-sport/banner.jpg",
     "thumbnailUrl": "/images/cars/corolla-altis-hev-gr-sport/thumbnail.jpg",
     "brochureUrl": "/files/brochure-corolla-altis-hev-gr-sport.pdf",
-    "startingPrice": 646600000,
+    "startingPrice": 639200000,
     "priceLabel": "Starting from",
     "label": "HYBRID",
     "isNew": true,
@@ -4765,19 +3653,17 @@
         "sortOrder": 1,
         "prices": [
           {
-            "id": 10900,
-            "label": "HEV 1.8L HV GRS",
-            "platB": 646600000,
-            "platF": 647500000,
+            "id": 25001,
+            "label": "1.8L HV",
+            "price": 639200000,
             "isBasePrice": true,
             "priceOnRequest": false,
             "sortOrder": 1
           },
           {
-            "id": 10901,
-            "label": "HEV 1.8L HV GRS P",
-            "platB": 649700000,
-            "platF": 650600000,
+            "id": 25002,
+            "label": "1.8L HV GRS",
+            "price": 646600000,
             "isBasePrice": false,
             "priceOnRequest": false,
             "sortOrder": 2
@@ -5178,76 +4064,20 @@
         "sortOrder": 1,
         "prices": [
           {
-            "id": 11000,
-            "label": "CVT 1.5 G",
-            "platB": 375800000,
-            "platF": 378000000,
+            "id": 28001,
+            "label": "1.5 G CVT",
+            "price": 375800000,
             "isBasePrice": true,
             "priceOnRequest": false,
             "sortOrder": 1
           },
           {
-            "id": 11001,
-            "label": "CVT 1.5 G TSS",
-            "platB": 389200000,
-            "platF": 391200000,
+            "id": 28002,
+            "label": "1.5 G CVT TSS",
+            "price": 389200000,
             "isBasePrice": false,
             "priceOnRequest": false,
             "sortOrder": 2
-          },
-          {
-            "id": 11002,
-            "label": "CVT 1.5 G PC",
-            "platB": 377300000,
-            "platF": 379500000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 3
-          },
-          {
-            "id": 11003,
-            "label": "CVT 1.5 G TSS PC",
-            "platB": 390700000,
-            "platF": 392800000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 4
-          },
-          {
-            "id": 11004,
-            "label": "HEV 1.5 1T",
-            "platB": 460000000,
-            "platF": 460600000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 5
-          },
-          {
-            "id": 11005,
-            "label": "HEV 1.5 1T PC",
-            "platB": 462500000,
-            "platF": 463100000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 6
-          },
-          {
-            "id": 11006,
-            "label": "HEV 1.5 2T",
-            "platB": 464000000,
-            "platF": 464600000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 7
-          },
-          {
-            "id": 11007,
-            "label": "HEV 1.5 2T PC",
-            "platB": 465000000,
-            "platF": 465600000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 8
           }
         ],
         "specs": [
@@ -5384,7 +4214,7 @@
     "bannerUrl": "/images/cars/corolla-altis/banner.jpg",
     "thumbnailUrl": "/images/cars/corolla-altis/thumbnail.jpg",
     "brochureUrl": "/files/brochure-corolla-altis.pdf",
-    "startingPrice": 585800000,
+    "startingPrice": 584800000,
     "priceLabel": "Starting from",
     "label": null,
     "isNew": false,
@@ -5407,58 +4237,12 @@
         "sortOrder": 1,
         "prices": [
           {
-            "id": 11100,
-            "label": "A/T 1.8 V",
-            "platB": 585800000,
-            "platF": 587600000,
+            "id": 29001,
+            "label": "1.8 V A/T",
+            "price": 584800000,
             "isBasePrice": true,
             "priceOnRequest": false,
             "sortOrder": 1
-          },
-          {
-            "id": 11101,
-            "label": "HEV 1.8L HV",
-            "platB": 638900000,
-            "platF": 641400000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 2
-          },
-          {
-            "id": 11102,
-            "label": "HEV 1.8L HV GRS",
-            "platB": 646600000,
-            "platF": 647500000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 3
-          },
-          {
-            "id": 11103,
-            "label": "A/T 1.8 V P",
-            "platB": 588800000,
-            "platF": 590600000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 4
-          },
-          {
-            "id": 11104,
-            "label": "HEV 1.8L HV P",
-            "platB": 643000000,
-            "platF": 644500000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 5
-          },
-          {
-            "id": 11105,
-            "label": "HEV 1.8L HV GRS P",
-            "platB": 649700000,
-            "platF": 650600000,
-            "isBasePrice": false,
-            "priceOnRequest": false,
-            "sortOrder": 6
           }
         ],
         "specs": [

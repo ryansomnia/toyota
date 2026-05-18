@@ -4,6 +4,9 @@ import { Car } from "@/models/Car";
 import "@/models/CarCategory";
 import { SortOrder } from "mongoose";
 
+// Tambahkan ini agar Next.js tidak coba render halaman ini saat build
+export const dynamic = "force-dynamic";
+
 export async function GET(req: NextRequest) {
   try {
     await connectDB();
@@ -13,7 +16,6 @@ export async function GET(req: NextRequest) {
     const limit = Math.min(50, Number(sp.get("limit") ?? 12));
     const skip  = (page - 1) * limit;
 
-    // ── Build filter ─────────────────────────────────────────────
     const filter: Record<string, unknown> = { isActive: true };
 
     if (sp.get("category"))   filter.categoryId = sp.get("category");
@@ -32,7 +34,6 @@ export async function GET(req: NextRequest) {
       filter.$text = { $search: sp.get("search") };
     }
 
-    // ── Sort ─────────────────────────────────────────────────────
     const SORT_MAP: Record<string, Record<string, SortOrder>> = {
       "price-asc":  { startingPrice:  1 },
       "price-desc": { startingPrice: -1 },
@@ -43,10 +44,9 @@ export async function GET(req: NextRequest) {
     };
     const sort = SORT_MAP[sp.get("sort") ?? "default"] ?? SORT_MAP["default"];
 
-    // ── Query ────────────────────────────────────────────────────
     const [cars, total] = await Promise.all([
       Car.find(filter)
-        .select("name fullName slug label thumbnailUrl startingPrice priceLabel isNew isFeatured sortOrder categoryId images variants")
+        .select("name fullName slug label thumbnailUrl startingPrice priceLabel isNewModel isFeatured sortOrder categoryId images variants")
         .sort(sort)
         .skip(skip)
         .limit(limit)
@@ -58,12 +58,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({
       success: true,
       data: cars,
-      pagination: {
-        page,
-        limit,
-        total,
-        totalPages: Math.ceil(total / limit),
-      },
+      pagination: { page, limit, total, totalPages: Math.ceil(total / limit) },
     });
   } catch (error) {
     console.error("[GET /api/cars]", error);
