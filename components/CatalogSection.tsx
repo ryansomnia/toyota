@@ -176,118 +176,132 @@ export default function CatalogSection() {
         ) : (
           <>
             {/* Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
-              {paginatedCars.map((car) => {
-                const primaryImage = car.images?.find(
-                  (img: any) => img.isPrimary
-                );
+        {/* Grid */}
+<div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
+  {paginatedCars.map((car) => {
+    // Cari image utama
+    const primaryImage =
+    car.images?.find((img: any) => img.isPrimary === true);
+  
+    const imageSrc =
+    car.thumbnailUrl &&
+    car.thumbnailUrl !== ""
+      ? car.thumbnailUrl
+      : "https://placehold.co/600x400?text=Toyota";
 
-                const firstVariant = car.variants?.[0];
+    const firstVariant = car.variants?.[0];
 
-                return (
-                  <div
-                    key={car._id}
-                    className="group rounded-3xl overflow-hidden bg-white/80 backdrop-blur-xl border border-white shadow-sm hover:shadow-xl transition-all duration-500"
-                  >
-                    {/* Image */}
-                    <div className="relative h-52 flex items-center justify-center bg-slate-100 overflow-hidden">
-                      {primaryImage?.url || car.thumbnailUrl ? (
-                        <img
-                          src={primaryImage?.url ?? car.thumbnailUrl}
-                          alt={car.fullName}
-                          className="p-8 w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
-                        />
-                      ) : (
-                        <div className="text-6xl select-none">🚗</div>
-                      )}
+    return (
+      <div
+        key={car._id}
+        className="group rounded-3xl overflow-hidden bg-white/80 backdrop-blur-xl border border-white shadow-sm hover:shadow-xl transition-all duration-500"
+      >
+        {/* Image */}
+        <div className="relative h-52 flex items-center justify-center bg-slate-100 overflow-hidden">
+        <img
+src={car.thumbnailUrl}
+  alt={car.fullName}
+  className="p-8 w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
+  loading="lazy"
+  onError={(e) => {
+    const target = e.currentTarget;
 
-                      {car.label && (
-                        <span
-                          className={`absolute top-4 left-4 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider ${
-                            BADGE_STYLE[car.label] ??
-                            "bg-slate-200 text-slate-600"
-                          }`}
-                        >
-                          {car.label}
-                        </span>
-                      )}
-                    </div>
+    // cegah infinite loop
+    target.onerror = null;
 
-                    {/* Content */}
-                    <div className="p-5">
-                      <div className="text-[10px] uppercase tracking-[2px] text-slate-400 mb-2">
-                        {car.categoryId?.name ?? "Toyota"}
-                      </div>
+    // fallback terakhir
+    target.src = "https://placehold.co/600x400?text=Toyota";
+  }}
+/>
+          {/* Badge */}
+          {car.label && (
+            <span
+              className={`absolute top-4 left-4 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider ${
+                BADGE_STYLE[car.label] ??
+                "bg-slate-200 text-slate-600"
+              }`}
+            >
+              {car.label}
+            </span>
+          )}
+        </div>
 
-                      <h3 className="text-xl font-semibold text-slate-900 mb-4 group-hover:text-red-600 transition-colors leading-tight">
-                        {car.fullName}
-                      </h3>
+        {/* Content */}
+        <div className="p-5">
+          {/* Category */}
+          <div className="text-[10px] uppercase tracking-[2px] text-slate-400 mb-2">
+            {car.categoryId?.name ?? "Toyota"}
+          </div>
 
-                      {/* Spek */}
-                      {firstVariant && (
-                        <div className="flex flex-wrap gap-2 mb-4">
-                          {firstVariant.transmission && (
-                            <span className="px-2 py-1 rounded bg-slate-50 text-slate-500 text-[10px]">
-                              {firstVariant.transmission}
-                            </span>
-                          )}
+          {/* Title */}
+          <h3 className="text-xl font-semibold text-slate-900 mb-4 group-hover:text-red-600 transition-colors leading-tight">
+            {car.fullName}
+          </h3>
 
-                          {firstVariant.fuel && (
-                            <span className="px-2 py-1 rounded bg-slate-50 text-slate-500 text-[10px]">
-                              {firstVariant.fuel}
-                            </span>
-                          )}
+          {/* Specs */}
+          {firstVariant && (
+            <div className="flex flex-wrap gap-2 mb-4">
+              {firstVariant.transmission && (
+                <span className="px-2 py-1 rounded bg-slate-50 text-slate-500 text-[10px]">
+                  {firstVariant.transmission}
+                </span>
+              )}
 
-                          {firstVariant.seats && (
-                            <span className="px-2 py-1 rounded bg-slate-50 text-slate-500 text-[10px]">
-                              {firstVariant.seats} Seats
-                            </span>
-                          )}
-                        </div>
-                      )}
+              {firstVariant.fuel && (
+                <span className="px-2 py-1 rounded bg-slate-50 text-slate-500 text-[10px]">
+                  {firstVariant.fuel}
+                </span>
+              )}
 
-                      {/* Harga */}
-                      {car.startingPrice && (
-                        <p className="text-[11px] text-slate-400 mb-4">
-                          {car.priceLabel}{" "}
-                          <span className="font-bold text-slate-700 text-sm">
-                            Rp{" "}
-                            {Number(car.startingPrice).toLocaleString("id-ID")}
-                          </span>
-                        </p>
-                      )}
-
-                      {/* CTA */}
-                      <div className="pt-3 border-t border-slate-50">
-                        <button
-                          onClick={() => setSelectedCar(car)}
-                          className="w-full flex items-center justify-between group/btn py-3 px-4 rounded-xl bg-slate-50 hover:bg-red-600 transition-all duration-300"
-                        >
-                          <span className="text-sm font-semibold text-slate-700 group-hover/btn:text-white transition-colors">
-                            Lihat Detail & Harga
-                          </span>
-
-                          <svg
-                            className="w-5 h-5 text-slate-400 group-hover/btn:text-white transition-colors"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M13 7l5 5m0 0l-5 5m5-5H6"
-                            />
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
+              {firstVariant.seats && (
+                <span className="px-2 py-1 rounded bg-slate-50 text-slate-500 text-[10px]">
+                  {firstVariant.seats} Seats
+                </span>
+              )}
             </div>
+          )}
 
+          {/* Price */}
+          {car.startingPrice && (
+            <p className="text-[11px] text-slate-400 mb-4">
+              {car.priceLabel}{" "}
+              <span className="font-bold text-slate-700 text-sm">
+                Rp{" "}
+                {Number(car.startingPrice).toLocaleString("id-ID")}
+              </span>
+            </p>
+          )}
+
+          {/* CTA */}
+          <div className="pt-3 border-t border-slate-50">
+            <button
+              onClick={() => setSelectedCar(car)}
+              className="w-full flex items-center justify-between group/btn py-3 px-4 rounded-xl bg-slate-50 hover:bg-red-600 transition-all duration-300"
+            >
+              <span className="text-sm font-semibold text-slate-700 group-hover/btn:text-white transition-colors">
+                Lihat Detail & Harga
+              </span>
+
+              <svg
+                className="w-5 h-5 text-slate-400 group-hover/btn:text-white transition-colors"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  })}
+</div>
             {/* Pagination */}
             {totalPages > 1 && (
               <div className="flex justify-center items-center gap-2 mt-12 flex-wrap">
