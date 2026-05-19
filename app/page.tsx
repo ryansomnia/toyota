@@ -7,7 +7,7 @@ import { PromoSection, WhySection, TestimonialSection } from "@/components/Secti
 import KreditCalc from "@/components/KreditCalc";
 import PromoCarousel from "@/components/PromoCarousel";
 
-import { ContactSection, Footer } from "@/components/AboutFooter";
+import { Footer } from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
@@ -32,7 +32,7 @@ export default function HomePage() {
         {/* <KreditCalc /> */}
         
         <TestimonialSection />
-        <ContactSection />
+     
       </main>
       <Footer />
       <ScrollReveal />
