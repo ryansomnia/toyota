@@ -178,8 +178,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       isFeatured: true, 
       isActive: true, 
       sortOrder: 1,
-      metaTitle: "New Toyota Fortuner – Harga & Promo Terbaru | AutoPrima",
-      metaDescription: "Beli New Toyota Fortuner di AutoPrima. Pilihan mesin Diesel 2.4L, 2.8L, dan Bensin 2.7L. Harga mulai Rp 584 Juta.",
+      metaTitle: "New Toyota Fortuner – Harga & Promo Terbaru | Toyota - Setiajaya",
+      metaDescription: "Beli New Toyota Fortuner di Toyota - Setiajaya. Pilihan mesin Diesel 2.4L, 2.8L, dan Bensin 2.7L. Harga mulai Rp 584 Juta.",
       variants: [
         {
           name: "2.4 G M/T", 
@@ -296,8 +296,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-rush-gr-sport.pdf",
       startingPrice: 289400000, priceLabel: "Starting from",
       label: "GR SPORT", isNewModel: true, isFeatured: false, isActive: true, sortOrder: 2,
-      metaTitle: "New Rush GR Sport – Harga Terbaru | AutoPrima",
-      metaDescription: "Toyota Rush GR Sport di AutoPrima Cibinong. Harga mulai Rp 289 Juta.",
+      metaTitle: "New Rush GR Sport – Harga Terbaru | Toyota - Setiajaya",
+      metaDescription: "Toyota Rush GR Sport di Toyota - Setiajaya Cibubur. Harga mulai Rp 289 Juta.",
       variants: [
         {
           name: "1.5 G M/T", slug: "rush-g-15-mt",
@@ -363,8 +363,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-raize-gr.pdf",
       startingPrice: 243500000, priceLabel: "Starting from",
       label: "GR", isNewModel: true, isFeatured: true, isActive: true, sortOrder: 3,
-      metaTitle: "New Raize GR – SUV Kompak Bertenaga | AutoPrima",
-      metaDescription: "Toyota Raize GR di AutoPrima Cibinong. Harga mulai Rp 243 Juta.",
+      metaTitle: "New Raize GR – SUV Kompak Bertenaga | Toyota - Setiajaya",
+      metaDescription: "Toyota Raize GR di Toyota - Setiajaya Cibubur. Harga mulai Rp 243 Juta.",
       variants: [
         {
           name: "1.2 G M/T", slug: "raize-12-g-mt",
@@ -441,8 +441,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-yaris-cross-hev.pdf",
       startingPrice: 359700000, priceLabel: "Starting from",
       label: "HYBRID", isNewModel: true, isFeatured: true, isActive: true, sortOrder: 4,
-      metaTitle: "All New Yaris Cross HEV – SUV Hybrid Kompak | AutoPrima",
-      metaDescription: "Toyota Yaris Cross HEV di AutoPrima Cibinong. Harga mulai Rp 359 Juta.",
+      metaTitle: "All New Yaris Cross HEV – SUV Hybrid Kompak | Toyota - Setiajaya",
+      metaDescription: "Toyota Yaris Cross HEV di Toyota - Setiajaya Cibubur. Harga mulai Rp 359 Juta.",
       variants: [
         {
           name: "1.5 G M/T", slug: "yaris-cross-15-g-mt",
@@ -547,8 +547,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-corolla-cross-hev.pdf",
       startingPrice: 608400000, priceLabel: "Starting from",
       label: "HYBRID", isNewModel: true, isFeatured: true, isActive: true, sortOrder: 5,
-      metaTitle: "New Corolla Cross HEV – SUV Hybrid Premium | AutoPrima",
-      metaDescription: "Toyota Corolla Cross HEV di AutoPrima Cibinong. Harga mulai Rp 608 Juta.",
+      metaTitle: "New Corolla Cross HEV – SUV Hybrid Premium | Toyota - Setiajaya",
+      metaDescription: "Toyota Corolla Cross HEV di Toyota - Setiajaya Cibubur. Harga mulai Rp 608 Juta.",
       variants: [
         {
           name: "1.8L HEV", slug: "corolla-cross-hev-18",
@@ -601,8 +601,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-land-cruiser.pdf",
       startingPrice: 2635400000, priceLabel: "Hubungi Kami",
       label: "NEW", isNewModel: true, isFeatured: true, isActive: true, sortOrder: 6,
-      metaTitle: "All New Land Cruiser – SUV Flagship Toyota | AutoPrima",
-      metaDescription: "Toyota Land Cruiser di AutoPrima Cibinong. Hubungi kami untuk info harga.",
+      metaTitle: "All New Land Cruiser – SUV Flagship Toyota | Toyota - Setiajaya",
+      metaDescription: "Toyota Land Cruiser di Toyota - Setiajaya Cibubur. Hubungi kami untuk info harga.",
       variants: [
         {
           name: "Land Cruiser VX-R 4x4", slug: "land-cruiser-vxr-4x4",
@@ -655,8 +655,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-innova-zenix-hev.pdf",
       startingPrice: 475400000, priceLabel: "Starting from",
       label: "HYBRID", isNewModel: true, isFeatured: true, isActive: true, sortOrder: 7,
-      metaTitle: "All New Innova Zenix HEV – MPV Hybrid Premium | AutoPrima",
-      metaDescription: "Toyota Innova Zenix HEV di AutoPrima Cibinong. Harga mulai Rp 475 Juta.",
+      metaTitle: "All New Innova Zenix HEV – MPV Hybrid Premium | Toyota - Setiajaya",
+      metaDescription: "Toyota Innova Zenix HEV di Toyota - Setiajaya Cibubur. Harga mulai Rp 475 Juta.",
       variants: [
         {
           name: "HEV G CVT", slug: "zenix-hev-g-cvt",
@@ -729,8 +729,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-innova-zenix.pdf",
       startingPrice: 437700000, priceLabel: "Starting from",
       label: null, isNewModel: true, isFeatured: false, isActive: true, sortOrder: 8,
-      metaTitle: "All New Innova Zenix – MPV Premium | AutoPrima",
-      metaDescription: "Toyota Innova Zenix di AutoPrima Cibinong. Harga mulai Rp 437 Juta.",
+      metaTitle: "All New Innova Zenix – MPV Premium | Toyota - Setiajaya",
+      metaDescription: "Toyota Innova Zenix di Toyota - Setiajaya Cibubur. Harga mulai Rp 437 Juta.",
       variants: [
         {
           name: "G CVT", slug: "innova-zenix-g-cvt",
@@ -782,8 +782,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-innova-reborn.pdf",
       startingPrice: 417800000, priceLabel: "Starting from",
       label: null, isNewModel: false, isFeatured: false, isActive: true, sortOrder: 9,
-      metaTitle: "All New Innova – MPV Diesel Terpercaya | AutoPrima",
-      metaDescription: "Toyota Innova Reborn di AutoPrima Cibinong. Harga mulai Rp 417 Juta.",
+      metaTitle: "All New Innova – MPV Diesel Terpercaya | Toyota - Setiajaya",
+      metaDescription: "Toyota Innova Reborn di Toyota - Setiajaya Cibubur. Harga mulai Rp 417 Juta.",
       variants: [
         {
           name: "2.4 G M/T", slug: "innova-reborn-24-g-mt",
@@ -825,8 +825,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-veloz-hev.pdf",
       startingPrice: 303000000, priceLabel: "Starting from",
       label: "HYBRID", isNewModel: false, isFeatured: false, isActive: true, sortOrder: 10,
-      metaTitle: "New Veloz Hybrid EV – MPV Hybrid Stylish | AutoPrima",
-      metaDescription: "Toyota Veloz HEV di AutoPrima Cibinong. Harga mulai Rp 303 Juta.",
+      metaTitle: "New Veloz Hybrid EV – MPV Hybrid Stylish | Toyota - Setiajaya",
+      metaDescription: "Toyota Veloz HEV di Toyota - Setiajaya Cibubur. Harga mulai Rp 303 Juta.",
       variants: [
         {
           name: "V HEV", slug: "veloz-v-hev",
@@ -880,8 +880,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-avanza.pdf",
       startingPrice: 243700000, priceLabel: "Starting from",
       label: null, isNewModel: false, isFeatured: false, isActive: true, sortOrder: 11,
-      metaTitle: "All New Toyota Avanza – MPV Keluarga Terbaik | AutoPrima",
-      metaDescription: "All New Toyota Avanza di AutoPrima Cibinong. Harga mulai Rp 243 Juta.",
+      metaTitle: "All New Toyota Avanza – MPV Keluarga Terbaik | Toyota - Setiajaya",
+      metaDescription: "All New Toyota Avanza di Toyota - Setiajaya Cibubur. Harga mulai Rp 243 Juta.",
       variants: [
         {
           name: "1.3 E M/T", slug: "avanza-13-e-mt",
@@ -934,8 +934,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-calya.pdf",
       startingPrice: 170200000, priceLabel: "Starting from",
       label: null, isNewModel: false, isFeatured: false, isActive: true, sortOrder: 12,
-      metaTitle: "New Calya – MPV LCGC Terjangkau | AutoPrima",
-      metaDescription: "Toyota Calya di AutoPrima Cibinong. Harga mulai Rp 170 Juta.",
+      metaTitle: "New Calya – MPV LCGC Terjangkau | Toyota - Setiajaya",
+      metaDescription: "Toyota Calya di Toyota - Setiajaya Cibubur. Harga mulai Rp 170 Juta.",
       variants: [
         {
           name: "1.2 E STD M/T", slug: "calya-12-e-std-mt",
@@ -972,8 +972,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-voxy.pdf",
       startingPrice: 632700000, priceLabel: "Starting from",
       label: "NEW", isNewModel: true, isFeatured: false, isActive: true, sortOrder: 13,
-      metaTitle: "All New Voxy – MPV Premium Bold | AutoPrima",
-      metaDescription: "Toyota Voxy di AutoPrima Cibinong. Harga mulai Rp 632 Juta.",
+      metaTitle: "All New Voxy – MPV Premium Bold | Toyota - Setiajaya",
+      metaDescription: "Toyota Voxy di Toyota - Setiajaya Cibubur. Harga mulai Rp 632 Juta.",
       variants: [
         {
           name: "2.0 A/T", slug: "voxy-20-at",
@@ -1012,8 +1012,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-alphard-hev.pdf",
       startingPrice: 1288000000, priceLabel: "Starting from",
       label: "HYBRID", isNewModel: true, isFeatured: true, isActive: true, sortOrder: 14,
-      metaTitle: "All New Alphard HEV – MPV Luxury Hybrid | AutoPrima",
-      metaDescription: "Toyota Alphard HEV di AutoPrima Cibinong. Harga mulai Rp 1,2 Miliar.",
+      metaTitle: "All New Alphard HEV – MPV Luxury Hybrid | Toyota - Setiajaya",
+      metaDescription: "Toyota Alphard HEV di Toyota - Setiajaya Cibubur. Harga mulai Rp 1,2 Miliar.",
       variants: [
         {
           name: "2.5 XE CVT", slug: "alphard-25-xe-cvt",
@@ -1090,8 +1090,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-vellfire-hev.pdf",
       startingPrice: 1872800000, priceLabel: "Starting from",
       label: "HYBRID", isNewModel: true, isFeatured: true, isActive: true, sortOrder: 15,
-      metaTitle: "All New Vellfire HEV – Ultra Luxury MPV | AutoPrima",
-      metaDescription: "Toyota Vellfire HEV di AutoPrima Cibinong. Harga mulai Rp 1,8 Miliar.",
+      metaTitle: "All New Vellfire HEV – Ultra Luxury MPV | Toyota - Setiajaya",
+      metaDescription: "Toyota Vellfire HEV di Toyota - Setiajaya Cibubur. Harga mulai Rp 1,8 Miliar.",
       variants: [
         {
           name: "2.5 VIP HEV", slug: "vellfire-hev-25-vip",
@@ -1141,8 +1141,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
   //   isFeatured: false, 
   //   isActive: true, 
   //   sortOrder: 16,
-  //   metaTitle: "New Toyota Agya – Harga & Promo Terbaru | AutoPrima",
-  //   metaDescription: "Beli New Toyota Agya di AutoPrima Cibinong. City car lincah dan efisien. Harga mulai Rp 173 Juta.",
+  //   metaTitle: "New Toyota Agya – Harga & Promo Terbaru | Toyota - Setiajaya",
+  //   metaDescription: "Beli New Toyota Agya di Toyota - Setiajaya Cibubur. City car lincah dan efisien. Harga mulai Rp 173 Juta.",
   //   variants: [
   //     {
   //       name: "1.2 Agya", 
@@ -1189,8 +1189,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-gr-yaris.pdf",
       startingPrice: undefined, priceLabel: "Hubungi Kami",
       label: "GR", isNewModel: true, isFeatured: true, isActive: true, sortOrder: 17,
-      metaTitle: "New GR Yaris – Hatchback Performa Tinggi | AutoPrima",
-      metaDescription: "Toyota GR Yaris di AutoPrima Cibinong. Hatchback bertenaga DNA Rally.",
+      metaTitle: "New GR Yaris – Hatchback Performa Tinggi | Toyota - Setiajaya",
+      metaDescription: "Toyota GR Yaris di Toyota - Setiajaya Cibubur. Hatchback bertenaga DNA Rally.",
       variants: [
         {
           name: "GR Yaris 1.6T AWD", slug: "gr-yaris-16t-awd",
@@ -1228,8 +1228,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-gr-corolla.pdf",
       startingPrice: undefined, priceLabel: "Hubungi Kami",
       label: "GR", isNewModel: true, isFeatured: true, isActive: true, sortOrder: 18,
-      metaTitle: "All New GR Corolla – Hatchback Performa Tinggi | AutoPrima",
-      metaDescription: "Toyota GR Corolla di AutoPrima Cibinong. Hatchback motorsport AWD.",
+      metaTitle: "All New GR Corolla – Hatchback Performa Tinggi | Toyota - Setiajaya",
+      metaDescription: "Toyota GR Corolla di Toyota - Setiajaya Cibubur. Hatchback motorsport AWD.",
       variants: [
         {
           name: "GR Corolla 1.6T AWD", slug: "gr-corolla-16t-awd",
@@ -1269,8 +1269,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-camry-hev.pdf",
       startingPrice: 856200000, priceLabel: "Starting from",
       label: "HYBRID", isNewModel: true, isFeatured: true, isActive: true, sortOrder: 19,
-      metaTitle: "New Camry HEV – Sedan Premium Hybrid | AutoPrima",
-      metaDescription: "Toyota Camry HEV di AutoPrima Cibinong. Harga mulai Rp 856 Juta.",
+      metaTitle: "New Camry HEV – Sedan Premium Hybrid | Toyota - Setiajaya",
+      metaDescription: "Toyota Camry HEV di Toyota - Setiajaya Cibubur. Harga mulai Rp 856 Juta.",
       variants: [
         {
           name: "2.5 V A/T", slug: "camry-25-v-at",
@@ -1325,8 +1325,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-altis-hev-gr-sport.pdf",
       startingPrice: 585800000, priceLabel: "Starting from",
       label: "HYBRID", isNewModel: true, isFeatured: false, isActive: true, sortOrder: 20,
-      metaTitle: "Altis GR Sport HEV – Sedan Hybrid Sporty | AutoPrima",
-      metaDescription: "Toyota Corolla Altis GR Sport HEV di AutoPrima Cibinong. Harga mulai Rp 585 Juta.",
+      metaTitle: "Altis GR Sport HEV – Sedan Hybrid Sporty | Toyota - Setiajaya",
+      metaDescription: "Toyota Corolla Altis GR Sport HEV di Toyota - Setiajaya Cibubur. Harga mulai Rp 585 Juta.",
       variants: [
         {
           name: "1.8 V A/T", slug: "altis-18-v-at",
@@ -1377,8 +1377,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-vios.pdf",
       startingPrice: 375800000, priceLabel: "Starting from",
       label: null, isNewModel: true, isFeatured: false, isActive: true, sortOrder: 21,
-      metaTitle: "All New Vios – Sedan Compact Modern | AutoPrima",
-      metaDescription: "Toyota Vios di AutoPrima Cibinong. Harga mulai Rp 375 Juta.",
+      metaTitle: "All New Vios – Sedan Compact Modern | Toyota - Setiajaya",
+      metaDescription: "Toyota Vios di Toyota - Setiajaya Cibubur. Harga mulai Rp 375 Juta.",
       variants: [
         {
           name: "1.5 G CVT", slug: "vios-15-g-cvt",
@@ -1435,8 +1435,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-gr-86.pdf",
       startingPrice: undefined, priceLabel: "Hubungi Kami",
       label: "GR", isNewModel: true, isFeatured: true, isActive: true, sortOrder: 22,
-      metaTitle: "All New GR 86 – Sports Coupe Toyota | AutoPrima",
-      metaDescription: "Toyota GR 86 di AutoPrima Cibinong. Sports car murni bertenaga 234 PS.",
+      metaTitle: "All New GR 86 – Sports Coupe Toyota | Toyota - Setiajaya",
+      metaDescription: "Toyota GR 86 di Toyota - Setiajaya Cibubur. Sports car murni bertenaga 234 PS.",
       variants: [
         {
           name: "GR 86 2.4 M/T", slug: "gr-86-24-mt",
@@ -1475,8 +1475,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-gr-supra.pdf",
       startingPrice: undefined, priceLabel: "Hubungi Kami",
       label: "GR", isNewModel: true, isFeatured: true, isActive: true, sortOrder: 23,
-      metaTitle: "New GR Supra – Sports Car Legendaris Toyota | AutoPrima",
-      metaDescription: "Toyota GR Supra di AutoPrima Cibinong. Sports car ikonik 387 PS.",
+      metaTitle: "New GR Supra – Sports Car Legendaris Toyota | Toyota - Setiajaya",
+      metaDescription: "Toyota GR Supra di Toyota - Setiajaya Cibubur. Sports car ikonik 387 PS.",
       variants: [
         {
           name: "GR Supra 3.0T", slug: "gr-supra-30t",
@@ -1519,8 +1519,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-hiace-premio.pdf",
       startingPrice: 678800000, priceLabel: "Starting from",
       label: null, isNewModel: true, isFeatured: false, isActive: true, sortOrder: 24,
-      metaTitle: "New Hiace Premio – Minibus Premium | AutoPrima",
-      metaDescription: "Toyota Hiace Premio di AutoPrima Cibinong. Harga mulai Rp 678 Juta.",
+      metaTitle: "New Hiace Premio – Minibus Premium | Toyota - Setiajaya",
+      metaDescription: "Toyota Hiace Premio di Toyota - Setiajaya Cibubur. Harga mulai Rp 678 Juta.",
       variants: [
         {
           name: "Premio M/T", slug: "hiace-premio-mt",
@@ -1560,8 +1560,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-hiace-commuter.pdf",
       startingPrice: 575400000, priceLabel: "Starting from",
       label: null, isNewModel: false, isFeatured: false, isActive: true, sortOrder: 25,
-      metaTitle: "Hiace Commuter – Minibus Komersial | AutoPrima",
-      metaDescription: "Toyota Hiace Commuter di AutoPrima Cibinong. Harga mulai Rp 575 Juta.",
+      metaTitle: "Hiace Commuter – Minibus Komersial | Toyota - Setiajaya",
+      metaDescription: "Toyota Hiace Commuter di Toyota - Setiajaya Cibubur. Harga mulai Rp 575 Juta.",
       variants: [
         {
           name: "Commuter M/T", slug: "hiace-commuter-mt",
@@ -1593,8 +1593,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-hilux-rangga.pdf",
       startingPrice: 194300000, priceLabel: "Starting from",
       label: "NEW", isNewModel: true, isFeatured: false, isActive: true, sortOrder: 26,
-      metaTitle: "Hilux Rangga – Pickup Serbaguna | AutoPrima",
-      metaDescription: "Toyota Hilux Rangga di AutoPrima Cibinong. Harga mulai Rp 194 Juta.",
+      metaTitle: "Hilux Rangga – Pickup Serbaguna | Toyota - Setiajaya",
+      metaDescription: "Toyota Hilux Rangga di Toyota - Setiajaya Cibubur. Harga mulai Rp 194 Juta.",
       variants: [
         {
           name: "PU 2.0 Bensin", slug: "hilux-rangga-pu-20-bensin",
@@ -1641,8 +1641,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-hilux-d-cab.pdf",
       startingPrice: 456300000, priceLabel: "Starting from",
       label: null, isNewModel: true, isFeatured: false, isActive: true, sortOrder: 27,
-      metaTitle: "New Hilux Double Cab – Pickup Tangguh | AutoPrima",
-      metaDescription: "Toyota Hilux D Cab di AutoPrima Cibinong. Harga mulai Rp 456 Juta.",
+      metaTitle: "New Hilux Double Cab – Pickup Tangguh | Toyota - Setiajaya",
+      metaDescription: "Toyota Hilux D Cab di Toyota - Setiajaya Cibubur. Harga mulai Rp 456 Juta.",
       variants: [
         {
           name: "DC 2.4", slug: "hilux-dc-24",
@@ -1680,8 +1680,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-hilux-s-cab.pdf",
       startingPrice: 416800000, priceLabel: "Starting from",
       label: null, isNewModel: true, isFeatured: false, isActive: true, sortOrder: 28,
-      metaTitle: "New Hilux Single Cab – Pickup Kerja | AutoPrima",
-      metaDescription: "Toyota Hilux S Cab di AutoPrima Cibinong. Harga mulai Rp 416 Juta.",
+      metaTitle: "New Hilux Single Cab – Pickup Kerja | Toyota - Setiajaya",
+      metaDescription: "Toyota Hilux S Cab di Toyota - Setiajaya Cibubur. Harga mulai Rp 416 Juta.",
       variants: [
         {
           name: "SC M/T 2.4 DSL 4x4", slug: "hilux-sc-24-mt-4x4",
@@ -1711,8 +1711,8 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       brochureUrl: "/files/brochure-dyna.pdf",
       startingPrice: 509300000, priceLabel: "Starting from",
       label: null, isNewModel: true, isFeatured: false, isActive: true, sortOrder: 29,
-      metaTitle: "New Dyna – Truk Ringan Komersial | AutoPrima",
-      metaDescription: "Toyota Dyna di AutoPrima Cibinong. Harga mulai Rp 509 Juta.",
+      metaTitle: "New Dyna – Truk Ringan Komersial | Toyota - Setiajaya",
+      metaDescription: "Toyota Dyna di Toyota - Setiajaya Cibubur. Harga mulai Rp 509 Juta.",
       variants: [
         {
           name: "M/T 4x2 6", slug: "dyna-4x2-6",

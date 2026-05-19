@@ -11,9 +11,9 @@ import { Footer } from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Toyota Cibubur – Sales Mobil Resmi Cibinong & Bogor",
+  title: "Toyota Cibubur – Sales Mobil Dealer Resmi Toyota Daerah Cibubur",
   description:
-    "Sales mobil resmi terpercaya di Cibinong, Bogor. Tersedia Toyota, Honda, Mitsubishi dan lebih. Proses kredit mudah, DP ringan mulai 10%. Hubungi kami sekarang!",
+    "Sales mobil resmi terpercaya di Cibubur dan sekitarnya. Proses kredit mudah, Tersedia berbagai pilihan mobil Toyota populer seperti Toyota Avanza, Innova Zenix, Rush, Raize, Yaris Cross, Fortuner, Hilux, hingga Alphard dengan pilihan tipe lengkap dan harga kompetitif. Hubungi kami sekarang!",
   alternates: { canonical: "https://mobiltoyotacibubur.com" },
 };
 
