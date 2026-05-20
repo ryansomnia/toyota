@@ -9,6 +9,8 @@ import PromoCarousel from "@/components/PromoCarousel";
 
 import { Footer } from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
+import { ProfileSection } from "@/components/ProfilSection";
+import { DeliverySection } from "@/components/DeliverSection";
 
 export const metadata: Metadata = {
   title: "Toyota Cibubur – Sales Mobil Dealer Resmi Toyota Daerah Cibubur",
@@ -32,6 +34,8 @@ export default function HomePage() {
         {/* <KreditCalc /> */}
         
         <TestimonialSection />
+        <ProfileSection/>
+        <DeliverySection/>
      
       </main>
       <Footer />
