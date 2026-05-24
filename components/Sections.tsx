@@ -3,19 +3,19 @@ import Link from "next/link";
 const PROMOS = [
   {
     icon: "💰",
-    title: "Cash Back Puluhan Juta",
+    title: "Cashback Puluhan Juta",
     desc: "Khusus pembelian unit tertentu bulan ini",
   },
 
   {
     icon: "🛡️",
-    title: "Asuransi All-Risk 1 Tahun",
+    title: "Free Asuransi All-Risk",
     desc: "Proteksi penuh kendaraan barumu gratis",
   },
   {
     icon: "🔄",
-    title: "Tukar Tambah Terbaik",
-    desc: "Estimasi harga mobil lama gratis & transparan",
+    title: "Trade-In",
+    desc: "Layanan Tukar tambah untuk merk mobil apapun",
   },
 ];
 
@@ -127,12 +127,14 @@ export function PromoSection() {
               </p>
 
               <Link
-                href="/promo"
-                className="inline-flex items-center gap-3 bg-red-400 hover:bg-red-300 text-slate-900 px-7 py-4 rounded-2xl font-semibold transition-all hover:gap-4"
-              >
-                Tanya Promo
-                <span>→</span>
-              </Link>
+  href="https://wa.me/6282125061466?text=Halo%20Toyota%2C%20saya%20ingin%20tanya%20promo"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-3 bg-red-400 hover:bg-red-300 text-slate-900 px-7 py-4 rounded-2xl font-semibold transition-all hover:gap-4"
+>
+  Tanya Promo
+  <span>→</span>
+</Link>
             </div>
           </div>
 
@@ -167,111 +169,111 @@ export function PromoSection() {
   );
 }
 
-export function WhySection() {
-  return (
-    <section className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4">
-        {/* Heading */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="text-sm uppercase tracking-[4px] text-red-500 font-semibold mb-4">
-            Mengapa Memilih Kami
-          </p>
+// export function WhySection() {
+//   return (
+//     <section className="py-24 bg-white">
+//       <div className="max-w-7xl mx-auto px-4">
+//         {/* Heading */}
+//         <div className="text-center max-w-2xl mx-auto mb-16">
+//           <p className="text-sm uppercase tracking-[4px] text-red-500 font-semibold mb-4">
+//             Mengapa Memilih Kami
+//           </p>
 
-          <h2 className="text-4xl md:text-6xl font-light text-slate-900 leading-tight">
-            Dipercaya
-            <br />
-            <span className="font-semibold text-red-500">
-              Ribuan Keluarga
-            </span>
-          </h2>
-        </div>
+//           <h2 className="text-4xl md:text-6xl font-light text-slate-900 leading-tight">
+//             Dipercaya
+//             <br />
+//             <span className="font-semibold text-red-500">
+//               Ribuan Keluarga
+//             </span>
+//           </h2>
+//         </div>
 
-        {/* Grid */}
-        <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-6">
-          {WHY.map((w) => (
-            <div
-              key={w.title}
-              className="group rounded-[28px] border border-slate-100 bg-gradient-to-b from-white to-slate-50 p-8 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500"
-            >
-              <div className="w-16 h-16 rounded-2xl bg-red-50 flex items-center justify-center text-3xl mb-6">
-                {w.icon}
-              </div>
+//         {/* Grid */}
+//         <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-6">
+//           {WHY.map((w) => (
+//             <div
+//               key={w.title}
+//               className="group rounded-[28px] border border-slate-100 bg-gradient-to-b from-white to-slate-50 p-8 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500"
+//             >
+//               <div className="w-16 h-16 rounded-2xl bg-red-50 flex items-center justify-center text-3xl mb-6">
+//                 {w.icon}
+//               </div>
 
-              <div className="text-5xl font-bold text-slate-900 mb-3">
-                {w.num}
-              </div>
+//               <div className="text-5xl font-bold text-slate-900 mb-3">
+//                 {w.num}
+//               </div>
 
-              <h3 className="text-xl font-semibold text-slate-900 mb-3">
-                {w.title}
-              </h3>
+//               <h3 className="text-xl font-semibold text-slate-900 mb-3">
+//                 {w.title}
+//               </h3>
 
-              <p className="text-slate-500 leading-relaxed">
-                {w.desc}
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
+//               <p className="text-slate-500 leading-relaxed">
+//                 {w.desc}
+//               </p>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
 
-export function TestimonialSection() {
-  return (
-    <section className="py-24 bg-gradient-to-b from-slate-50 to-white">
-      <div className="max-w-7xl mx-auto px-4">
-        {/* Heading */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="text-sm uppercase tracking-[4px] text-red-500 font-semibold mb-4">
-            Testimoni Pelanggan
-          </p>
+// export function TestimonialSection() {
+//   return (
+//     <section className="py-24 bg-gradient-to-b from-slate-50 to-white">
+//       <div className="max-w-7xl mx-auto px-4">
+//         {/* Heading */}
+//         <div className="text-center max-w-2xl mx-auto mb-16">
+//           <p className="text-sm uppercase tracking-[4px] text-red-500 font-semibold mb-4">
+//             Testimoni Pelanggan
+//           </p>
 
-          <h2 className="text-4xl md:text-6xl font-light text-slate-900 leading-tight">
-            Cerita Mereka
-            <br />
-            <span className="font-semibold text-red-500">
-              Tentang Kami
-            </span>
-          </h2>
-        </div>
+//           <h2 className="text-4xl md:text-6xl font-light text-slate-900 leading-tight">
+//             Cerita Mereka
+//             <br />
+//             <span className="font-semibold text-red-500">
+//               Tentang Kami
+//             </span>
+//           </h2>
+//         </div>
 
-        {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-6">
-          {TESTIMONIALS.map((t) => (
-            <div
-              key={t.name}
-              className="group bg-white rounded-[30px] p-8 border border-slate-100 shadow-[0_10px_40px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.08)] hover:-translate-y-2 transition-all duration-500"
-            >
-              {/* Stars */}
-              <div className="flex gap-1 text-red-400 text-lg mb-6">
-                {"★".repeat(t.stars)}
-              </div>
+//         {/* Cards */}
+//         <div className="grid md:grid-cols-3 gap-6">
+//           {TESTIMONIALS.map((t) => (
+//             <div
+//               key={t.name}
+//               className="group bg-white rounded-[30px] p-8 border border-slate-100 shadow-[0_10px_40px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.08)] hover:-translate-y-2 transition-all duration-500"
+//             >
+//               {/* Stars */}
+//               <div className="flex gap-1 text-red-400 text-lg mb-6">
+//                 {"★".repeat(t.stars)}
+//               </div>
 
-              {/* Quote */}
-              <blockquote className="text-slate-600 leading-relaxed mb-8 text-[15px]">
-                "{t.quote}"
-              </blockquote>
+//               {/* Quote */}
+//               <blockquote className="text-slate-600 leading-relaxed mb-8 text-[15px]">
+//                 "{t.quote}"
+//               </blockquote>
 
-              {/* User */}
-              <div className="flex items-center gap-4">
-                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-red-400 to-orange-400 text-white flex items-center justify-center font-semibold">
-                  {t.initial}
-                </div>
+//               {/* User */}
+//               <div className="flex items-center gap-4">
+//                 <div className="w-14 h-14 rounded-full bg-gradient-to-br from-red-400 to-orange-400 text-white flex items-center justify-center font-semibold">
+//                   {t.initial}
+//                 </div>
 
-                <div>
-                  <div className="font-semibold text-slate-900">
-                    {t.name}
-                  </div>
+//                 <div>
+//                   <div className="font-semibold text-slate-900">
+//                     {t.name}
+//                   </div>
 
-                  <div className="text-sm text-slate-500">
-                    {t.city} · {t.car}
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
+//                   <div className="text-sm text-slate-500">
+//                     {t.city} · {t.car}
+//                   </div>
+//                 </div>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }

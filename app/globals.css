@@ -84,6 +84,33 @@ html {
     pointer-events: none;
     z-index: 1;
   }
+  .fixed-wa-mobile {
+    position: fixed !important;
+    bottom: 24px !important;
+    /* Deteksi otomatis area notch bawah HP baru */
+    bottom: max(24px, env(safe-area-inset-bottom)) !important; 
+    right: 16px !important; /* Jarak dari kanan layar mobile */
+    
+    /* Naikkan z-index super tinggi melewati elemen atau backdrop apa pun */
+    z-index: 999999 !important;
+    
+    /* MEMAKSA RE-RENDER LAYER: Ini kunci utamanya */
+    transform: translate3d(0, 0, 0) !important;
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    will-change: transform, bottom;
+    
+    /* Memastikan tombol tidak transparan atau tersembunyi secara tidak sengaja */
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: flex !important;
+  }
+
+  /* Ketika layar melebihi ukuran kecil (sm / desktop), sesuaikan posisi kanan */
+  @media (min-width: 640px) {
+    .fixed-wa-mobile {
+      right: 24px !important;
+    }
+  }
 }
 
 /* Fade-in-up on scroll */

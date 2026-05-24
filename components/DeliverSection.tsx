@@ -1,22 +1,17 @@
 const DELIVERIES = [
     {
-      image: "/images/delivery-1.jpg", // Ganti dengan path foto serah terima
+      image: "/images/testimony/testimony1.jpeg", // Ganti dengan path foto serah terima
       car: "Toyota Fortuner GR Sport",
       name: "Keluarga Bpk. Ahmad",
       type: "Pembelian Kredit",
     },
     {
-      image: "/images/delivery-2.jpg",
+      image: "/images/testimony/testimony2.jpeg",
       car: "Toyota Innova Zenix Hybrid",
       name: "Ibu Siti Maryam",
       type: "Tukar Tambah",
-    },
-    {
-      image: "/images/delivery-3.jpg",
-      car: "Toyota All New Avanza",
-      name: "Bpk. Budi Raharjo",
-      type: "Pembelian Tunai",
     }
+  
   ];
   
   export function DeliverySection() {

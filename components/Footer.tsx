@@ -48,7 +48,7 @@ export function Footer() {
               <div>
                 <span className="text-white font-semibold">Jam Operasional:</span>
                 <br />
-                Senin - Minggu • 08.00 - 16.00
+                Senin - Minggu • 08.00 - 17:00
               </div>
             </div>
 
@@ -126,12 +126,12 @@ export function Footer() {
 
           <div className="flex gap-8">
             <span className="hover:text-white cursor-pointer transition-colors">
-              Privacy Policy
+            Created by:
             </span>
 
             <span className="hover:text-white cursor-pointer transition-colors">
-              Terms of Service
-            </span>
+  <a href="https://heriyantositorus.com">heriyantositorus.com</a>
+</span>
           </div>
         </div>
       </div>

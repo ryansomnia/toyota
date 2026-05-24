@@ -77,7 +77,7 @@ export default function CatalogSection() {
 
   // ── Loading ────────────────────────────────────────────────────
   if (loading) return (
-    <section id="katalog" className="py-20 px-4 bg-white">
+    <section id="katalog" className="py-10 px-4 bg-white">
       <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
         {Array.from({ length: 8 }).map((_, i) => (
           <div key={i} className="rounded-2xl bg-zinc-100 animate-pulse" style={{ height: 280 }} />

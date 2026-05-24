@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import "./globals.css";
 
+import Navbar from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+import ScrollReveal from "@/components/ScrollReveal";
+
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600"],
@@ -19,63 +23,23 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mobiltoyotacibubur.com"),
+
   title: {
-    default: "Toyota Cibubur – Sales Mobil Resmi Cibubur & Bekasi",
+    default: "Toyota Cibubur – Sales Mobil Resmi Cibskdfgkhdwsubur & Bekasi",
     template: "%s | Toyota Cibubur",
   },
+
   description:
-    "Sales mobil resmi terpercaya di Cibubur, Bekasi. Tersedia Toyota, Honda, Mitsubishi, Suzuki & lebih. Proses kredit mudah, DP ringan, konsultasi gratis. Hubungi kami sekarang!",
-  keywords: [
-    "sales mobil Cibubur",
-    "dealer mobil Bekasi",
-    "kredit mobil Bekasi",
-    "beli mobil Cibubur",
-    "Toyota Cibubur",
-    "Honda Bekasi",
-    "Toyota Cibubur",
-    "sales mobil terpercaya",
-  ],
-  authors: [{ name: "Toyota Cibubur" }],
-  creator: "Toyota Cibubur",
-  openGraph: {
-    type: "website",
-    locale: "id_ID",
-    url: "https://mobiltoyotacibubur.com",
-    siteName: "Toyota Cibubur",
-    title: "Toyota Cibubur – Sales Mobil Resmi Cibubur & Bekasi",
-    description:
-      "Sales mobil resmi terpercaya di Cibubur, Bekasi. Proses kredit mudah, DP ringan, konsultasi gratis.",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Toyota Cibubur – Sales Mobil Resmi",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Toyota Cibubur – Sales Mobil Resmi Cibubur & Bekasi",
-    description: "Sales mobil terpercaya. Proses kredit mudah, konsultasi gratis.",
-    images: ["/og-image.jpg"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
+    "Sales mobil resmi terpercaya di Cibubur, Bekasi. Tersedia Toyota, Honda, Mitsubishi, Suzuki & lebih.",
+
   alternates: {
     canonical: "https://mobiltoyotacibubur.com",
   },
-  verification: {
-    google: "YOUR_GOOGLE_VERIFICATION_CODE",
+
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
   },
 };
 
@@ -87,7 +51,7 @@ export default function RootLayout({
   return (
     <html lang="id" className={`${cormorant.variable} ${dmSans.variable}`}>
       <head>
-        {/* JSON-LD Schema – Local Business */}
+        {/* JSON-LD */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -95,47 +59,49 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "AutoDealer",
               name: "Toyota Cibubur",
-              description:
-                "Sales mobil resmi terpercaya di Cibubur, Bekasi dan sekitarnya.",
               url: "https://mobiltoyotacibubur.com",
-              telephone: "+628123456789",
-              email: "info@Toyota Cibubur.id",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "Jl. Raya Otomotif No. 88",
-                addressLocality: "Cibubur",
-                addressRegion: "Jawa Barat",
-                postalCode: "16911",
-                addressCountry: "ID",
-              },
-              geo: {
-                "@type": "GeoCoordinates",
-                latitude: -6.4833,
-                longitude: 106.8333,
-              },
-              openingHoursSpecification: [
-                {
-                  "@type": "OpeningHoursSpecification",
-                  dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-                  opens: "08:00",
-                  closes: "17:00",
-                },
-              ],
-              sameAs: [
-                "https://instagram.com/Toyota Cibubur",
-                "https://facebook.com/Toyota Cibubur",
-              ],
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.9",
-                reviewCount: "312",
-              },
             }),
           }}
         />
       </head>
-      <body className="font-body bg-[#0A0A0A] text-white antialiased overflow-x-hidden">
-        {children}
+
+      <body className="font-body bg-[#0A0A0A] text-white antialiased">
+        {/* GLOBAL NAVBAR */}
+        <Navbar />
+
+        {/* PAGE CONTENT - Kita isolasi overflow-x di sini agar tidak merusak body */}
+        <main className="relative w-full overflow-x-hidden">
+          {children}
+        </main>
+
+        {/* GLOBAL FOOTER */}
+        <Footer />
+
+        {/* GLOBAL EFFECT */}
+        <ScrollReveal />
+
+        {/* FLOATING WA - Keluar dari main tracker, murni fixed */}
+        <a
+          href="https://wa.me/6282125061466?text=Halo%20Toyota%2C%20saya%20ingin%20konsultasi"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fixed-wa-mobile flex items-center gap-2 bg-[#25D366] text-white pl-3.5 pr-4 py-2.5 sm:pl-4 sm:pr-5 sm:py-3.5 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.6)] hover:scale-105 active:scale-95 transition-transform duration-300"
+          aria-label="Chat via WhatsApp"
+        >
+          <svg
+            width="18"
+            height="18"
+            className="sm:w-5 sm:h-5"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm.029 18.88a7.946 7.946 0 01-3.786-.964L4.5 19.5l1.617-3.664a7.93 7.93 0 01-1.046-3.948c0-4.411 3.588-7.999 8-7.999s8 3.588 8 8-3.589 7.991-8.042 7.991z" />
+          </svg>
+          <span className="text-[12px] sm:text-[13px] font-medium tracking-wide">
+            Chat Sekarang
+          </span>
+        </a>
       </body>
     </html>
   );

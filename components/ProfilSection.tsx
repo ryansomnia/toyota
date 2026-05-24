@@ -44,7 +44,7 @@ export function ProfileSection() {
                       <span className="text-slate-400 text-xs transition-transform group-hover:translate-y-0.5">▼</span>
                     </div>
                     <div className="flex justify-between items-center text-sm text-slate-600 pl-9 pr-2">
-                      <span>Selasa : 08:00 - 16:00</span>
+                      <span>Setiap Hari : 08:00 - 16:00</span>
                       <span className="flex items-center gap-2 text-green-600 font-semibold">
                         <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> Buka
                       </span>
@@ -54,17 +54,17 @@ export function ProfileSection() {
                   {/* Bengkel */}
                   <div>
                     <div className="flex justify-between items-center mb-3 cursor-pointer group">
-                      <div className="flex items-center gap-3 font-semibold text-slate-800">
+                      {/* <div className="flex items-center gap-3 font-semibold text-slate-800">
                         <span className="text-xl">🔧</span> Bengkel & Suku Cadang
-                      </div>
-                      <span className="text-slate-400 text-xs transition-transform group-hover:translate-y-0.5">▼</span>
+                      </div> */}
+                      {/* <span className="text-slate-400 text-xs transition-transform group-hover:translate-y-0.5">▼</span> */}
                     </div>
-                    <div className="flex justify-between items-center text-sm text-slate-600 pl-9 pr-2">
-                      <span>Selasa : 08:00 - 16:00</span>
+                    {/* <div className="flex justify-between items-center text-sm text-slate-600 pl-9 pr-2">
+                      <span>Selasa : 08:00 - 17:00</span>
                       <span className="flex items-center gap-2 text-green-600 font-semibold">
                         <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> Buka
                       </span>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

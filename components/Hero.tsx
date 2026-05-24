@@ -264,9 +264,9 @@ import { useEffect, useState } from "react";
 
 const STATS = [
   { num: "250+", label: "Unit Ready Stock" },
-  { num: "12+", label: "Tahun Pengalaman" },
+  { num: "20+", label: "Tahun Pengalaman" },
   { num: "1.5k", label: "Happy Clients" },
-  { num: "0%", label: "Bunga Promo" },
+  { num: "15+", label: "Mitra Bank " },
 ];
 
 const WA = "6282125061466";
@@ -422,15 +422,16 @@ export default function Hero() {
               md:text-[92px]
             "
           >
-            Drive
+            LET'S
+         
             <br />
 
             <span className="text-red-500">
-              Beyond
+            GO 
             </span>
 
             <br />
-            Limits.
+             BEYOND.
           </h1>
 
           {/* SUBTITLE */}
@@ -442,11 +443,11 @@ export default function Hero() {
               md:text-lg
               leading-relaxed
               max-w-xl
+              
             "
           >
-            Temukan mobil Toyota impian Anda dengan promo terbaik,
-            pelayanan profesional, dan pengalaman pembelian yang
-            nyaman serta terpercaya.
+            Mobil Toyota Bukan Hanya Sekedar Kendaraan, Oleh Sebab Itu Toyota Selalu Berinofasi Lebih dari 30 Tahun Untuk Masyarakat Indonesia Tidak Hanya Menciptakan Produk Tapi Untuk Investasi Kenyamanan dan Keamanan Untuk Setiap Perjalanan Keluarga di Indonesia .
+
           </p>
 
           {/* BUTTON */}

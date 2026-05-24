@@ -1700,39 +1700,7 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
       features: [{ title:"4x4 Capability", description:"Sistem 4x4 untuk kemampuan off-road dan medan berat.", category:"Performance", sortOrder:1 }],
     },
 
-    // ─── Dyna ─────────────────────────────────────────────────────
-    {
-      categoryId: COMM,
-      name: "Dyna", fullName: "New Dyna", slug: "dyna",
-      tagline: "Built for Business",
-      description: "New Dyna adalah truk ringan andalan Toyota untuk kebutuhan komersial dengan kapasitas muatan besar.",
-      bannerUrl: "/images/cars/dyna/banner.jpg",
-      thumbnailUrl: "/images/cars/dyna/thumbnail.jpg",
-      brochureUrl: "/files/brochure-dyna.pdf",
-      startingPrice: 509300000, priceLabel: "Starting from",
-      label: null, isNewModel: true, isFeatured: false, isActive: true, sortOrder: 29,
-      metaTitle: "New Dyna – Truk Ringan Komersial | Toyota - Setiajaya",
-      metaDescription: "Toyota Dyna di Toyota - Setiajaya Cibubur. Harga mulai Rp 509 Juta.",
-      variants: [
-        {
-          name: "M/T 4x2 6", slug: "dyna-4x2-6",
-          fuel: "Diesel", transmission: "Manual", engineCc: 0,
-          engineLabel: "Diesel", drivetrain: "4x2", seats: 3, sortOrder: 1,
-          prices: [
-            p("M/T 4x2 6",       509300000, null, true,  false, 1),
-            p("M/T 4x2 6 (PTO)", 513300000, null, false, false, 2),
-          ],
-          specs: [
-            { category:"Kapasitas", specKey:"GVW",  specValue:"6.000 kg", sortOrder:1 },
-            { category:"Transmisi", specKey:"Tipe", specValue:"Manual",   sortOrder:2 },
-          ],
-        },
-      ],
-      colors: [{ name:"White", hexCode:"#FFFFFF", imageUrl:"/images/cars/dyna/color-white.jpg", sortOrder:1 }],
-      images: [{ url:"/images/cars/dyna/exterior-1.jpg", altText:"Toyota Dyna tampak depan", category:"exterior", isPrimary:true, sortOrder:1 }],
-      features: [{ title:"Heavy Duty Payload", description:"Kapasitas muatan tinggi untuk kebutuhan angkut komersial.", category:"Performance", sortOrder:1 }],
-    },
-
+   
   ]; // end return
 }
 

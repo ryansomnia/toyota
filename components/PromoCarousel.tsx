@@ -67,7 +67,7 @@ export default function PromoCarousel() {
           z-20
           w-full
           px-5 md:px-10
-          pt-8 md:pt-10
+          pt-5 md:pt-5
           pointer-events-none
         "
       >
@@ -246,7 +246,7 @@ export default function PromoCarousel() {
 
                   {/* CTA */}
                   <div className="mt-8 flex items-center gap-4">
-                    <span
+                    {/* <span
                       className="
                         inline-flex
                         h-14
@@ -265,8 +265,8 @@ export default function PromoCarousel() {
                       "
                     >
                       Baca Selengkapnya
-                    </span>
-
+                    </span> */}
+{/* 
                     {item.isFeatured && (
                       <span
                         className="
@@ -279,7 +279,7 @@ export default function PromoCarousel() {
                       >
                         Featured Article
                       </span>
-                    )}
+                    )} */}
                   </div>
                 </div>
               </div>
