@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import CatalogSection from "@/components/CatalogSection";
-import { PromoSection, WhySection, TestimonialSection } from "@/components/Sections";
+import { PromoSection} from "@/components/Sections";
 // import KreditCalc from "@/components/KreditCalc";
 import PromoCarousel from "@/components/PromoCarousel";
 
