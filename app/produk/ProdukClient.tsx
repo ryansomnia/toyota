@@ -413,7 +413,7 @@ export default function ProdukClient() {
                   placeholder="Cari model... (Fortuner, Raize, dll)"
                   value={search}
                   onChange={(e) => { setSearch(e.target.value); setPage(1); }}
-                  className="w-full bg-zinc-800 text-white placeholder-zinc-500 text-xs pl-10 pr-4 py-3 rounded-xl border border-zinc-700 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-all"
+                  className="w-full bg-white text-black placeholder-zinc-500 text-xs pl-10 pr-4 py-3 rounded-xl border border-zinc-700 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-all"
                 />
               </div>
             </div>
