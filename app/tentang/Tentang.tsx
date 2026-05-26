@@ -116,7 +116,7 @@ export default function TentangPage() {
                 </div>
                 <div>
                   <p className="text-[10px] text-zinc-400 uppercase tracking-wider">Telepon</p>
-                  <p className="text-sm font-bold text-zinc-900">0821-2075-1946</p>
+                  <p className="text-sm font-bold text-zinc-900">0821-2506-1466</p>
                 </div>
               </a>
 
@@ -135,7 +135,7 @@ export default function TentangPage() {
                 </div>
                 <div>
                   <p className="text-[10px] text-zinc-400 uppercase tracking-wider">WhatsApp</p>
-                  <p className="text-sm font-bold text-zinc-900">0821-2075-1946</p>
+                  <p className="text-sm font-bold text-zinc-900">0821-2506-1466</p>
                 </div>
               </a>
 
