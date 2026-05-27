@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://mobiltoyotacibubur.com"),
 
   title: {
-    default: "Toyota Cibubur – Sales Mobil Resmi Cibskdfgkhdwsubur & Bekasi",
+    default: "Toyota Cibubur – Sales Mobil Resmi Cibubur & Bekasi",
     template: "%s | Toyota Cibubur",
   },
 
@@ -65,13 +65,12 @@ export default function RootLayout({
         />
       </head>
 
-      <body className="font-body bg-[#0A0A0A] text-white antialiased">
-        {/* GLOBAL NAVBAR */}
+      <body className="font-body bg-white text-white antialiased">        {/* GLOBAL NAVBAR */}
         <Navbar />
 
         {/* PAGE CONTENT - Kita isolasi overflow-x di sini agar tidak merusak body */}
-        <main className="relative w-full overflow-x-hidden">
-          {children}
+        <main className="relative w-full overflow-x-hidden bg-white">
+        {children}
         </main>
 
         {/* GLOBAL FOOTER */}

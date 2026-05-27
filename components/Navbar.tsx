@@ -4,19 +4,18 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const NAV_ITEMS = [
-  { label: "Beranda", href: "/"        },
-  { label: "Produk",  href: "/produk"  },
-    { label: "Purna Jual",   href: "/purnaJual"   },
-    // { label: "Tukar Tambah",   href: "/tukartambah"   },
-
-  { label: "Tentang", href: "/tentang" },
+  { label: "Beranda",    href: "/"          },
+  { label: "Produk",     href: "/produk"    },
+  { label: "Purna Jual", href: "/purnaJual" },
+  // { label: "Tukar Tambah", href: "/tukartambah" },
+  { label: "Tentang",    href: "/tentang"   },
 ];
 
 const WA_LINK = "https://wa.me/6282125061466";
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled,  setScrolled]  = useState(false);
+  const [menuOpen,  setMenuOpen]  = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -25,11 +24,17 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Lock body scroll saat menu buka
   useEffect(() => {
-    document.body.style.overflow = menuOpen ? "hidden" : "unset";
-    return () => { document.body.style.overflow = "unset"; };
+    if (menuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => { document.body.style.overflow = ""; };
   }, [menuOpen]);
 
+  // Tutup menu otomatis saat navigasi
   useEffect(() => { setMenuOpen(false); }, [pathname]);
 
   function isActive(href: string) {
@@ -39,7 +44,7 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Top Bar */}
+      {/* ── Top Bar ── */}
       <div className="bg-[#0A0A0A] px-6 md:px-12 py-2.5 flex items-center justify-between border-b border-white/5">
         <div className="flex items-center gap-6 text-white/60 text-[10px] uppercase tracking-[1.5px] font-medium">
           <span className="flex items-center gap-2 whitespace-nowrap">
@@ -52,13 +57,15 @@ export default function Navbar() {
           </span>
         </div>
         <span className="text-white/40 text-[10px] hidden md:block tracking-widest font-bold">
-        AUTHORIZED DEALER
+          AUTHORIZED DEALER
         </span>
       </div>
 
-      {/* Main Nav */}
+      {/* ── Main Nav ── */}
       <nav className={`sticky top-0 z-50 transition-all duration-500 ${
-        scrolled ? "bg-white/90 backdrop-blur-md shadow-[0_10px_30px_rgba(0,0,0,0.05)] py-3" : "bg-white py-5"
+        scrolled
+          ? "bg-white/90 backdrop-blur-md shadow-[0_10px_30px_rgba(0,0,0,0.05)] py-3"
+          : "bg-white py-5"
       }`}>
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
 
@@ -110,49 +117,50 @@ export default function Navbar() {
             <span className={`block w-6 h-0.5 bg-[#0A0A0A] transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
           </button>
         </div>
+      </nav>
+      {/* ── Mobile Menu — DI LUAR </nav> ── */}
+      <div className={`lg:hidden fixed inset-0 bg-white z-[60] transition-transform duration-500 ${
+        menuOpen ? "translate-x-0" : "translate-x-full"
+      }`}>
+        {/* Header menu */}
+        <div className="p-6 flex justify-between items-center border-b border-gray-100">
+          <span className="text-black font-black text-xl tracking-tighter">
+            SETIA<span className="text-red-600">JAYA</span>
+          </span>
+          <button
+            onClick={() => setMenuOpen(false)}
+            className="text-[10px] font-bold uppercase tracking-widest bg-gray-100 text-black px-5 py-2.5 rounded-full"
+          >
+            Tutup
+          </button>
+        </div>
 
-        {/* Mobile Menu */}
-        <div className={`lg:hidden fixed inset-0 top-0 bg-white z-[60] transition-all duration-500 transform ${
-          menuOpen ? "translate-x-0" : "translate-x-full"
-        }`}>
-          <div className="p-6 flex justify-between items-center border-b border-gray-100">
-            <span className="text-black font-black text-xl tracking-tighter">
-              SETIA<span className="text-red-600">JAYA</span>
-            </span>
-            <button
-              onClick={() => setMenuOpen(false)}
-              className="text-[10px] font-bold uppercase tracking-widest bg-gray-100 px-5 py-2.5 rounded-full"
+        {/* Nav links */}
+        <div className="px-10 py-10 flex flex-col gap-8">
+          {NAV_ITEMS.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`text-4xl font-black uppercase tracking-tighter transition-colors ${
+                isActive(item.href) ? "text-red-600" : "text-[#0A0A0A]"
+              }`}
             >
-              Tutup
-            </button>
-          </div>
+              {item.label}
+            </Link>
+          ))}
 
-          <div className="px-10 py-16 space-y-10">
-            {NAV_ITEMS.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`block text-4xl font-black uppercase tracking-tighter transition-colors ${
-                  isActive(item.href) ? "text-red-600" : "text-[#0A0A0A]"
-                }`}
-              >
-                {item.label}
-              </Link>
-            ))}
-
-            <div className="pt-12">
-              <a
-                href={WA_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full bg-red-600 text-white text-center py-6 rounded-sm font-black uppercase tracking-widest text-sm shadow-2xl shadow-red-200"
-              >
-                Chat Sales Sekarang
-              </a>
-            </div>
+          <div className="pt-2">
+            <a
+              href={WA_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full bg-red-600 text-white text-center py-5 rounded-sm font-black uppercase tracking-widest text-sm shadow-2xl shadow-red-200"
+            >
+              Chat Sales Sekarang
+            </a>
           </div>
         </div>
-      </nav>
+      </div>
     </>
   );
 }

@@ -327,7 +327,7 @@ export default function Hero() {
       id="hero"
       className="
         relative
-        min-h-screen
+        min-h-[100svh] md:min-h-screen
         overflow-hidden
         bg-black
       "
@@ -382,7 +382,7 @@ export default function Hero() {
           max-w-7xl
           mx-auto
           px-6 md:px-10
-          min-h-screen
+        min-h-[100svh] md:min-h-screen
           grid
           lg:grid-cols-2
           gap-10

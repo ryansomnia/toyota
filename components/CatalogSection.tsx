@@ -88,7 +88,7 @@ export default function CatalogSection() {
 
   // ── Error ──────────────────────────────────────────────────────
   if (error) return (
-    <section id="katalog" className="py-20 px-4 text-center bg-white">
+    <section id="katalog" className="py-10 md:py-20 px-4 text-center bg-white">
       <p className="text-red-500 mb-4 text-sm">⚠️ {error}</p>
       <button onClick={() => window.location.reload()}
         className="px-5 py-2 bg-zinc-900 text-white rounded-lg text-sm">
@@ -99,8 +99,8 @@ export default function CatalogSection() {
 
   return (
     <>
-      <section id="katalog" className="bg-white py-16 md:py-24 px-4">
-        <div className="max-w-7xl mx-auto">
+<section id="katalog" className="bg-white py-10 md:py-24 px-4">
+<div className="max-w-7xl mx-auto">
 
           {/* ── Header ─────────────────────────────────────────── */}
           <div className="mb-10">
@@ -135,7 +135,7 @@ export default function CatalogSection() {
 
           {/* ── Grid ───────────────────────────────────────────── */}
           {filtered.length === 0 ? (
-            <p className="text-center py-16 text-zinc-400 text-sm">
+            <p className="text-center py-8 md:py-16 text-zinc-400 text-sm">
               Tidak ada mobil di kategori ini
             </p>
           ) : (

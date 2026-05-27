@@ -1,7 +1,7 @@
 export function ProfileSection() {
     return (
-      <section className="py-20 bg-white" id="profil">
-        <div className="max-w-7xl mx-auto px-4">
+<section className="py-10 md:py-20 bg-white" id="profil">
+<div className="max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-12 gap-10 items-center">
             
             {/* Kolom Kiri: Profil & Sambutan */}

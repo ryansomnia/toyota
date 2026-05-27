@@ -80,7 +80,7 @@ export function PromoSection() {
   return (
     <section
       id="promo"
-      className="relative py-24 overflow-hidden bg-gradient-to-b from-white to-slate-50"
+      className="relative py-12 md:py-24 overflow-hidden bg-gradient-to-b from-white to-slate-50"
     >
       <div className="absolute top-0 left-0 w-72 h-72 bg-red-100 blur-3xl opacity-30 rounded-full" />
       <div className="absolute bottom-0 right-0 w-72 h-72 bg-orange-100 blur-3xl opacity-30 rounded-full" />
