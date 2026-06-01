@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
+import { toSlug } from "@/utils/slug";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // CONFIG
@@ -56,13 +56,7 @@ function SkeletonCard() {
 // ─────────────────────────────────────────────────────────────────────────────
 // MODAL
 // ─────────────────────────────────────────────────────────────────────────────
-function CarModal({
-  modal,
-  onClose,
-}: {
-  modal: any;
-  onClose: () => void;
-}) {
+function CarModal({ modal, onClose }: { modal: any; onClose: () => void }) {
   const [activeVariant, setActiveVariant] = useState(0);
 
   useEffect(() => {
@@ -81,7 +75,7 @@ function CarModal({
         style={{ maxHeight: "92vh" }}
         onClick={(e) => e.stopPropagation()}
       >
-        {/* ── Header ── */}
+        {/* Header */}
         <div className="relative shrink-0">
           <div className="bg-gradient-to-b from-zinc-50 to-white flex items-center justify-center px-8 pt-10 pb-4" style={{ minHeight: 180 }}>
             <img
@@ -98,7 +92,6 @@ function CarModal({
               </span>
             )}
           </div>
-
           <div className="px-5 pb-4 border-b border-zinc-100">
             <p className="text-[10px] uppercase tracking-[3px] text-red-500 font-semibold mb-0.5">
               {modal.categoryId?.name ?? "Toyota"}
@@ -106,9 +99,7 @@ function CarModal({
             <div className="flex items-start justify-between gap-3">
               <div>
                 <h2 className="text-xl font-bold text-zinc-900 leading-tight">{modal.fullName}</h2>
-                {modal.tagline && (
-                  <p className="text-xs text-zinc-400 mt-0.5">{modal.tagline}</p>
-                )}
+                {modal.tagline && <p className="text-xs text-zinc-400 mt-0.5">{modal.tagline}</p>}
               </div>
               <button
                 onClick={onClose}
@@ -121,9 +112,8 @@ function CarModal({
           </div>
         </div>
 
-        {/* ── Scrollable Body ── */}
+        {/* Scrollable Body */}
         <div className="overflow-y-auto flex-1">
-          {/* Variant selector */}
           {modal.variants?.length > 1 && (
             <div className="px-5 pt-4">
               <p className="text-[10px] uppercase tracking-[2px] text-zinc-400 font-medium mb-2">Pilih Varian</p>
@@ -147,7 +137,6 @@ function CarModal({
 
           {v && (
             <div className="px-5 pt-4">
-              {/* Spec pills */}
               <div className="flex flex-wrap gap-1.5 mb-4">
                 {[v.fuel, v.transmission, v.seats && `${v.seats} Kursi`, v.engineCc && `${v.engineCc}cc`, v.drivetrain]
                   .filter(Boolean)
@@ -158,12 +147,9 @@ function CarModal({
                   ))}
               </div>
 
-              {/* Price table */}
               {v.prices?.length > 0 && (
                 <div className="mb-4">
                   <p className="text-[10px] uppercase tracking-[2px] text-zinc-400 font-medium mb-2">Daftar Harga OTR Bogor</p>
-
-                  {/* Mobile */}
                   <div className="sm:hidden flex flex-col divide-y divide-zinc-100 border border-zinc-100 rounded-xl overflow-hidden">
                     {v.prices.map((p: any, pi: number) => (
                       <div key={pi} className={`px-4 py-3 ${pi % 2 === 0 ? "bg-white" : "bg-zinc-50/60"}`}>
@@ -185,8 +171,6 @@ function CarModal({
                       </div>
                     ))}
                   </div>
-
-                  {/* Desktop */}
                   <div className="hidden sm:block overflow-x-auto rounded-xl border border-zinc-100">
                     <table className="w-full text-left border-collapse">
                       <thead>
@@ -218,7 +202,6 @@ function CarModal({
                 </div>
               )}
 
-              {/* Spesifikasi teknis */}
               {v.specs?.length > 0 && (
                 <div className="mb-4">
                   <p className="text-[10px] uppercase tracking-[2px] text-zinc-400 font-medium mb-2">Spesifikasi Teknis</p>
@@ -246,7 +229,6 @@ function CarModal({
                 </div>
               )}
 
-              {/* Warna */}
               {modal.colors?.length > 0 && (
                 <div className="mb-6">
                   <p className="text-[10px] uppercase tracking-[2px] text-zinc-400 font-medium mb-2">Pilihan Warna</p>
@@ -268,7 +250,7 @@ function CarModal({
           )}
         </div>
 
-        {/* ── Footer ── */}
+        {/* Footer */}
         <div className="shrink-0 border-t border-zinc-100 p-4 flex gap-2.5 bg-white">
           <button
             onClick={onClose}
@@ -297,36 +279,29 @@ function CarModal({
 // ─────────────────────────────────────────────────────────────────────────────
 // MAIN PAGE CLIENT
 // ─────────────────────────────────────────────────────────────────────────────
-export default function ProdukClient() {
-  const [cars, setCars]       = useState<any[]>([]);
-  const [cats, setCats]       = useState<any[]>([]);
+export default function ProdukClient({
+  initialCars = [],
+  initialCats = [],
+  initialModal = null, // ← tambah ini
+
+}: {
+  initialCars?: any[];
+  initialCats?: any[];
+  initialModal?: any;  // ← tambah ini
+
+}) {
+  // ✅ Semua useState harus di TOP LEVEL — tidak boleh di dalam useEffect
+  const [cars, setCars]       = useState<any[]>(initialCars);
+  const [cats, setCats]       = useState<any[]>(initialCats);
   const [tab, setTab]         = useState("Semua");
   const [search, setSearch]   = useState("");
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false); // ✅ false karena data sudah ada dari server
   const [error, setError]     = useState<string | null>(null);
-  const [modal, setModal]     = useState<any>(null);
+  const [modal, setModal]     = useState<any>(initialModal);
   const [page, setPage]       = useState(1);
 
-  // ── Fetch data ──────────────────────────────────────────────────
-  useEffect(() => {
-    (async () => {
-      try {
-        const [r1, r2] = await Promise.all([
-          fetch("/api/cars?limit=100"),
-          fetch("/api/categories"),
-        ]);
-        if (!r1.ok || !r2.ok) throw new Error("Gagal memuat data");
-        const { data: d1 } = await r1.json();
-        const { data: d2 } = await r2.json();
-        setCars(d1 ?? []);
-        setCats(d2 ?? []);
-      } catch (e: any) {
-        setError(e.message);
-      } finally {
-        setLoading(false);
-      }
-    })();
-  }, []);
+  // ✅ useEffect hanya untuk sinkronisasi jika props berubah (opsional)
+  // Tidak perlu fetch lagi — data sudah datang dari server via props
 
   // ── Filter + search ─────────────────────────────────────────────
   const filtered = cars
@@ -344,11 +319,16 @@ export default function ProdukClient() {
   const openModal = useCallback((car: any) => {
     setModal(car);
     document.body.style.overflow = "hidden";
+      // ✅ URL berubah tapi tidak reload halaman
+      window.history.pushState({}, "", `/produk/${toSlug(car.fullName)}`);
   }, []);
 
   const closeModal = useCallback(() => {
     setModal(null);
     document.body.style.overflow = "";
+    // ✅ Kembali ke /produk saat modal ditutup
+    window.history.pushState({}, "", `/produk`);
+
   }, []);
 
   // ── Tab change ──────────────────────────────────────────────────
@@ -375,14 +355,12 @@ export default function ProdukClient() {
     <>
       <main className="min-h-screen bg-zinc-50">
 
-        {/* ── HERO / PAGE HEADER ─────────────────────────────────── */}
+        {/* HERO / PAGE HEADER */}
         <section className="bg-zinc-900 text-white pt-12 pb-10 px-4 relative overflow-hidden">
-          {/* Subtle background pattern */}
           <div className="absolute inset-0 opacity-5"
             style={{ backgroundImage: "radial-gradient(circle at 20% 50%, #ef4444 0%, transparent 50%), radial-gradient(circle at 80% 20%, #ef4444 0%, transparent 40%)" }} />
 
           <div className="max-w-7xl mx-auto relative">
-            {/* Breadcrumb */}
             <nav className="flex items-center gap-2 text-[11px] text-zinc-500 mb-6" aria-label="Breadcrumb">
               <Link href="/" className="hover:text-zinc-300 transition-colors">Beranda</Link>
               <span>/</span>
@@ -403,7 +381,6 @@ export default function ProdukClient() {
                 </p>
               </div>
 
-              {/* Search bar */}
               <div className="relative w-full md:w-72 shrink-0">
                 <svg className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -420,7 +397,7 @@ export default function ProdukClient() {
           </div>
         </section>
 
-        {/* ── FILTER TABS ────────────────────────────────────────── */}
+        {/* FILTER TABS */}
         <div className="sticky top-0 z-40 bg-white border-b border-zinc-100 shadow-sm">
           <div className="max-w-7xl mx-auto px-4">
             <div className="flex gap-1.5 overflow-x-auto py-3 scrollbar-none" style={{ scrollbarWidth: "none" }}>
@@ -441,10 +418,9 @@ export default function ProdukClient() {
           </div>
         </div>
 
-        {/* ── GRID AREA ──────────────────────────────────────────── */}
+        {/* GRID AREA */}
         <section className="max-w-7xl mx-auto px-4 py-10">
 
-          {/* Result count */}
           {!loading && (
             <div className="flex items-center justify-between mb-6">
               <p className="text-xs text-zinc-400">
@@ -463,14 +439,12 @@ export default function ProdukClient() {
             </div>
           )}
 
-          {/* Loading skeleton */}
           {loading && (
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
               {Array.from({ length: 8 }).map((_, i) => <SkeletonCard key={i} />)}
             </div>
           )}
 
-          {/* Empty state */}
           {!loading && filtered.length === 0 && (
             <div className="text-center py-24">
               <p className="text-4xl mb-3">🔍</p>
@@ -485,7 +459,6 @@ export default function ProdukClient() {
             </div>
           )}
 
-          {/* Car grid */}
           {!loading && filtered.length > 0 && (
             <>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
@@ -500,7 +473,6 @@ export default function ProdukClient() {
                       onClick={() => openModal(car)}
                       className="group text-left bg-white border border-zinc-100 rounded-2xl overflow-hidden hover:border-zinc-300 hover:shadow-xl transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
                     >
-                      {/* Image */}
                       <div className="relative bg-zinc-50 flex items-center justify-center overflow-hidden" style={{ height: 148 }}>
                         <img
                           src={car.thumbnailUrl || `https://placehold.co/400x280/f4f4f5/a1a1aa?text=${encodeURIComponent(car.name)}`}
@@ -518,7 +490,6 @@ export default function ProdukClient() {
                         )}
                       </div>
 
-                      {/* Body */}
                       <div className="p-3.5">
                         <p className="text-[9px] uppercase tracking-[2px] text-zinc-400 mb-1">
                           {car.categoryId?.name ?? "Toyota"}
@@ -527,7 +498,6 @@ export default function ProdukClient() {
                           {car.fullName}
                         </h2>
 
-                        {/* Spec pills */}
                         {fv && (
                           <div className="flex flex-wrap gap-1 mb-3">
                             {[fv.fuel, fv.transmission, fv.seats && `${fv.seats} kursi`]
@@ -540,7 +510,6 @@ export default function ProdukClient() {
                           </div>
                         )}
 
-                        {/* Price + CTA */}
                         <div className="border-t border-zinc-50 pt-2.5 flex items-end justify-between gap-1">
                           <div>
                             {sp ? (
@@ -565,7 +534,6 @@ export default function ProdukClient() {
                 })}
               </div>
 
-              {/* ── Pagination ── */}
               {totalPages > 1 && (
                 <div className="flex justify-center items-center gap-1.5 mt-10 flex-wrap">
                   <button
@@ -601,7 +569,7 @@ export default function ProdukClient() {
           )}
         </section>
 
-        {/* ── BOTTOM CTA STRIP ───────────────────────────────────── */}
+        {/* BOTTOM CTA */}
         <section className="bg-zinc-900 text-white py-12 px-4 text-center">
           <p className="text-[11px] uppercase tracking-[4px] text-red-500 font-semibold mb-3">Butuh Bantuan?</p>
           <h2 className="text-2xl font-bold mb-2">Tidak yakin pilih model mana?</h2>
@@ -616,14 +584,13 @@ export default function ProdukClient() {
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-              <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm.029 18.88a7.946 7.946 0 01-3.786-.964L4.5 19.5l1.617-3.664a7.93 7.93 0 01-1.046-3.948c0-4.411 3.588-7.999 8-7.999s8 3.588 8 8-3.589 7.991-8.042 7.991z" />
+              <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm.029 18.88a7.946 7.946 0 01-3.786-.964L4.5 19.5l1.617-3.664a7.93 7.94 0 01-1.046-3.948c0-4.411 3.588-7.999 8-7.999s8 3.588 8 8-3.589 7.991-8.042 7.991z" />
             </svg>
             Konsultasi via WhatsApp
           </a>
         </section>
       </main>
 
-      {/* Modal */}
       {modal && <CarModal modal={modal} onClose={closeModal} />}
     </>
   );

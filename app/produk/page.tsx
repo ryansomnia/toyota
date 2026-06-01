@@ -33,7 +33,39 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ProdukPage() {
-  
-  return <ProdukClient />;
+// ✅ Fetch di server — data ini yang dibaca Google
+async function getCars() {
+  try {
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000";
+    const res = await fetch(`${baseUrl}/api/cars?limit=100`, {
+      next: { revalidate: 3600 },
+    });
+    const { data } = await res.json();
+    return data ?? [];
+  } catch {
+    return [];
+  }
+}
+
+async function getCategories() {
+  try {
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000";
+    const res = await fetch(`${baseUrl}/api/categories`, {
+      next: { revalidate: 3600 },
+    });
+    const { data } = await res.json();
+    return data ?? [];
+  } catch {
+    return [];
+  }
+}
+
+// ✅ async Server Component — kirim data ke Client via props
+export default async function ProdukPage() {
+  const [initialCars, initialCats] = await Promise.all([
+    getCars(),
+    getCategories(),
+  ]);
+
+  return <ProdukClient initialCars={initialCars} initialCats={initialCats} />;
 }
