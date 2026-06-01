@@ -19,6 +19,7 @@ async function getCarBySlug(slug: string) {
 
 // Generate semua slug saat build (Static Generation)
 export async function generateStaticParams() {
+    
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000";
   const res = await fetch(`${baseUrl}/api/cars?limit=100`);
   const { data } = await res.json();
