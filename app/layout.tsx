@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
+import Script from "next/script"; // 1. IMPORT SCRIPT NEXT.JS DI SINI
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -65,12 +66,28 @@ export default function RootLayout({
         />
       </head>
 
-      <body className="font-body bg-white text-white antialiased">        {/* GLOBAL NAVBAR */}
+      <body className="font-body bg-white text-white antialiased">
+        {/* 2. GOOGLE ADS TRACKING TAG */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18172959033"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads-tag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'AW-18172959033');
+          `}
+        </Script>
+
+        {/* GLOBAL NAVBAR */}
         <Navbar />
 
         {/* PAGE CONTENT - Kita isolasi overflow-x di sini agar tidak merusak body */}
         <main className="relative w-full overflow-x-hidden bg-white">
-        {children}
+          {children}
         </main>
 
         {/* GLOBAL FOOTER */}
