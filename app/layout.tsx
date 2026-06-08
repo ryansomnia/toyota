@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
+"use client"; // 1. DIUBAH MENJADI CLIENT COMPONENT AGAR BISA KLIK
+
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
-import Script from "next/script"; // 1. IMPORT SCRIPT NEXT.JS DI SINI
+import Script from "next/script";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -22,33 +23,26 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://mobiltoyotacibubur.com"),
-
-  title: {
-    default: "Toyota Cibubur – Sales Mobil Resmi Cibubur & Bekasi",
-    template: "%s | Toyota Cibubur",
-  },
-
-  description:
-    "Sales mobil resmi terpercaya di Cibubur, Bekasi. Tersedia Toyota, Honda, Mitsubishi, Suzuki & lebih.",
-
-  alternates: {
-    canonical: "https://mobiltoyotacibubur.com",
-  },
-
-  icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
-  },
-};
+// PENTING: Objek metadata dihapus dari sini karena Client Component tidak bisa mengekspor metadata secara langsung.
+// Jika Anda butuh metadata, nanti bisa dipindah ke file page.tsx masing-masing.
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  
+  // 2. FUNGSI UNTUK MELAPORKAN KONVERSI KE GOOGLE ADS
+  const handleWaClick = () => {
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag("event", "conversion", {
+        send_to: "AW-18172959033/O3BDCO39wa8cELmyxdlD",
+        value: 1.0,
+        currency: "IDR",
+      });
+    }
+  };
+
   return (
     <html lang="id" className={`${cormorant.variable} ${dmSans.variable}`}>
       <head>
@@ -67,7 +61,7 @@ export default function RootLayout({
       </head>
 
       <body className="font-body bg-white text-white antialiased">
-        {/* 2. GOOGLE ADS TRACKING TAG */}
+        {/* GOOGLE ADS BASE TAG */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-18172959033"
           strategy="afterInteractive"
@@ -85,7 +79,7 @@ export default function RootLayout({
         {/* GLOBAL NAVBAR */}
         <Navbar />
 
-        {/* PAGE CONTENT - Kita isolasi overflow-x di sini agar tidak merusak body */}
+        {/* PAGE CONTENT */}
         <main className="relative w-full overflow-x-hidden bg-white">
           {children}
         </main>
@@ -96,11 +90,12 @@ export default function RootLayout({
         {/* GLOBAL EFFECT */}
         <ScrollReveal />
 
-        {/* FLOATING WA - Keluar dari main tracker, murni fixed */}
+        {/* FLOATING WA - DENGAN TRACKING KONVERSI */}
         <a
           href="https://wa.me/6282125061466?text=Halo%20Toyota%2C%20saya%20ingin%20konsultasi"
           target="_blank"
           rel="noopener noreferrer"
+          onClick={handleWaClick} // 3. PANGGIL FUNGSI TRACKING DI SINI
           className="fixed-wa-mobile flex items-center gap-2 bg-[#25D366] text-white pl-3.5 pr-4 py-2.5 sm:pl-4 sm:pr-5 sm:py-3.5 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.6)] hover:scale-105 active:scale-95 transition-transform duration-300"
           aria-label="Chat via WhatsApp"
         >
