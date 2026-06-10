@@ -1123,60 +1123,60 @@ function getCarsData(categoryMap: Record<string, Types.ObjectId>) {
     // HATCHBACK
     // ══════════════════════════════════════════════
 
-   // ─── Agya ────────────────────────────────────────────────────
-  //  {
-  //   categoryId: HATCH,
-  //   name: "Agya", 
-  //   fullName: "New Agya", 
-  //   slug: "agya",
-  //   tagline: "Move with No Boundaries",
-  //   description: "New Toyota Agya hadir sebagai city car kompak yang lincah, irit bahan bakar, dan sangat cocok untuk mobilitas harian di perkotaan dengan desain yang lebih modern.",
-  //   bannerUrl: "/images/cars/agya/banner.jpg",
-  //   thumbnailUrl: "/images/cars/agya/thumbnail.jpg",
-  //   brochureUrl: "/files/brochure-agya.pdf",
-  //   startingPrice: 173800000, 
-  //   priceLabel: "Starting from",
-  //   label: "CITY CAR", 
-  //   isNewModel: true, 
-  //   isFeatured: false, 
-  //   isActive: true, 
-  //   sortOrder: 16,
-  //   metaTitle: "New Toyota Agya – Harga & Promo Terbaru | Toyota - Setiajaya",
-  //   metaDescription: "Beli New Toyota Agya di Toyota - Setiajaya Cibubur. City car lincah dan efisien. Harga mulai Rp 173 Juta.",
-  //   variants: [
-  //     {
-  //       name: "1.2 Agya", 
-  //       slug: "agya-12",
-  //       fuel: "Bensin", transmission: "Manual / CVT", engineCc: 1197,
-  //       engineLabel: "1.2L 3-cyl DOHC Dual VVT-i", drivetrain: "FWD", seats: 5, sortOrder: 1,
-  //       prices: [
-  //         p("M/T 1.2 E (SPOT ORDER)", 173800000, 177100000, true,  false, 1),
-  //         p("M/T 1.2 G",              181500000, 184600000, false, false, 2),
-  //         p("CVT 1.2 G",              197700000, 200800000, false, false, 3),
-  //         p("CVT 1.2 STYLIX",         201200000, 204300000, false, false, 4),
-  //       ],
-  //       specs: [
-  //         { category:"Mesin",     specKey:"Kapasitas Mesin", specValue:"1.197 cc",             sortOrder:1 },
-  //         { category:"Mesin",     specKey:"Tipe Mesin",      specValue:"WA-VE 3-Silinder",     sortOrder:2 },
-  //         { category:"Transmisi", specKey:"Tipe",            specValue:"5-Speed Manual / CVT", sortOrder:3 },
-  //       ],
-  //     },
-  //   ],
-  //   colors: [
-  //     { name:"White",  hexCode:"#FFFFFF", imageUrl:"/images/cars/agya/color-white.jpg",  sortOrder:1 },
-  //     { name:"Red",    hexCode:"#C0392B", imageUrl:"/images/cars/agya/color-red.jpg",    sortOrder:2 },
-  //     { name:"Black",  hexCode:"#1C1C1C", imageUrl:"/images/cars/agya/color-black.jpg",  sortOrder:3 },
-  //     { name:"Yellow", hexCode:"#F4D03F", imageUrl:"/images/cars/agya/color-yellow.jpg", sortOrder:4 },
-  //   ],
-  //   images: [
-  //     { url:"/images/cars/agya/exterior-1.jpg", altText:"Toyota Agya tampak depan",   category:"exterior", isPrimary:true,  sortOrder:1 },
-  //     { url:"/images/cars/agya/exterior-2.jpg", altText:"Toyota Agya tampak samping", category:"exterior", isPrimary:false, sortOrder:2 }
-  //   ],
-  //   features: [
-  //     { title:"Efisiensi Bahan Bakar", description:"Mesin 1.2L WA-VE terbaru yang lebih bertenaga namun tetap irit bahan bakar.", category:"Performance", sortOrder:1 },
-  //     { title:"Desain Kompak",         description:"Bodi kompak yang memudahkan manuver dan parkir di jalanan kota yang padat.",  category:"Design",      sortOrder:2 }
-  //   ],
-  // },
+  //  ─── Agya ────────────────────────────────────────────────────
+   {
+    categoryId: HATCH,
+    name: "Agya", 
+    fullName: "New Agya", 
+    slug: "agya",
+    tagline: "Move with No Boundaries",
+    description: "New Toyota Agya hadir sebagai city car kompak yang lincah, irit bahan bakar, dan sangat cocok untuk mobilitas harian di perkotaan dengan desain yang lebih modern.",
+    bannerUrl: "/images/cars/agya/banner.jpg",
+    thumbnailUrl: "/images/cars/agya/thumbnail.jpg",
+    brochureUrl: "/files/brochure-agya.pdf",
+    startingPrice: 173800000, 
+    priceLabel: "Starting from",
+    label: "CITY CAR", 
+    isNewModel: true, 
+    isFeatured: false, 
+    isActive: true, 
+    sortOrder: 16,
+    metaTitle: "New Toyota Agya – Harga & Promo Terbaru | Toyota - Setiajaya",
+    metaDescription: "Beli New Toyota Agya di Toyota - Setiajaya Cibubur. City car lincah dan efisien. Harga mulai Rp 173 Juta.",
+    variants: [
+      {
+        name: "1.2 Agya", 
+        slug: "agya-12",
+        fuel: "Bensin", transmission: "Manual / CVT", engineCc: 1197,
+        engineLabel: "1.2L 3-cyl DOHC Dual VVT-i", drivetrain: "FWD", seats: 5, sortOrder: 1,
+        prices: [
+          p("M/T 1.2 E (SPOT ORDER)", 173800000, 177100000, true,  false, 1),
+          p("M/T 1.2 G",              181500000, 184600000, false, false, 2),
+          p("CVT 1.2 G",              197700000, 200800000, false, false, 3),
+          p("CVT 1.2 STYLIX",         201200000, 204300000, false, false, 4),
+        ],
+        specs: [
+          { category:"Mesin",     specKey:"Kapasitas Mesin", specValue:"1.197 cc",             sortOrder:1 },
+          { category:"Mesin",     specKey:"Tipe Mesin",      specValue:"WA-VE 3-Silinder",     sortOrder:2 },
+          { category:"Transmisi", specKey:"Tipe",            specValue:"5-Speed Manual / CVT", sortOrder:3 },
+        ],
+      },
+    ],
+    colors: [
+      { name:"White",  hexCode:"#FFFFFF", imageUrl:"/images/cars/agya/color-white.jpg",  sortOrder:1 },
+      { name:"Red",    hexCode:"#C0392B", imageUrl:"/images/cars/agya/color-red.jpg",    sortOrder:2 },
+      { name:"Black",  hexCode:"#1C1C1C", imageUrl:"/images/cars/agya/color-black.jpg",  sortOrder:3 },
+      { name:"Yellow", hexCode:"#F4D03F", imageUrl:"/images/cars/agya/color-yellow.jpg", sortOrder:4 },
+    ],
+    images: [
+      { url:"/images/cars/agya/exterior-1.jpg", altText:"Toyota Agya tampak depan",   category:"exterior", isPrimary:true,  sortOrder:1 },
+      { url:"/images/cars/agya/exterior-2.jpg", altText:"Toyota Agya tampak samping", category:"exterior", isPrimary:false, sortOrder:2 }
+    ],
+    features: [
+      { title:"Efisiensi Bahan Bakar", description:"Mesin 1.2L WA-VE terbaru yang lebih bertenaga namun tetap irit bahan bakar.", category:"Performance", sortOrder:1 },
+      { title:"Desain Kompak",         description:"Bodi kompak yang memudahkan manuver dan parkir di jalanan kota yang padat.",  category:"Design",      sortOrder:2 }
+    ],
+  },
 
     // ─── GR Yaris ─────────────────────────────────────────────────
     {
